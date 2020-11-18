@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/main_activity"
+            android:icon="@drawable/ic_main"
+            android:title="@string/main_activity_lang"
+            app:showAsAction="always"
+
+            />
+
+        <item
+            android:id="@+id/lang_activity"
+            android:icon="@drawable/ic_lang"
+            android:title="@string/lang_activity_lang"
+            app:showAsAction="always" />
+
+        <item
+            android:id="@+id/share_activity"
+            android:icon="@drawable/ic_share"
+            android:title="@string/share_activity_lang"
+            app:showAsAction="always" />
+
+        <item
+            android:id="@+id/about_activity"
+            android:icon="@drawable/ic_about_us"
+            android:title="@string/about_activity_lang"
+            app:showAsAction="always" />
+
+        <item
+            android:id="@+id/info_activity"
+            android:icon="@drawable/ic_info"
+            android:title="@string/info_activity_lang"
+            app:showAsAction="always" />
+
+        <item
+            android:id="@+id/rate_activity"
+            android:icon="@drawable/ic_rate_us"
+            android:title="@string/rate_activity_lang"
+            app:showAsAction="always" />
+
+        <item
+            android:id="@+id/other_activity"
+            android:icon="@drawable/ic_other_app"
+            android:title="@string/other_activity_lang"
+            app:showAsAction="always" />
+    </group>
+
+    <item android:title="@string/connect_with_us_lang">
+        <menu>
+            <item
+                android:id="@+id/facebook_activity"
+                android:icon="@drawable/ic_facebook_circular_logo"
+                android:title="Facebook"
+                app:showAsAction="always" />
+
+            <item
+                android:id="@+id/instagramm_activity"
+                android:icon="@drawable/ic_instagram"
+                android:title="Instagramm"
+                app:showAsAction="always" />
+
+            <item
+                android:id="@+id/telegramm_activity"
+                android:icon="@drawable/ic_telegram"
+                android:title="Telegramm"
+                app:showAsAction="always" />
+        </menu>
+    </item>
+
+</menu>

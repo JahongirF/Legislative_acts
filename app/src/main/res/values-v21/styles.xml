@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="colorPrimaryDark">@color/color_action_bar_Top</item> //Верхняя часть ActionBar
+        <item name="colorPrimaryVariant">@color/color_action_bar</item> //Сам ActionBar
+    </style>
+</resources>
