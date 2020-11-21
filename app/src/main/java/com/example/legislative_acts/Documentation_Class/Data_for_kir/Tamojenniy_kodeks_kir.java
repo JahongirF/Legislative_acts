@@ -27,9 +27,9 @@ public class Tamojenniy_kodeks_kir {
     public static List<Acts_Subtitle> getActs_Chapter_1()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("I-боб. Асосий қоидалар"));
-        acts_subtitles.add(new Acts_Subtitle("II-боб. Ушбу Кодексда қўлланиладиган асосий тушунчалар"));
-        acts_subtitles.add(new Acts_Subtitle("III-боб. Товарларни ва транспорт воситаларини божхона чегараси орқали олиб ўтиш"));
+        acts_subtitles.add(new Acts_Subtitle("1-боб. Асосий қоидалар"));
+        acts_subtitles.add(new Acts_Subtitle("2-боб. Ушбу Кодексда қўлланиладиган асосий тушунчалар"));
+        acts_subtitles.add(new Acts_Subtitle("3-боб. Товарларни ва транспорт воситаларини божхона чегараси орқали олиб ўтиш"));
 
         return acts_subtitles;
     }
@@ -37,24 +37,24 @@ public class Tamojenniy_kodeks_kir {
     public static List<Acts_Subtitle> getActs_Chapter_2()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("IV-боб. Умумий қоидалар"));
-        acts_subtitles.add(new Acts_Subtitle("V-боб. Экспорт"));
-        acts_subtitles.add(new Acts_Subtitle("VI-боб. Реэкспорт"));
-        acts_subtitles.add(new Acts_Subtitle("VII-боб. Вақтинча олиб чиқиш"));
-        acts_subtitles.add(new Acts_Subtitle("VIII-боб. Божхона ҳудудидан ташқарида қайта ишлаш"));
-        acts_subtitles.add(new Acts_Subtitle("IX-боб. Эркин муомалага чиқариш (импорт)"));
-        acts_subtitles.add(new Acts_Subtitle("X-боб. Реимпорт"));
-        acts_subtitles.add(new Acts_Subtitle("XI-боб. Вақтинча олиб кириш"));
-        acts_subtitles.add(new Acts_Subtitle("XII-боб. Божхона ҳудудида қайта ишлаш"));
-        acts_subtitles.add(new Acts_Subtitle("XIII-боб. Вақтинча сақлаш"));
-        acts_subtitles.add(new Acts_Subtitle("XIV-боб. Божхона омбори"));
-        acts_subtitles.add(new Acts_Subtitle("XV-боб. Эркин омбор"));
-        acts_subtitles.add(new Acts_Subtitle("XVI-боб. Эркин божхона зонаси"));
-        acts_subtitles.add(new Acts_Subtitle("XVII-боб. Бож олинмайдиган савдо"));
-        acts_subtitles.add(new Acts_Subtitle("XVIII-боб. Божхона транзити"));
-        acts_subtitles.add(new Acts_Subtitle("XIX-боб. Йўқ қилиш"));
-        acts_subtitles.add(new Acts_Subtitle("XX-боб. Давлат фойдасига воз кечиш"));
-        acts_subtitles.add(new Acts_Subtitle("XXI-боб. Товарни божхона режимларига жойлаштирилаётгандаги рухсат бериш тартиб-таомиллари"));
+        acts_subtitles.add(new Acts_Subtitle("4-боб. Умумий қоидалар"));
+        acts_subtitles.add(new Acts_Subtitle("5-боб. Экспорт"));
+        acts_subtitles.add(new Acts_Subtitle("6-боб. Реэкспорт"));
+        acts_subtitles.add(new Acts_Subtitle("7-боб. Вақтинча олиб чиқиш"));
+        acts_subtitles.add(new Acts_Subtitle("8-боб. Божхона ҳудудидан ташқарида қайта ишлаш"));
+        acts_subtitles.add(new Acts_Subtitle("9-боб. Эркин муомалага чиқариш (импорт)"));
+        acts_subtitles.add(new Acts_Subtitle("10-боб. Реимпорт"));
+        acts_subtitles.add(new Acts_Subtitle("11-боб. Вақтинча олиб кириш"));
+        acts_subtitles.add(new Acts_Subtitle("12-боб. Божхона ҳудудида қайта ишлаш"));
+        acts_subtitles.add(new Acts_Subtitle("13-боб. Вақтинча сақлаш"));
+        acts_subtitles.add(new Acts_Subtitle("14-боб. Божхона омбори"));
+        acts_subtitles.add(new Acts_Subtitle("15-боб. Эркин омбор"));
+        acts_subtitles.add(new Acts_Subtitle("16-боб. Эркин божхона зонаси"));
+        acts_subtitles.add(new Acts_Subtitle("17-боб. Бож олинмайдиган савдо"));
+        acts_subtitles.add(new Acts_Subtitle("18-боб. Божхона транзити"));
+        acts_subtitles.add(new Acts_Subtitle("19-боб. Йўқ қилиш"));
+        acts_subtitles.add(new Acts_Subtitle("20-боб. Давлат фойдасига воз кечиш"));
+        acts_subtitles.add(new Acts_Subtitle("21-боб. Товарни божхона режимларига жойлаштирилаётгандаги рухсат бериш тартиб-таомиллари"));
 
         return acts_subtitles;
     }
@@ -62,11 +62,11 @@ public class Tamojenniy_kodeks_kir {
     public static List<Acts_Subtitle> getActs_Chapter_3()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("XXII-боб. Тижорат мақсадларида фойдаланиладиган транспорт воситалар"));
-        acts_subtitles.add(new Acts_Subtitle("XXIII-боб. Жисмоний шахслар томонидан товарларни ва транспорт восит"));
-        acts_subtitles.add(new Acts_Subtitle("XXIV-боб. Халқаро почта ва курьерлик жўнатмаларида юбориладиган товарлар"));
-        acts_subtitles.add(new Acts_Subtitle("XXV-боб. Божхона чегарасидан қувур транспортида ва электр узатиш ли"));
-        acts_subtitles.add(new Acts_Subtitle("XXVI-боб. Божхона омборлари, бож олинмайдиган савдо дўконлари ва эр"));
+        acts_subtitles.add(new Acts_Subtitle("22-боб. Тижорат мақсадларида фойдаланиладиган транспорт воситаларини олиб ўтиш"));
+        acts_subtitles.add(new Acts_Subtitle("23-боб. Жисмоний шахслар томонидан товарларни ва транспорт воситала"));
+        acts_subtitles.add(new Acts_Subtitle("24-боб. Халқаро почта ва курьерлик жўнатмаларида юбориладиган товарлар"));
+        acts_subtitles.add(new Acts_Subtitle("25-боб. Божхона чегарасидан қувур транспортида ва электр узатиш лин"));
+        acts_subtitles.add(new Acts_Subtitle("26-боб. Божхона омборлари, бож олинмайдиган савдо дўконлари ва эркин омборлар"));
 
         return acts_subtitles;
     }
@@ -74,13 +74,13 @@ public class Tamojenniy_kodeks_kir {
     public static List<Acts_Subtitle> getActs_Chapter_4()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("XXVII-боб. Божхона назоратининг умумий қоидалари"));
-        acts_subtitles.add(new Acts_Subtitle("XXVIII-боб. Божхона назоратини амалга ошириш шакллари ва тартиби"));
-        acts_subtitles.add(new Acts_Subtitle("XXIX-боб. Хавфни бошқариш тизими"));
-        acts_subtitles.add(new Acts_Subtitle("XXX-боб. Божхона экспертизаси"));
-        acts_subtitles.add(new Acts_Subtitle("XXXI-боб. Товарларни ва транспорт воситаларини божхона назорати остида ташиш"));
-        acts_subtitles.add(new Acts_Subtitle("XXXII-боб. Транспорт воситасига товарларни божхона пломбалари ва муҳрлари остида ташишга рухсат бериш тўғрисидаги гувоҳнома"));
-        acts_subtitles.add(new Acts_Subtitle("XXXIII-боб. Божхона ташувчисининг фаолияти"));
+        acts_subtitles.add(new Acts_Subtitle("27-боб. Божхона назоратининг умумий қоидалари"));
+        acts_subtitles.add(new Acts_Subtitle("28-боб. Божхона назоратини амалга ошириш шакллари ва тартиби"));
+        acts_subtitles.add(new Acts_Subtitle("29-боб. Хавфни бошқариш тизими"));
+        acts_subtitles.add(new Acts_Subtitle("30-боб. Божхона экспертизаси"));
+        acts_subtitles.add(new Acts_Subtitle("31-боб. Товарларни ва транспорт воситаларини божхона назорати остида ташиш"));
+        acts_subtitles.add(new Acts_Subtitle("32-боб. Транспорт воситасига товарларни божхона пломбалари ва муҳрлари остида ташишга рухсат бериш тўғрисидаги гувоҳнома"));
+        acts_subtitles.add(new Acts_Subtitle("33-боб. Божхона ташувчисининг фаолияти"));
 
         return acts_subtitles;
     }
@@ -88,8 +88,8 @@ public class Tamojenniy_kodeks_kir {
     public static List<Acts_Subtitle> getActs_Chapter_5()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("XXXIV-боб. Валюта назорати"));
-        acts_subtitles.add(new Acts_Subtitle("XXXV-боб. Ташқи савдо операциялари мониторинги"));
+        acts_subtitles.add(new Acts_Subtitle("34-боб. Валюта назорати"));
+        acts_subtitles.add(new Acts_Subtitle("35-боб. Ташқи савдо операциялари мониторинги"));
 
         return acts_subtitles;
     }
@@ -97,9 +97,9 @@ public class Tamojenniy_kodeks_kir {
     public static List<Acts_Subtitle> getActs_Chapter_6()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("XXXVI-боб. Умумий қоидалар"));
-        acts_subtitles.add(new Acts_Subtitle("XXXVII-боб. Декларациялаш"));
-        acts_subtitles.add(new Acts_Subtitle("XXXVIII-боб. Товарларни ва транспорт воситаларини чиқариб юбориш"));
+        acts_subtitles.add(new Acts_Subtitle("36-боб. Умумий қоидалар"));
+        acts_subtitles.add(new Acts_Subtitle("37-боб. Декларациялаш"));
+        acts_subtitles.add(new Acts_Subtitle("38-боб. Товарларни ва транспорт воситаларини чиқариб юбориш"));
 
         return acts_subtitles;
     }
@@ -107,9 +107,9 @@ public class Tamojenniy_kodeks_kir {
     public static List<Acts_Subtitle> getActs_Chapter_7()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("XXXIX-боб. Декларант"));
-        acts_subtitles.add(new Acts_Subtitle("XXXX-боб. Божхона брокери"));
-        acts_subtitles.add(new Acts_Subtitle("XLI-боб. Божхона расмийлаштируви бўйича мутахассис"));
+        acts_subtitles.add(new Acts_Subtitle("39-боб. Декларант"));
+        acts_subtitles.add(new Acts_Subtitle("40-боб. Божхона брокери"));
+        acts_subtitles.add(new Acts_Subtitle("41-боб. Божхона расмийлаштируви бўйича мутахассис"));
 
         return acts_subtitles;
     }
@@ -117,17 +117,17 @@ public class Tamojenniy_kodeks_kir {
     public static List<Acts_Subtitle> getActs_Chapter_8()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("VIIIL-боб. Асосий қоидалар"));
-        acts_subtitles.add(new Acts_Subtitle("VIIL-боб. Божхона тўловларини тўлаш бўйича имтиёзлар ва тариф преференциялари"));
-        acts_subtitles.add(new Acts_Subtitle("VIL-боб. Товарнинг божхона қиймати"));
-        acts_subtitles.add(new Acts_Subtitle("VL-боб. Божхона тўловларини ҳисоблаб чиқариш ва тўлаш"));
-        acts_subtitles.add(new Acts_Subtitle("IVL-боб. Божхона тўловларини тўлаш тартиби ва муддатлари"));
-        acts_subtitles.add(new Acts_Subtitle("IIIL-боб. Божхона тўловлари тўланишини таъминлаш"));
-        acts_subtitles.add(new Acts_Subtitle("IIL-боб. Божхона тўловларини тўлаш бўйича қарздорлик"));
-        acts_subtitles.add(new Acts_Subtitle("IL-боб. Божхона тўловлари суммаларини қайтариш"));
-        acts_subtitles.add(new Acts_Subtitle("L-боб. Товар ишлаб чиқарилган мамлакатни аниқлаш"));
-        acts_subtitles.add(new Acts_Subtitle("LI-боб. Ўзбекистон Республикаси Ташқи иқтисодий фаолиятининг товар номенклатураси"));
-        acts_subtitles.add(new Acts_Subtitle("LII-боб. Дастлабки қарорлар"));
+        acts_subtitles.add(new Acts_Subtitle("42-боб. Асосий қоидалар"));
+        acts_subtitles.add(new Acts_Subtitle("43-боб. Божхона тўловларини тўлаш бўйича имтиёзлар ва тариф преференциялари"));
+        acts_subtitles.add(new Acts_Subtitle("44-боб. Товарнинг божхона қиймати"));
+        acts_subtitles.add(new Acts_Subtitle("45-боб. Божхона тўловларини ҳисоблаб чиқариш ва тўлаш"));
+        acts_subtitles.add(new Acts_Subtitle("46-боб. Божхона тўловларини тўлаш тартиби ва муддатлари"));
+        acts_subtitles.add(new Acts_Subtitle("47-боб. Божхона тўловлари тўланишини таъминлаш"));
+        acts_subtitles.add(new Acts_Subtitle("48-боб. Божхона тўловларини тўлаш бўйича қарздорлик"));
+        acts_subtitles.add(new Acts_Subtitle("49-боб. Божхона тўловлари суммаларини қайтариш"));
+        acts_subtitles.add(new Acts_Subtitle("50-боб. Товар ишлаб чиқарилган мамлакатни аниқлаш"));
+        acts_subtitles.add(new Acts_Subtitle("51-боб. Ўзбекистон Республикаси Ташқи иқтисодий фаолиятининг товар номенклатураси"));
+        acts_subtitles.add(new Acts_Subtitle("52-боб. Дастлабки қарорлар"));
 
         return acts_subtitles;
     }
@@ -135,10 +135,10 @@ public class Tamojenniy_kodeks_kir {
     public static List<Acts_Subtitle> getActs_Chapter_9()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("LIII-боб. Божхона органлари томони"));
-        acts_subtitles.add(new Acts_Subtitle("LIV-боб. Божхона ишида ахборот-ком"));
-        acts_subtitles.add(new Acts_Subtitle("LV-боб. Ахборот ва маслаҳат бериш"));
-        acts_subtitles.add(new Acts_Subtitle("LVI-боб. Интеллектуал мулк объектл"));
+        acts_subtitles.add(new Acts_Subtitle("53-боб. Божхона органлари томонидабожхона статистикасини юритиш"));
+        acts_subtitles.add(new Acts_Subtitle("54-боб. Божхона ишида ахборот-коммуникация технологиялари"));
+        acts_subtitles.add(new Acts_Subtitle("55-боб. Ахборот ва маслаҳат бериш"));
+        acts_subtitles.add(new Acts_Subtitle("56-боб. Интеллектуал мулк объектларига бўлган ҳуқуқларни ҳимоя қилиш"));
 
         return acts_subtitles;
     }
@@ -146,9 +146,9 @@ public class Tamojenniy_kodeks_kir {
     public static List<Acts_Subtitle> getActs_Chapter_10()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("LVII-боб. Чет давлатларнинг ваколатхоналари ва уларнинг ходимлари учун божхона имтиёзлари"));
-        acts_subtitles.add(new Acts_Subtitle("LVIII-боб. Чет эллик бошқа шахслар учун божхона имтиёзлари"));
-        acts_subtitles.add(new Acts_Subtitle("LIX-боб. Ўзбекистон Республикасининг чет давлатлардаги дипломатик ваколатхоналари ва консуллик муассасалар"));
+        acts_subtitles.add(new Acts_Subtitle("57-боб. Чет давлатларнинг ваколатхоналари ва уларнинг ходимлари учун божхона имтиёзлари"));
+        acts_subtitles.add(new Acts_Subtitle("58-боб. Чет эллик бошқа шахслар учун божхона имтиёзлари"));
+        acts_subtitles.add(new Acts_Subtitle("59-боб. Ўзбекистон Республикасининг чет давлатлардаги дипломатик ваколатхоналари ва консуллик муассасалари"));
 
         return acts_subtitles;
     }

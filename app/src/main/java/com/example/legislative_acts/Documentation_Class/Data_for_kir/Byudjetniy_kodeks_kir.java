@@ -24,70 +24,70 @@ public class Byudjetniy_kodeks_kir {
 
     public static List<Acts_Subtitle> getActs_Chapter_1(){
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("I-боб. Асосий қоидалар"));
-        acts_subtitles.add(new Acts_Subtitle("II-боб. Бюджет тизими тушунчаси ва принциплари"));
-        acts_subtitles.add(new Acts_Subtitle("III-боб. Бюджет таснифи"));
-        acts_subtitles.add(new Acts_Subtitle("IV-боб. Бюджет соҳасидаги ваколатлар"));
+        acts_subtitles.add(new Acts_Subtitle("1-боб. Асосий қоидалар"));
+        acts_subtitles.add(new Acts_Subtitle("2-боб. Бюджет тизими тушунчаси ва принциплари"));
+        acts_subtitles.add(new Acts_Subtitle("3-боб. Бюджет таснифи"));
+        acts_subtitles.add(new Acts_Subtitle("4-боб. Бюджет соҳасидаги ваколатлар"));
 
         return acts_subtitles;
     }
 
     public static List<Acts_Subtitle> getActs_Chapter_2(){
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("V-боб. Давлат бюджети"));
-        acts_subtitles.add(new Acts_Subtitle("VI-боб. Давлат мақсадли жамғармалари ва бюджет ташкилотларининг бюджетдан ташқари жамғармалари"));
+        acts_subtitles.add(new Acts_Subtitle("5-боб. Давлат бюджети"));
+        acts_subtitles.add(new Acts_Subtitle("6-боб. Давлат мақсадли жамғармалари ва бюджет ташкилотларининг бюджетдан ташқари жамғармалари"));
 
         return acts_subtitles;
     }
 
     public static List<Acts_Subtitle> getActs_Chapter_3(){
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("VII-боб. Ўзбекистон Республикасининг консолидациялашган бюджети"));
-        acts_subtitles.add(new Acts_Subtitle("VIII-боб. Ўзбекистон Республикасининг Тикланиш ва тарақ"));
+        acts_subtitles.add(new Acts_Subtitle("7-боб. Ўзбекистон Республикасининг консолидациялашган бюджети"));
+        acts_subtitles.add(new Acts_Subtitle("8-боб. Ўзбекистон Республикасининг Тикланиш ва тараққиё"));
 
         return acts_subtitles;
     }
 
     public static List<Acts_Subtitle> getActs_Chapter_4(){
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("IX-боб. Давлат бюджети даромадлари"));
-        acts_subtitles.add(new Acts_Subtitle("XI-боб. Бюджет ташкилотларининг бюджетдан ташқари жамғармалари даромадлари"));
-        acts_subtitles.add(new Acts_Subtitle("XII-боб. Беғараз ёрдам"));
+        acts_subtitles.add(new Acts_Subtitle("9-боб. Давлат бюджети даромадлари"));
+        acts_subtitles.add(new Acts_Subtitle("11-боб. Бюджет ташкилотларининг бюджетдан ташқари жамғармалари даромадлари"));
+        acts_subtitles.add(new Acts_Subtitle("12-боб. Беғараз ёрдам"));
         return acts_subtitles;
     }
 
     public static List<Acts_Subtitle> getActs_Chapter_5(){
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("XIII-боб. Давлат бюджети харажатлари"));
-        acts_subtitles.add(new Acts_Subtitle("XV-боб. Бюджет ташкилотларининг бюджетдан ташқари жамғармалари харажатлари"));
+        acts_subtitles.add(new Acts_Subtitle("13-боб. Давлат бюджети харажатлари"));
+        acts_subtitles.add(new Acts_Subtitle("15-боб. Бюджет ташкилотларининг бюджетдан ташқари жамғармалари харажатлари"));
         return acts_subtitles;
     }
 
     public static List<Acts_Subtitle> getActs_Chapter_6(){
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("XVI-боб. Давлат бюджети ва давлат мақсадли жамғармалари бюджетларининг лойиҳасини тузиш тартиби"));
-        acts_subtitles.add(new Acts_Subtitle("XVII-боб. Давлат бюджети тўғрисидаги Қонунни қабул қилиш тартиби"));
-        acts_subtitles.add(new Acts_Subtitle("XVIII-боб. Харажатлар сметаларини ва штат жадвалларини тузиш ҳамда тасдиқлаш, уларни рўйхатдан ўтказиш тартиби"));
+        acts_subtitles.add(new Acts_Subtitle("16-боб. Давлат бюджети ва давлат мақсадли жамғармалари бюджетларининг лойиҳасини тузиш тартиби"));
+        acts_subtitles.add(new Acts_Subtitle("17-боб. Давлат бюджети тўғрисидаги Қонунни қабул қилиш тартиби"));
+        acts_subtitles.add(new Acts_Subtitle("18-боб. Харажатлар сметаларини ва штат жадвалларини тузиш ҳамда тасдиқлаш, уларни рўйхатдан ўтказиш тартиби"));
         return acts_subtitles;
     }
 
     public static List<Acts_Subtitle> getActs_Chapter_7(){
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("XIX-боб. Бюджет тизими бюджетларини ижро этиш тартиби"));
-        acts_subtitles.add(new Acts_Subtitle("XX-боб. Бюджетлараро муносабатлар"));
-        acts_subtitles.add(new Acts_Subtitle("XXI-боб. Бюджет тизими бюджетларига ўзгартиришлар киритиш"));
-        acts_subtitles.add(new Acts_Subtitle("XXII-боб. Давлат бюджети тақчиллиги ва профицити. Давлат томонидан маблағ жалб қилиш"));
-        acts_subtitles.add(new Acts_Subtitle("XXIII-боб. Бюджет ссудалари, кредит линиялари ва кредитлар"));
+        acts_subtitles.add(new Acts_Subtitle("19-боб. Бюджет тизими бюджетларини ижро этиш тартиби"));
+        acts_subtitles.add(new Acts_Subtitle("20-боб. Бюджетлараро муносабатлар"));
+        acts_subtitles.add(new Acts_Subtitle("21-боб. Бюджет тизими бюджетларига ўзгартиришлар киритиш"));
+        acts_subtitles.add(new Acts_Subtitle("22-боб. Давлат бюджети тақчиллиги ва профицити. Давлат томонидан маблағ жалб қилиш"));
+        acts_subtitles.add(new Acts_Subtitle("23-боб. Бюджет ссудалари, кредит линиялари ва кредитлар"));
         return acts_subtitles;
     }
 
     public static List<Acts_Subtitle> getActs_Chapter_8(){
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("XXIV-боб. Бюджет ҳисоби ва ҳисоботини юритиш тартиби"));
-        acts_subtitles.add(new Acts_Subtitle("XXV-боб. Давлат бюджетининг ва давлат мақсадли жамғармалари бюджетларининг ижроси тўғрисидаги ҳисоботларни тасдиқлаш"));
-        acts_subtitles.add(new Acts_Subtitle("XXVI-боб. Давлат молиявий назорати"));
-        acts_subtitles.add(new Acts_Subtitle("XXVII-боб. Давлат молиявий назоратини ташкил этиш"));
-        acts_subtitles.add(new Acts_Subtitle("XXVIII-боб. Бюджет тўғрисидаги қонун ҳужжатларини бузиш"));
+        acts_subtitles.add(new Acts_Subtitle("24-боб. Бюджет ҳисоби ва ҳисоботини юритиш тартиби"));
+        acts_subtitles.add(new Acts_Subtitle("25-боб. Давлат бюджетининг ва давлат мақсадли жамғармалари бюджетларининг ижроси тўғрисидаги ҳисоботларни тасдиқлаш"));
+        acts_subtitles.add(new Acts_Subtitle("26-боб. Давлат молиявий назорати"));
+        acts_subtitles.add(new Acts_Subtitle("27-боб. Давлат молиявий назоратини ташкил этиш"));
+        acts_subtitles.add(new Acts_Subtitle("28-боб. Бюджет тўғрисидаги қонун ҳужжатларини бузиш"));
         return acts_subtitles;
     }
 

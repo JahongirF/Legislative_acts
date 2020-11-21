@@ -5,6 +5,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.Toolbar;
+import androidx.constraintlayout.widget.ConstraintSet;
 import androidx.core.content.FileProvider;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -21,7 +22,10 @@ import android.preference.PreferenceManager;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.animation.LayoutAnimationController;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.example.legislative_acts.Adapter.Acts_Adapter;
 import com.example.legislative_acts.Data.Acts_Subtitle;
@@ -40,39 +44,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     private ActivityMainBinding binding;
     private SharedPreferences sharedPreferences;
+    private NavigationView navigationView;
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu_item_main, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-
-        int id = item.getItemId();
-        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-
-        switch (id) {
-            case R.id.darkMode:
-                if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES) {
-                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-                    sharedPreferences.edit().putString("darkMode","no").apply();
-                } else {
-                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-                    sharedPreferences.edit().putString("darkMode","yes").apply();
-                }
-                break;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
+
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         String dark = sharedPreferences.getString("darkMode","no");
@@ -92,7 +72,21 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setSupportActionBar(toolbar);
 
 
-        NavigationView navigationView = findViewById(R.id.nav_view);
+        navigationView = findViewById(R.id.nav_view);
+        View header = navigationView.getHeaderView(0);
+        ImageView imageViewdark = header.findViewById(R.id.imageViewDark);
+        imageViewdark.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES) {
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+                    sharedPreferences.edit().putString("darkMode","no").apply();
+                } else {
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+                    sharedPreferences.edit().putString("darkMode","yes").apply();
+                }
+            }
+        });
         navigationView.setNavigationItemSelectedListener(this);
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, binding.drawerLayout, toolbar, R.string.open, R.string.close);
@@ -122,6 +116,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.other_activity:
                 getSupportFragmentManager().beginTransaction().addToBackStack("other").replace(R.id.fragment_container, new Other_Activity_Fragment()).commit();
                 break;
+
+
 
 
             case R.id.share_activity:
@@ -165,7 +161,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
         }
+        binding.navView.getMenu().clear();
+        binding.navView.inflateMenu(R.menu.menu_item);
         binding.drawerLayout.closeDrawer(GravityCompat.START);
+
         return true;
     }
 }

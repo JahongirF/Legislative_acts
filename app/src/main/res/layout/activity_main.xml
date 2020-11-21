@@ -39,6 +39,7 @@
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/menu_item"
         app:itemTextColor="@color/color_text_item"
+
         />
 
 

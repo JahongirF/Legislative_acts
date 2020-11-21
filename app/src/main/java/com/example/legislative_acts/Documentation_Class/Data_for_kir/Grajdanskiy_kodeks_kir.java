@@ -15,9 +15,9 @@ public class Grajdanskiy_kodeks_kir {
     public static List<Acts_Subtitle> getActs_Subtitle()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ I. ОБЩИЕ ПОЛОЖЕНИЯ"));
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ II. ПРАВО СОБСТВЕННОСТИ И ДРУГИЕ ВЕЩНЫЕ ПРАВА "));
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ III. ОБЯЗАТЕЛЬСТВЕННОЕ ПРАВО"));
+        acts_subtitles.add(new Acts_Subtitle("I.БЎЛИМ УМУМИЙ ҚОИДАЛАР"));
+        acts_subtitles.add(new Acts_Subtitle("II.БЎЛИМ МУЛК ҲУҚУҚИ ВА БОШҚА АШЁВИЙ ҲУҚУҚЛАР"));
+        acts_subtitles.add(new Acts_Subtitle("III.БЎЛИМ МАЖБУРИЯТ ҲУҚУҚИ"));
 
         return acts_subtitles;
     }
@@ -25,18 +25,18 @@ public class Grajdanskiy_kodeks_kir {
     public static List<Acts_Subtitle> getActs_Chapter_1()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 1. ГРАЖДАНСКОЕ ЗАКОНОДАТЕЛЬСТВО"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 2. ВОЗНИКНОВЕНИЕ ГРАЖДАНСКИХ ПРАВ И ОБЯЗАННОСТЕЙ. ОСУЩЕСТВЛЕНИЕ И ЗАЩИТА ГРАЖДАНСКИХ ПРАВ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 3. ГРАЖДАНЕ (ФИЗИЧЕСКИЕ ЛИЦА)"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 4. ЮРИДИЧЕСКИЕ ЛИЦА"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 5. ГОСУДАРСТВО КАК УЧАСТНИК ГРАЖДАНСКО-ПРАВОВЫХ ОТНОШЕНИЙ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 6. ОБЩИЕ ПОЛОЖЕНИЯ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 7. МАТЕРИАЛЬНЫЕ БЛАГА"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 8. НЕМАТЕРИАЛЬНЫЕ БЛАГА"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 9. СДЕЛКИ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 10. ПРЕДСТАВИТЕЛЬСТВО И ДОВЕРЕННОСТЬ\n"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 11. ИСЧИСЛЕНИЕ СРОКОВ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 12. ИСКОВАЯ ДАВНОСТЬ"));
+        acts_subtitles.add(new Acts_Subtitle("1-БОБ ФУҚАРОЛИК ҚОНУН ҲУЖЖАТЛАРИ"));
+        acts_subtitles.add(new Acts_Subtitle("2-БОБ ФУҚАРОЛИК ҲУҚУҚ ВА БУРЧЛАРИНИНГ ВУЖУДГА КЕЛИШИ. ФУҚАРОЛИК ҲУҚУҚЛАРИНИ АМАЛГА ОШИРИШ ВА ҲИМОЯ ҚИЛИШ"));
+        acts_subtitles.add(new Acts_Subtitle("3-БОБ ФУҚАРОЛАР (ЖИСМОНИЙ ШАХСЛАР)"));
+        acts_subtitles.add(new Acts_Subtitle("4-БОБ ЮРИДИК ШАХСЛАР"));
+        acts_subtitles.add(new Acts_Subtitle("5-БОБ ДАВЛАТ ФУҚАРОЛИК-ҲУҚУҚИЙ МУНОСАБАТЛАР ИШТИРОКЧИСИ СИФАТИДА"));
+        acts_subtitles.add(new Acts_Subtitle("6-БОБ УМУМИЙ ҚОИДАЛАР"));
+        acts_subtitles.add(new Acts_Subtitle("7-БОБ МОДДИЙ НЕЪМАТЛАР"));
+        acts_subtitles.add(new Acts_Subtitle("8-БОБ НОМОДДИЙ НЕЪМАТЛАР"));
+        acts_subtitles.add(new Acts_Subtitle("9-БОБ БИТИМЛАР"));
+        acts_subtitles.add(new Acts_Subtitle("10-БОБ ВАКИЛЛИК ВА ИШОНЧНОМА"));
+        acts_subtitles.add(new Acts_Subtitle("11-БОБ МУДДАТЛАРНИ ҲИСОБЛАШ"));
+        acts_subtitles.add(new Acts_Subtitle("12-БОБ ДАЪВО МУДДАТИ"));
 
         return acts_subtitles;
 
@@ -45,13 +45,13 @@ public class Grajdanskiy_kodeks_kir {
     public static List<Acts_Subtitle> getActs_Chapter_2()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 13. ОБЩИЕ ПОЛОЖЕНИЯ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 14. ПРАВО ХОЗЯЙСТВЕННОГО ВЕДЕНИЯ. ПРАВО ОПЕРАТИВНОГО УПРАВЛЕНИЯ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 15. ПРИОБРЕТЕНИЕ И ПРЕКРАЩЕНИЕ ПРАВА СОБСТВЕННОСТИ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 16. ЧАСТНАЯ СОБСТВЕННОСТЬ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 17. ПУБЛИЧНАЯ СОБСТВЕННОСТЬ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 18. ОБЩАЯ СОБСТВЕННОСТЬ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 19. ЗАЩИТА ПРАВА СОБСТВЕННОСТИ И ДРУГИХ ВЕЩНЫХ ПРАВ"));
+        acts_subtitles.add(new Acts_Subtitle("13-БОБ УМУМИЙ ҚОИДАЛАР"));
+        acts_subtitles.add(new Acts_Subtitle("14-БОБ ХЎЖАЛИК ЮРИТИШ ҲУҚУҚИ. ОПЕРАТИВ БОШҚАРИШ ҲУҚУҚИ"));
+        acts_subtitles.add(new Acts_Subtitle("15-БОБ МУЛК ҲУҚУҚИНИНГ ВУЖУДГА КЕЛИШИ ВА УНИНГ БЕКОР БЎЛИШИ"));
+        acts_subtitles.add(new Acts_Subtitle("16-БОБ ХУСУСИЙ МУЛК"));
+        acts_subtitles.add(new Acts_Subtitle("17-БОБ ОММАВИЙ МУЛК"));
+        acts_subtitles.add(new Acts_Subtitle("18-БОБ УМУМИЙ МУЛК"));
+        acts_subtitles.add(new Acts_Subtitle("19-БОБ МУЛК ҲУҚУҚИНИ ВА БОШҚА АШЁВИЙ ҲУҚУҚЛАРНИ ҲИМОЯ ҚИЛИШ"));
 
         return acts_subtitles;
 
@@ -60,15 +60,15 @@ public class Grajdanskiy_kodeks_kir {
     public static List<Acts_Subtitle> getActs_Chapter_3()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 20. ПОНЯТИЕ И СТОРОНЫ ОБЯЗАТЕЛЬСТВА"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 21. ИСПОЛНЕНИЕ ОБЯЗАТЕЛЬСТВ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 22. ОБЕСПЕЧЕНИЕ ИСПОЛНЕНИЯ ОБЯЗАТЕЛЬСТВ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 23. ПЕРЕМЕНА ЛИЦ В ОБЯЗАТЕЛЬСТВЕ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 24. ОТВЕТСТВЕННОСТЬ ЗА НАРУШЕНИЕ ОБЯЗАТЕЛЬСТВ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 25. ПРЕКРАЩЕНИЕ ОБЯЗАТЕЛЬСТВ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 26. ПОНЯТИЕ И УСЛОВИЯ ДОГОВОРА"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 27. ЗАКЛЮЧЕНИЕ ДОГОВОРА"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 28. ИЗМЕНЕНИЕ И РАСТОРЖЕНИЕ ДОГОВОРА"));
+        acts_subtitles.add(new Acts_Subtitle("20-БОБ МАЖБУРИЯТ ТУШУНЧАСИ ВА ТАРАФЛАРИ"));
+        acts_subtitles.add(new Acts_Subtitle("21-БОБ МАЖБУРИЯТЛАРНИ БАЖАРИШ"));
+        acts_subtitles.add(new Acts_Subtitle("22-БОБ МАЖБУРИЯТЛАРНИНГ БАЖАРИЛИШИНИ ТАЪМИНЛАШ"));
+        acts_subtitles.add(new Acts_Subtitle("23-БОБ МАЖБУРИЯТДАГИ ШАХСЛАРНИНГ ЎЗГАРИШИ"));
+        acts_subtitles.add(new Acts_Subtitle("24-БОБ МАЖБУРИЯТЛАРНИ БУЗГАНЛИК УЧУН ЖАВОБГАРЛИК"));
+        acts_subtitles.add(new Acts_Subtitle("25-БОБ МАЖБУРИЯТЛАРНИНГ БЕКОР БЎЛИШИ"));
+        acts_subtitles.add(new Acts_Subtitle("26-БОБ ШАРТНОМА ТУШУНЧАСИ ВА ШАРТЛАРИ"));
+        acts_subtitles.add(new Acts_Subtitle("27-БОБ ШАРТНОМА ТУЗИШ"));
+        acts_subtitles.add(new Acts_Subtitle("28-БОБ ШАРТНОМАНИ ЎЗГАРТИРИШ ВА БЕКОР ҚИЛИШ"));
 
         return acts_subtitles;
 
