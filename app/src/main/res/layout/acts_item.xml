@@ -42,9 +42,10 @@
                 android:layout_weight="4"
                 android:text="TextView"
                 android:gravity="start"
-                android:textSize="17sp"
-                android:textStyle="bold"
+                android:textSize="15sp"
+                android:fontFamily="@font/frank_ruhl_libre_black"
                 android:textColor="@color/color_text_item"
+                android:layout_margin="10dp"
                 />
 
             <ImageView

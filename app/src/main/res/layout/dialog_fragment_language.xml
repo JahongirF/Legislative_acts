@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialog_fragment_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="16dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:paddingTop="50dp"
+        android:paddingBottom="50dp"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/button_uzb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_lang_bg"
+            android:text="O'zb"
+            android:textSize="25sp" />
+
+
+        <Button
+            android:id="@+id/button_rus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_lang_bg"
+            android:text="Рус"
+            android:textSize="25sp" />
+
+
+        <Button
+            android:id="@+id/button_kir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_lang_bg"
+            android:text="Узб"
+            android:textSize="25sp" />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+

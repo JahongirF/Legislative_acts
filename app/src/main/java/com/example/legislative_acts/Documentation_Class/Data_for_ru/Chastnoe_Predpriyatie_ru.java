@@ -10,12 +10,12 @@ public class Chastnoe_Predpriyatie_ru {
    public static List<Acts_Subtitle> getActs_Subtitle()
    {
        List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-       acts_subtitles.add(new Acts_Subtitle("I. ОБЩИЕ ПОЛОЖЕНИЯ"));
-       acts_subtitles.add(new Acts_Subtitle("II. СОЗДАНИЕ ЧАСТНОГО ПРЕДПРИЯТИЯ И ЕГО ГОСУДАРСТВЕННАЯ РЕГИСТРАЦИЯ"));
-       acts_subtitles.add(new Acts_Subtitle("III. УПРАВЛЕНИЕ ЧАСТНЫМ ПРЕДПРИЯТИЕМ"));
-       acts_subtitles.add(new Acts_Subtitle("IV. ТРУДОВЫЕ ОТНОШЕНИЯ НА ЧАСТНОМ ПРЕДПРИЯТИИ"));
-       acts_subtitles.add(new Acts_Subtitle("V. ГАРАНТИЯ СВОБОДЫ ДЕЯТЕЛЬНОСТИ ЧАСТНОГО ПРЕДПРИЯТИЯ"));
-       acts_subtitles.add(new Acts_Subtitle("VI. ЗАКЛЮЧИТЕЛЬНЫЕ ПОЛОЖЕНИЯ"));
+       acts_subtitles.add(new Acts_Subtitle("Глава I. Общие положения"));
+       acts_subtitles.add(new Acts_Subtitle("Глава II. Создание частного предприятия и его государственная регистрация"));
+       acts_subtitles.add(new Acts_Subtitle("Глава III. Управление частным предприятием"));
+       acts_subtitles.add(new Acts_Subtitle("Глава IV. Трудовые отношения на частном предприяти"));
+       acts_subtitles.add(new Acts_Subtitle("Глава V. Гарантия свободы деятельности частного предприятия"));
+       acts_subtitles.add(new Acts_Subtitle("Глава VI. Заключительные положения"));
 
        return acts_subtitles;
    }

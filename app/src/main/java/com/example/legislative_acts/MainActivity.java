@@ -31,6 +31,7 @@ import com.example.legislative_acts.Adapter.Acts_Adapter;
 import com.example.legislative_acts.Data.Acts_Subtitle;
 import com.example.legislative_acts.Fragment.About_Activity_Fragment;
 import com.example.legislative_acts.Fragment.Fragment_Main_Activity;
+import com.example.legislative_acts.Fragment.Language_Activity_Fragment;
 import com.example.legislative_acts.Fragment.Other_Activity_Fragment;
 import com.example.legislative_acts.databinding.ActivityMainBinding;
 import com.google.android.material.navigation.NavigationView;
@@ -106,6 +107,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         switch (item.getItemId()) {
             case R.id.main_activity:
                 getSupportFragmentManager().beginTransaction().addToBackStack("main").replace(R.id.fragment_container, new Fragment_Main_Activity()).commit();
+                break;
+
+            case R.id.lang_activity:
+                Language_Activity_Fragment language_activity_fragment = new Language_Activity_Fragment();
+                language_activity_fragment.show(getSupportFragmentManager(), "MyFragment");
                 break;
 
             case R.id.about_activity:

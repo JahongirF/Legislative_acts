@@ -5,7 +5,7 @@ import com.example.legislative_acts.Data.Acts_Subtitle;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Obshestvenniy_lodeks_ru {
+public class Obshestvenniy_kodeks_ru {
 
     public static List<Acts_Subtitle> getActs_Subtitle()
     {

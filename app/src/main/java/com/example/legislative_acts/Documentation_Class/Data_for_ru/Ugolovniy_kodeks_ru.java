@@ -24,8 +24,8 @@ public class Ugolovniy_kodeks_ru {
     public static List<Acts_Subtitle> getActs_Chapter_1()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("Глава I. Задачи и принципы Уголовного кодекса"));
-        acts_subtitles.add(new Acts_Subtitle("Глава II. Пределы действия Кодекса"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 1. Задачи и принципы Уголовного кодекса"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 2. Пределы действия Кодекса"));
         return acts_subtitles;
     }
 
@@ -34,12 +34,12 @@ public class Ugolovniy_kodeks_ru {
     public static List<Acts_Subtitle> getActs_Chapter_2()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("Глава III. Преступление"));
-        acts_subtitles.add(new Acts_Subtitle("Глава IV. Лица, подлежащие ответственности"));
-        acts_subtitles.add(new Acts_Subtitle("Глава V. Вина"));
-        acts_subtitles.add(new Acts_Subtitle("Глава VI. Неоконченное преступление"));
-        acts_subtitles.add(new Acts_Subtitle("Глава VII. Соучастие в преступлении"));
-        acts_subtitles.add(new Acts_Subtitle("Глава VIII. Множественность преступлений"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 3. Преступление"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 4. Лица, подлежащие ответственности"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 5. Вина"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 6. Неоконченное преступление"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 7. Соучастие в преступлении"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 8. Множественность преступлений"));
         return acts_subtitles;
     }
 
@@ -48,24 +48,24 @@ public class Ugolovniy_kodeks_ru {
     public static List<Acts_Subtitle> getActs_Chapter_3()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("Глава IX. Понятие и виды обстоятельств, исключающих преступность деяния"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 9. Понятие и виды обстоятельств, исключающих преступность деяния"));
         return acts_subtitles;
     }
 
     public static List<Acts_Subtitle> getActs_Chapter_4()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("Глава X. Понятие, цели и виды наказаний"));
-        acts_subtitles.add(new Acts_Subtitle("Глава XI. Назначение наказания"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 10. Понятие, цели и виды наказаний"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 11. Назначение наказания"));
         return acts_subtitles;
     }
 
     public static List<Acts_Subtitle> getActs_Chapter_5()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("Глава XII. Виды освобождения от ответственностии"));
-        acts_subtitles.add(new Acts_Subtitle("Глава XIII. Виды освобождения от наказания"));
-        acts_subtitles.add(new Acts_Subtitle("Глава XIV. Судимость"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 12. Виды освобождения от ответственности"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 13. Виды освобождения от наказания"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 14. Судимость"));
         return acts_subtitles;
     }
 
@@ -74,8 +74,8 @@ public class Ugolovniy_kodeks_ru {
     public static List<Acts_Subtitle> getActs_Chapter_6()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("Глава XV. Наказание и его назначение"));
-        acts_subtitles.add(new Acts_Subtitle("Глава XVI. Освобождение от ответственности или наказания"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 15. Наказание и его назначение"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 16. Освобождение от ответственности или наказания"));
 
         return acts_subtitles;
     }
@@ -83,7 +83,7 @@ public class Ugolovniy_kodeks_ru {
     public static List<Acts_Subtitle> getActs_Chapter_7()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("Глава XVII. Основания и назначение принудительных мер медицинского характера"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 17. Основания и назначение принудительных мер медицинского характера"));
 
 
         return acts_subtitles;

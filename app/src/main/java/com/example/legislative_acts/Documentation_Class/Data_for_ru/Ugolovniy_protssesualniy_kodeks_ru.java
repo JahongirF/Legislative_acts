@@ -52,7 +52,7 @@ public class Ugolovniy_protssesualniy_kodeks_ru {
         acts_subtitles.add(new Acts_Subtitle("Глава 9. ОБЩИЕ УСЛОВИЯ ДОКАЗЫВАНИЯ"));
         acts_subtitles.add(new Acts_Subtitle("Глава 10. ОБЩИЕ ПРАВИЛА ДОПРОСА"));
         acts_subtitles.add(new Acts_Subtitle("Глава 11. ДОПРОС ПОДОЗРЕВАЕМОГО И ОБВИНЯЕМОГО"));
-        acts_subtitles.add(new Acts_Subtitle("Глава 12. ДОПРОС СВИДЕТЕЛЯ И ПОТЕРПЕВШЕГО "));
+        acts_subtitles.add(new Acts_Subtitle("Глава 12. ДОПРОС СВИДЕТЕЛЯ И ПОТЕРПЕВШЕГО"));
         acts_subtitles.add(new Acts_Subtitle("Глава 13. ОЧНАЯ СТАВКА"));
         acts_subtitles.add(new Acts_Subtitle("Глава 14. ПРЕДЪЯВЛЕНИЕ ДЛЯ ОПОЗНАНИЯ"));
         acts_subtitles.add(new Acts_Subtitle("Глава 15. ПРОВЕРКА ПОКАЗАНИЙ НА МЕСТЕ СОБЫТИЯ"));
@@ -63,10 +63,10 @@ public class Ugolovniy_protssesualniy_kodeks_ru {
         acts_subtitles.add(new Acts_Subtitle("Глава 20. ВЫЕМКА И ОБЫСК"));
         acts_subtitles.add(new Acts_Subtitle("Глава 21. ПРОСЛУШИВАНИЕ ПЕРЕГОВОРОВ, ВЕДУЩИХСЯ С ТЕЛЕФОНОВ И ДРУГИХ ПЕРЕГОВОРНЫХ УСТРОЙСТВ"));
         acts_subtitles.add(new Acts_Subtitle("Глава 22. ЭКСПЕРТИЗА"));
-        acts_subtitles.add(new Acts_Subtitle("Глава 22.1. Ревизия"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 22.1. РЕВИЗИЯ"));
         acts_subtitles.add(new Acts_Subtitle("Глава 23. ПОЛУЧЕНИЕ ОБРАЗЦОВ ДЛЯ ЭКСПЕРТНОГО ИССЛЕДОВАНИЯ"));
         acts_subtitles.add(new Acts_Subtitle("Глава 24. ПРЕДСТАВЛЕНИЕ ПРЕДМЕТОВ И ДОКУМЕНТОВ"));
-        acts_subtitles.add(new Acts_Subtitle("Глава 25. ПРИОБЩЕНИЕ К ДЕЛУ ПРЕДМЕТОВ И ДОКУМЕНТОВ В КАЧЕСТВЕ ВЕЩЕСТВЕННЫХ И ПИСЬМЕННЫХ ДОКАЗАТЕЛЬСТВ "));
+        acts_subtitles.add(new Acts_Subtitle("Глава 25. ПРИОБЩЕНИЕ К ДЕЛУ ПРЕДМЕТОВ И ДОКУМЕНТОВ В КАЧЕСТВЕ ВЕЩЕСТВЕННЫХ И ПИСЬМЕННЫХ ДОКАЗАТЕЛЬСТВ"));
 
         return acts_subtitles;
     }
@@ -88,9 +88,9 @@ public class Ugolovniy_protssesualniy_kodeks_ru {
 
     public static List<Acts_Subtitle> getActs_Chapter_5() {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("Глава 33. ГРАЖДАНСКИЙ ИСК В УГОЛОВНОМ ПРОЦЕССЕ. ДРУГИЕ ИМУЩЕСТВЕННЫЕ ВЗЫСКАНИЯ "));
+        acts_subtitles.add(new Acts_Subtitle("Глава 33. ГРАЖДАНСКИЙ ИСК В УГОЛОВНОМ ПРОЦЕССЕ. ДРУГИЕ ИМУЩЕСТВЕННЫЕ ВЗЫСКАНИЯ"));
         acts_subtitles.add(new Acts_Subtitle("Глава 34. ВОЗВРАЩЕНИЕ ИМУЩЕСТВА ПОТЕРПЕВШЕМУ ИЛИ ГРАЖДАНСКОМУ ИСТЦУ"));
-        acts_subtitles.add(new Acts_Subtitle("Глава 35. ОБЕСПЕЧЕНИЕ ИСПОЛНЕНИЯ ПРИГОВОРА В ЧАСТИ ИМУЩЕСТВЕННЫХ ВЗЫСКАНИЙ "));
+        acts_subtitles.add(new Acts_Subtitle("Глава 35. ОБЕСПЕЧЕНИЕ ИСПОЛНЕНИЯ ПРИГОВОРА В ЧАСТИ ИМУЩЕСТВЕННЫХ ВЗЫСКАНИЙ"));
         return acts_subtitles;
     }
 
@@ -123,13 +123,14 @@ public class Ugolovniy_protssesualniy_kodeks_ru {
         acts_subtitles.add(new Acts_Subtitle("Глава 45. ПРИОСТАНОВЛЕНИЕ И ВОЗОБНОВЛЕНИЕ ПРЕДВАРИТЕЛЬНОГО СЛЕДСТВИЯ"));
         acts_subtitles.add(new Acts_Subtitle("Глава 46. ОКОНЧАНИЕ ПРЕДВАРИТЕЛЬНОГО СЛЕДСТВИЯ"));
         acts_subtitles.add(new Acts_Subtitle("Глава 46.1. Общие условия дознания"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 47. Надзор за исполнением законов органами дознания и предварительного следствия, а также органами"));
         return acts_subtitles;
     }
 
     public static List<Acts_Subtitle> getActs_Chapter_10() {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
         acts_subtitles.add(new Acts_Subtitle("Глава 48. ПОДСУДНОСТЬ"));
-        acts_subtitles.add(new Acts_Subtitle("Глава 49. НАЗНАЧЕНИЕ УГОЛОВНОГО ДЕЛА К СУДЕБНОМУ РАЗБИРАТЕЛЬСТВУ "));
+        acts_subtitles.add(new Acts_Subtitle("Глава 49. НАЗНАЧЕНИЕ УГОЛОВНОГО ДЕЛА К СУДЕБНОМУ РАЗБИРАТЕЛЬСТВУ"));
         acts_subtitles.add(new Acts_Subtitle("Глава 50. ОБЩИЕ УСЛОВИЯ СУДЕБНОГО РАЗБИРАТЕЛЬСТВА"));
         acts_subtitles.add(new Acts_Subtitle("Глава 51. ПОДГОТОВИТЕЛЬНАЯ ЧАСТЬ СУДЕБНОГО ЗАСЕДАНИЯ"));
         acts_subtitles.add(new Acts_Subtitle("Глава 52. СУДЕБНОЕ СЛЕДСТВИЕ"));
@@ -140,7 +141,7 @@ public class Ugolovniy_protssesualniy_kodeks_ru {
 
     public static List<Acts_Subtitle> getActs_Chapter_11() {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("Глава 55. ОБЩИЕ УСЛОВИЯ ПРОВЕРКИ ЗАКОННОСТИ, ОБОСНОВАННОСТИ И СПРАВЕДЛИВОСТИ ПРИГОВОРОВ, ОПРЕДЕЛЕНИЙ И ПОСТАНОВЛЕНИЙ "));
+        acts_subtitles.add(new Acts_Subtitle("Глава 55. ОБЩИЕ УСЛОВИЯ ПРОВЕРКИ ЗАКОННОСТИ, ОБОСНОВАННОСТИ И СПРАВЕДЛИВОСТИ ПРИГОВОРОВ, ОПРЕДЕЛЕНИЙ И ПОСТАНОВЛЕНИЙ"));
         acts_subtitles.add(new Acts_Subtitle("Глава 55.1. АПЕЛЛЯЦИОННОЕ ПРОИЗВОДСТВО"));
         acts_subtitles.add(new Acts_Subtitle("Глава 56. КАССАЦИОННОЕ ПРОИЗВОДСТВО"));
         acts_subtitles.add(new Acts_Subtitle("Глава 57. НАДЗОРНОЕ ПРОИЗВОДСТВО"));

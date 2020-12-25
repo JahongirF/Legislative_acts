@@ -56,6 +56,11 @@ public class Acts_Adapter extends RecyclerView.Adapter<Acts_Adapter.Acts_ViewHol
         void onActsClick(int position, Acts acts);
     }
 
+    public void clear()
+    {
+        actsList.clear();
+    }
+
     @NonNull
     @Override
     public Acts_ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -77,9 +82,9 @@ public class Acts_Adapter extends RecyclerView.Adapter<Acts_Adapter.Acts_ViewHol
         acts_subtitle_adapter.setOnSubtitleClickListener(new Acts_Subtitle_Adapter.OnSubtitleClickListener() {
             @Override
             public void onSubtitleClick(int position, Acts_Subtitle acts_subtitle) {
-//                Toast.makeText(holder.itemView.getContext(), ""+acts_subtitle.getTitle() + " " + actsList.get(positionTitle).getTitle() , Toast.LENGTH_SHORT).show();
+             //  Toast.makeText(holder.itemView.getContext(), ""+acts_subtitle.getTitle() + " " + actsList.get(positionTitle).getTitle() , Toast.LENGTH_SHORT).show();
 
-                if (actsList.get(positionTitle).getTitle().equals("Земельный кодекс") || actsList.get(positionTitle).getTitle().equals("Трудовой кодекс") || actsList.get(positionTitle).getTitle().equals("Общественный кодекс") || actsList.get(positionTitle).getTitle().equals("Частное предприятие")) {
+                if (actsList.get(positionTitle).getTitle().equals("ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ ЕР КОДЕКСИ") || actsList.get(positionTitle).getTitle().equals("ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ МЕҲНАТ КОДЕКСИ") || actsList.get(positionTitle).getTitle().equals("ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ ҚОНУНИ МАСЪУЛИЯТИ ЧЕКЛАНГАН ҲАМДА ҚЎШИМЧА МАСЪУЛИЯТЛИ ЖАМИЯТЛАР ТЎҒРИСИДА") || actsList.get(positionTitle).getTitle().equals("ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ ҚОНУНИ ХУСУСИЙ КОРХОНА ТЎҒРИСИДА") || actsList.get(positionTitle).getTitle().equals("O‘ZBEKISTON RESPUBLIKASINING YER KODEKSI") || actsList.get(positionTitle).getTitle().equals("O‘ZBEKISTON RESPUBLIKASINING QONUNI MAS’ULIYATI CHEKLANGAN HAMDA QO‘SHIMCHA MAS’ULIYATLI JAMIYATLAR TO‘G‘RISIDA") || actsList.get(positionTitle).getTitle().equals("O‘ZBEKISTON RESPUBLIKASINING MEHNAT KODEKSI") || actsList.get(positionTitle).getTitle().equals("O‘ZBEKISTON RESPUBLIKASINING QONUNI XUSUSIY KORXONA TO‘G‘RISIDA") || actsList.get(positionTitle).getTitle().equals("Общественный кодекс") || actsList.get(positionTitle).getTitle().equals("Трудовой кодекс") || actsList.get(positionTitle).getTitle().equals("Частное предприятие")) {
                     Intent intent = new Intent(holder.itemView.getContext(), Detail_Activity.class);
                     intent.putExtra("title", actsList.get(positionTitle).getTitle());
                     intent.putExtra("position", positionTitle);

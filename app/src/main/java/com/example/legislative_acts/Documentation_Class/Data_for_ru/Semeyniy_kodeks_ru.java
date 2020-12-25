@@ -98,7 +98,7 @@ public class Semeyniy_kodeks_ru {
     public static List<Acts_Subtitle> getActs_Chapter_8()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-       acts_subtitles.add(new Acts_Subtitle("VIII БЎЛИМ. ЧЕТ ЭЛ ФУҚАРОЛАРИ ВА ФУҚАРОЛИГИ БЎЛМАГАН ШАХСЛАР ИШТИРОКИДА"));
+       acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ VIII. РЕГУЛИРОВАНИЕ СЕМЕЙНЫХ ОТНОШЕНИЙ С УЧАСТИЕМ ИНОСТРАННЫХ ГРАЖДАН И ЛИЦ БЕЗ ГРАЖДАНСТВА"));
         return acts_subtitles;
     }
 

@@ -39,7 +39,7 @@ public class Tamojenniy_kodeks_ru {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
         acts_subtitles.add(new Acts_Subtitle("Глава 4. Общие положения"));
         acts_subtitles.add(new Acts_Subtitle("Глава 5. Экспорт"));
-        acts_subtitles.add(new Acts_Subtitle("Глава 6. Реэкспорт "));
+        acts_subtitles.add(new Acts_Subtitle("Глава 6. Реэкспорт"));
         acts_subtitles.add(new Acts_Subtitle("Глава 7. Временный вывоз"));
         acts_subtitles.add(new Acts_Subtitle("Глава 8. Переработка вне таможенной территории"));
         acts_subtitles.add(new Acts_Subtitle("Глава 9. Выпуск для свободного обращения (импорт)"));
@@ -124,7 +124,7 @@ public class Tamojenniy_kodeks_ru {
         acts_subtitles.add(new Acts_Subtitle("Глава 46. Сроки и порядок уплаты таможенных платежей"));
         acts_subtitles.add(new Acts_Subtitle("Глава 47. Обеспечение уплаты таможенных платежей"));
         acts_subtitles.add(new Acts_Subtitle("Глава 48. Задолженность по уплате таможенных платежей"));
-        acts_subtitles.add(new Acts_Subtitle("Глава 49. Возврат сумм таможенных платежей "));
+        acts_subtitles.add(new Acts_Subtitle("Глава 49. Возврат сумм таможенных платежей"));
         acts_subtitles.add(new Acts_Subtitle("Глава 50. Определение страны происхождения товаров"));
         acts_subtitles.add(new Acts_Subtitle("Глава 51. Товарная номенклатура внешнеэкономической деятельности Республики Узбекистан"));
         acts_subtitles.add(new Acts_Subtitle("Глава 52. Предварительные решения"));
@@ -156,7 +156,7 @@ public class Tamojenniy_kodeks_ru {
     public static List<Acts_Subtitle> getActs_Chapter_11()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("XI бўлим. Назорат остида етказиб бериш"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел XI. Контролируемые поставки"));
 
         return acts_subtitles;
     }
@@ -164,7 +164,7 @@ public class Tamojenniy_kodeks_ru {
     public static List<Acts_Subtitle> getActs_Chapter_12()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("XII бўлим. Якунловчи қоидалар"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел XII. Заключительные положения"));
 
         return acts_subtitles;
     }

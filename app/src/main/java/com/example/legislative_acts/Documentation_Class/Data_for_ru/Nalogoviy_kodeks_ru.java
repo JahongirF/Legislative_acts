@@ -50,7 +50,6 @@ public class Nalogoviy_kodeks_ru {
         acts_subtitles.add(new Acts_Subtitle("Глава 9. Отсрочка и (или) рассрочка уплаты налогов и других обязательных платежей"));
         acts_subtitles.add(new Acts_Subtitle("Глава 10. Зачет и возврат излишне уплаченных сумм налогов и других обязательных платежей"));
         acts_subtitles.add(new Acts_Subtitle("Глава 11. Исполнение обязательств по уплате налогов и других обязательных платежей"));
-        acts_subtitles.add(new Acts_Subtitle("Глава 11. Исполнение обязательств по уплате налогов и других обязательных платежей"));
 
         return acts_subtitles;
     }
@@ -62,7 +61,6 @@ public class Nalogoviy_kodeks_ru {
         acts_subtitles.add(new Acts_Subtitle("Глава 13. Учет налогоплательщиков"));
         acts_subtitles.add(new Acts_Subtitle("Глава 14. Налоговые проверки"));
         acts_subtitles.add(new Acts_Subtitle("Глава 15. Порядок проведения налоговых проверок"));
-
         return acts_subtitles;
     }
 
@@ -119,9 +117,7 @@ public class Nalogoviy_kodeks_ru {
 
     public static List<Acts_Subtitle> getActs_Chapter_8() {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("XXVII-боб. Солиққа оид ҳуқуқбузарликлар содир этганлик учун жавобгарлик тўғрисидаги умумий қоидалар"));
-        acts_subtitles.add(new Acts_Subtitle("XXVIII-боб. Солиққа оид ҳуқуқбузарликлар ва уларни содир этганлик учун жавобгарлик"));
-        acts_subtitles.add(new Acts_Subtitle("XXIX-боб. Солиқ тўғрисидаги қонун ҳужжатларини бузганлик учун банкларнинг жавобгарлиги"));
+        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ VIII. АКЦИЗНЫЙ НАЛОГ"));
 
         return acts_subtitles;
     }
@@ -139,15 +135,7 @@ public class Nalogoviy_kodeks_ru {
 
     public static List<Acts_Subtitle> getActs_Chapter_10() {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("XXXI-боб. Солиқ тўловчилар ва солиқ солиш объекти"));
-        acts_subtitles.add(new Acts_Subtitle("XXXII-боб. Товарларни (хизматларни) реализация қилиш бўйича айланма. Товарларни (хизматларни) реализация қилиш жойи"));
-        acts_subtitles.add(new Acts_Subtitle("XXXIII-боб. Солиқ солишдан озод этиш"));
-        acts_subtitles.add(new Acts_Subtitle("XXXIV-боб. Солиқ базаси"));
-        acts_subtitles.add(new Acts_Subtitle("XXXV-боб. Солиқ ставкалари. Солиқ даври"));
-        acts_subtitles.add(new Acts_Subtitle("XXXVI-боб. Ноль даражали ставка бўйича солиқ солинадиган айланма"));
-        acts_subtitles.add(new Acts_Subtitle("XXXVII-боб. Солиқни ҳисоблаб чиқариш ва тўлаш тартиби"));
-        acts_subtitles.add(new Acts_Subtitle("XXXVIII-боб. Алоҳида ҳолларда солиқ солишнинг ўзига хос хусусиятлари"));
-        acts_subtitles.add(new Acts_Subtitle("XXXIX-боб. Электрон шаклда хизматлар кўрсатувчи чет эл юридик шахсларига солиқ солишнинг ўзига хос хусусиятлари"));
+        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ X. НАЛОГ ЗА ПОЛЬЗОВАНИЕ ВОДНЫМИ РЕСУРСАМИ"));
 
         return acts_subtitles;
     }
@@ -171,12 +159,8 @@ public class Nalogoviy_kodeks_ru {
 
     public static List<Acts_Subtitle> getActs_Chapter_15() {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("LII-боб. Солиқ тўловчилар, солиқ солиш объекти ва солиқ базаси"));
-        acts_subtitles.add(new Acts_Subtitle("LIII-боб. Жами даромад"));
-        acts_subtitles.add(new Acts_Subtitle("LIV-боб. Солиқ имтиёзлари"));
-        acts_subtitles.add(new Acts_Subtitle("LV-боб. Солиқ ставкалари. Солиқ даври"));
-        acts_subtitles.add(new Acts_Subtitle("LVI-боб. Солиқни ҳисоблаб чиқариш, солиқ ҳисоботини тақдим этиш ва тўлаш тартиби"));
-        acts_subtitles.add(new Acts_Subtitle("LVII-боб. Жами йиллик даромад тўғрисидаги декларация асосида даромадларга солиқ солиш"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 51. Единый социальный платеж"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 54. Автотранспортные сборы"));
 
         return acts_subtitles;
     }
@@ -185,23 +169,21 @@ public class Nalogoviy_kodeks_ru {
 
     public static List<Acts_Subtitle> getActs_Chapter_17() {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("LIX-боб. Юридик шахсларнинг мол-мулкига солинадиган солиқ"));
-        acts_subtitles.add(new Acts_Subtitle("LX-боб. Жисмоний шахслардан олинадиган мол-мулк солиғи"));
+        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ XVII. ГОСУДАРСТВЕННАЯ ПОШЛИНА"));
 
         return acts_subtitles;
     }
 
     public static List<Acts_Subtitle> getActs_Chapter_18() {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("LXI-боб. Юридик шахслардан олинадиган ер солиғи"));
-        acts_subtitles.add(new Acts_Subtitle("LXII-боб. Жисмоний шахслардан олинадиган ер солиғи"));
+        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ XVIII. ТАМОЖЕННЫЕ ПЛАТЕЖИ"));
 
         return acts_subtitles;
     }
 
     public static List<Acts_Subtitle> getActs_Chapter_19() {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("LXIII-боб. Сув ресурсларидан фойдаланганлик учун солиқни ҳисоблаб чиқариш ва тўлаш"));
+        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ XIX. СБОР ЗА ПРАВО РОЗНИЧНОЙ ТОРГОВЛИ ОТ"));
 
         return acts_subtitles;
     }
@@ -223,7 +205,6 @@ public class Nalogoviy_kodeks_ru {
         acts_subtitles.add(new Acts_Subtitle("Глава 61. Особенности налогообложения дехканских хозяйств"));
         acts_subtitles.add(new Acts_Subtitle("Глава 62. Особенности налогообложения рынков"));
         acts_subtitles.add(new Acts_Subtitle("Глава 63. Особенности налогообложения юридических и физических лиц, осуществляющих концертно-зрелищную деятельность"));
-        acts_subtitles.add(new Acts_Subtitle("Глава 64. Особенности налогообложения коллегий адвокатов, адвокатских фирм, адвокатских бюро и адвокатов"));
         acts_subtitles.add(new Acts_Subtitle("Глава 64. Особенности налогообложения коллегий адвокатов, адвокатских фирм, адвокатских бюро и адвокатов"));
 
         return acts_subtitles;

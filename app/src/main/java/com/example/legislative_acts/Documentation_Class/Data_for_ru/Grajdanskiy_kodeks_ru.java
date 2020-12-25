@@ -29,7 +29,7 @@ public class Grajdanskiy_kodeks_ru {
         acts_subtitles.add(new Acts_Subtitle("ГЛАВА 7. МАТЕРИАЛЬНЫЕ БЛАГА"));
         acts_subtitles.add(new Acts_Subtitle("ГЛАВА 8. НЕМАТЕРИАЛЬНЫЕ БЛАГА"));
         acts_subtitles.add(new Acts_Subtitle("ГЛАВА 9. СДЕЛКИ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 10. ПРЕДСТАВИТЕЛЬСТВО И ДОВЕРЕННОСТЬ\n"));
+        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 10. ПРЕДСТАВИТЕЛЬСТВО И ДОВЕРЕННОСТЬ"));
         acts_subtitles.add(new Acts_Subtitle("ГЛАВА 11. ИСЧИСЛЕНИЕ СРОКОВ"));
         acts_subtitles.add(new Acts_Subtitle("ГЛАВА 12. ИСКОВАЯ ДАВНОСТЬ"));
 
