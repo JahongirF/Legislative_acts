@@ -31,17 +31,17 @@
             android:title="@string/about_activity_lang"
             app:showAsAction="always" />
 
-        <item
-            android:id="@+id/info_activity"
-            android:icon="@drawable/ic_info"
-            android:title="@string/info_activity_lang"
-            app:showAsAction="always" />
+<!--        <item-->
+<!--            android:id="@+id/info_activity"-->
+<!--            android:icon="@drawable/ic_info"-->
+<!--            android:title="@string/info_activity_lang"-->
+<!--            app:showAsAction="always" />-->
 
-        <item
-            android:id="@+id/rate_activity"
-            android:icon="@drawable/ic_rate_us"
-            android:title="@string/rate_activity_lang"
-            app:showAsAction="always" />
+<!--        <item-->
+<!--            android:id="@+id/rate_activity"-->
+<!--            android:icon="@drawable/ic_rate_us"-->
+<!--            android:title="@string/rate_activity_lang"-->
+<!--            app:showAsAction="always" />-->
 
         <item
             android:id="@+id/other_activity"

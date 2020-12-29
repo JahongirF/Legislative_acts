@@ -1,6 +1,7 @@
 package com.example.legislative_acts;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
@@ -15,10 +16,13 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.preference.PreferenceManager;
+import android.util.DisplayMetrics;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -46,6 +50,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private ActivityMainBinding binding;
     private SharedPreferences sharedPreferences;
     private NavigationView navigationView;
+    private Toolbar toolbar;
 
 
     @Override
@@ -69,11 +74,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         setContentView(binding.getRoot());
 
-        Toolbar toolbar = findViewById(R.id.toolBar);
+        toolbar = findViewById(R.id.toolBar);
         setSupportActionBar(toolbar);
 
 
+
         navigationView = findViewById(R.id.nav_view);
+
         View header = navigationView.getHeaderView(0);
         ImageView imageViewdark = header.findViewById(R.id.imageViewDark);
         imageViewdark.setOnClickListener(new View.OnClickListener() {
@@ -88,6 +95,53 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 }
             }
         });
+
+        String lang = sharedPreferences.getString("lang","kir");
+        if (lang.equals("kir"))
+        {
+            Locale locale = new Locale("uk");
+            Resources resources = getResources();
+            DisplayMetrics displayMetrics = resources.getDisplayMetrics();
+            Configuration configuration = resources.getConfiguration();
+            configuration.locale = locale;
+            resources.updateConfiguration(configuration,displayMetrics);
+            android.content.res.Configuration configuration1 = resources.getConfiguration();
+            configuration1.setLocale(locale);
+
+            navigationView.getMenu().clear();
+            navigationView.inflateMenu(R.menu.menu_item);
+        }
+        else if (lang.equals("uz"))
+        {
+            Locale locale = new Locale("uz");
+            Resources resources = getResources();
+            DisplayMetrics displayMetrics = resources.getDisplayMetrics();
+            Configuration configuration = resources.getConfiguration();
+            configuration.locale = locale;
+            resources.updateConfiguration(configuration,displayMetrics);
+            android.content.res.Configuration configuration1 = resources.getConfiguration();
+            configuration1.setLocale(locale);
+
+            navigationView.getMenu().clear();
+            navigationView.inflateMenu(R.menu.menu_item);
+
+        }
+        else if (lang.equals("rus"))
+        {
+            Locale locale = new Locale("ru");
+            Resources resources = getResources();
+            DisplayMetrics displayMetrics = resources.getDisplayMetrics();
+            Configuration configuration = resources.getConfiguration();
+            configuration.locale = locale;
+            resources.updateConfiguration(configuration,displayMetrics);
+            android.content.res.Configuration configuration1 = resources.getConfiguration();
+            configuration1.setLocale(locale);
+
+            navigationView.getMenu().clear();
+            navigationView.inflateMenu(R.menu.menu_item);
+
+        }
+
         navigationView.setNavigationItemSelectedListener(this);
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, binding.drawerLayout, toolbar, R.string.open, R.string.close);
@@ -110,11 +164,18 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
 
             case R.id.lang_activity:
-                Language_Activity_Fragment language_activity_fragment = new Language_Activity_Fragment();
+                Language_Activity_Fragment language_activity_fragment = new Language_Activity_Fragment(new DialogDismisListener() {
+                    @Override
+                    public void dialogDismiss() {
+                        binding.navView.getMenu().clear();
+                        binding.navView.inflateMenu(R.menu.menu_item);
+                    }
+                });
                 language_activity_fragment.show(getSupportFragmentManager(), "MyFragment");
                 break;
 
             case R.id.about_activity:
+                toolbar.setVisibility(View.GONE);
                 getSupportFragmentManager().beginTransaction().addToBackStack("about").replace(R.id.fragment_container, new About_Activity_Fragment()).commit();
 
                 break;
@@ -167,8 +228,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
         }
-        binding.navView.getMenu().clear();
-        binding.navView.inflateMenu(R.menu.menu_item);
+
         binding.drawerLayout.closeDrawer(GravityCompat.START);
 
         return true;

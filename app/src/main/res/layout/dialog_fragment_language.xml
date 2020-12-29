@@ -13,14 +13,31 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/bxms_background_color"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView_title_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Выберите язык"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/bxms_title_color"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_gravity="center"
         android:orientation="horizontal"
-        android:background="@android:color/white"
-        android:paddingTop="50dp"
+        android:background="@color/bxms_background_color"
+        android:paddingTop="20dp"
         android:paddingBottom="50dp"
         android:weightSum="3">
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button_uzb"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -31,7 +48,7 @@
             android:textSize="25sp" />
 
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button_rus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -42,7 +59,7 @@
             android:textSize="25sp" />
 
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button_kir"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -52,6 +69,8 @@
             android:text="Узб"
             android:textSize="25sp" />
 
+
+    </LinearLayout>
 
     </LinearLayout>
 

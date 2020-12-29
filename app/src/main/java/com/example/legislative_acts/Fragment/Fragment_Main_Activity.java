@@ -80,8 +80,8 @@ public class Fragment_Main_Activity extends Fragment {
         Bundle bundle = this.getArguments();
 
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getContext());
-        lang = sharedPreferences.getString("lang", "kir");
-
+       lang = sharedPreferences.getString("lang", "kir");
+//        lang = LocalStorage.instance.getLanguage();
 
         if (lang.equals("uz"))
         {
@@ -125,11 +125,19 @@ public class Fragment_Main_Activity extends Fragment {
                 if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES)
                 {
                     sharedPreferences.edit().putString("lang", "kir").apply();
+//                    LocalStorage.instance.setLanguage("kir");
+
+//                    LanguageChanger languageChanger = new LanguageChanger(requireActivity());
+//                    languageChanger.setLanguage();
                     adapter = new Acts_Adapter(Acts_Dark());
                 }
                 else
                 {
                     sharedPreferences.edit().putString("lang", "kir").apply();
+//                    LocalStorage.instance.setLanguage("kir");
+
+//                    LanguageChanger languageChanger = new LanguageChanger(requireActivity());
+//                    languageChanger.setLanguage();
                     adapter = new Acts_Adapter(Acts());
                 }
             }
@@ -138,11 +146,17 @@ public class Fragment_Main_Activity extends Fragment {
                 if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES)
                 {
                     sharedPreferences.edit().putString("lang", "uz").apply();
+//                    LocalStorage.instance.setLanguage("uz");
+//                    LanguageChanger languageChanger = new LanguageChanger(requireActivity());
+//                    languageChanger.setLanguage();
                     adapter = new Acts_Adapter(Acts_lat_Dark());
                 }
                 else
                 {
                     sharedPreferences.edit().putString("lang", "uz").apply();
+//                    LocalStorage.instance.setLanguage("uz");
+//                    LanguageChanger languageChanger = new LanguageChanger(requireActivity());
+//                    languageChanger.setLanguage();*/
                     adapter = new Acts_Adapter(Acts_lat());
                 }
             }
@@ -150,12 +164,19 @@ public class Fragment_Main_Activity extends Fragment {
             if (text.equals("rus")) {
                 if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES)
                 {
+
                     sharedPreferences.edit().putString("lang", "rus").apply();
+//                    LocalStorage.instance.setLanguage("rus");
+//                    LanguageChanger languageChanger = new LanguageChanger(requireActivity());
+//                    languageChanger.setLanguage();
                     adapter = new Acts_Adapter(Acts_Dark_Rus());
                 }
                 else
                 {
                     sharedPreferences.edit().putString("lang", "rus").apply();
+//                    LocalStorage.instance.setLanguage("rus");
+//                    LanguageChanger languageChanger = new LanguageChanger(requireActivity());
+//                    languageChanger.setLanguage();
                     adapter = new Acts_Adapter(Acts_Rus());
                 }
             }
@@ -185,18 +206,18 @@ public class Fragment_Main_Activity extends Fragment {
 //        acts.add(new Acts(R.drawable.ic_pattern_example, "Частное предприятие", Chastnoe_Predpriyatie.getActs_Subtitle(),R.drawable.ic_arrow_down));
 
 
-        acts.add(new Acts(R.drawable.ic_pattern_example, "ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ МАЪМУРИЙ ЖАВОБГАРЛИК ТЎҒРИСИДАГИ КОДЕКСИ", Administrativniy_kodeks_kir.getActs_Subtitle(),R.drawable.ic_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example, "ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ БЮДЖЕТ КОДЕКСИ", Byudjetniy_kodeks_kir.getActs_Subtitle(),R.drawable.ic_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example, "ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ ФУҚАРОЛИК КОДЕКСИ", Grajdanskiy_kodeks_kir.getActs_Subtitle(),R.drawable.ic_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example, "ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ ЖИНОЯТ-ПРОЦЕССУАЛ КОДЕКСИ", Ugolovniy_protssesualniy_kodeks_kir.getActs_Subtitle(),R.drawable.ic_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example, "ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ ЕР КОДЕКСИ", Zemelniy_kodeks_kir.getActs_Subtitle(),R.drawable.ic_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example, "ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ СОЛИҚ КОДЕКСИ", Nalogoviy_kodeks_kir.getActs_Subtitles(),R.drawable.ic_arrow_down));
+        acts.add(new Acts(R.drawable.ic_administrativniy_kodeks, "ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ МАЪМУРИЙ ЖАВОБГАРЛИК ТЎҒРИСИДАГИ КОДЕКСИ", Administrativniy_kodeks_kir.getActs_Subtitle(),R.drawable.ic_arrow_down));
+        acts.add(new Acts(R.drawable.ic_byudjetniy_kodeks, "ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ БЮДЖЕТ КОДЕКСИ", Byudjetniy_kodeks_kir.getActs_Subtitle(),R.drawable.ic_arrow_down));
+        acts.add(new Acts(R.drawable.ic_grajdanskiy_kodeks, "ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ ФУҚАРОЛИК КОДЕКСИ", Grajdanskiy_kodeks_kir.getActs_Subtitle(),R.drawable.ic_arrow_down));
+        acts.add(new Acts(R.drawable.ic_protsesualniy, "ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ ЖИНОЯТ-ПРОЦЕССУАЛ КОДЕКСИ", Ugolovniy_protssesualniy_kodeks_kir.getActs_Subtitle(),R.drawable.ic_arrow_down));
+        acts.add(new Acts(R.drawable.ic_zemelniy_kodeks, "ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ ЕР КОДЕКСИ", Zemelniy_kodeks_kir.getActs_Subtitle(),R.drawable.ic_arrow_down));
+        acts.add(new Acts(R.drawable.ic_nalogoviy_kodeks, "ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ СОЛИҚ КОДЕКСИ", Nalogoviy_kodeks_kir.getActs_Subtitles(),R.drawable.ic_arrow_down));
         acts.add(new Acts(R.drawable.ic_pattern_example, "ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ ҚОНУНИ МАСЪУЛИЯТИ ЧЕКЛАНГАН ҲАМДА ҚЎШИМЧА МАСЪУЛИЯТЛИ ЖАМИЯТЛАР ТЎҒРИСИДА", Obshestvenniy_lodeks_kir.getActs_Subtitle(),R.drawable.ic_arrow_down));
         acts.add(new Acts(R.drawable.ic_pattern_example, "ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ ОИЛА КОДЕКСИ", Semeyniy_kodeks_kir.getActs_Subtitle(),R.drawable.ic_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example, "ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ БОЖХОНА КОДЕКСИ", Tamojenniy_kodeks_kir.getActs_Subtitle(),R.drawable.ic_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example, "ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ МЕҲНАТ КОДЕКСИ", Trudovoy_kodeks_kir.getActs_Subtitle(),R.drawable.ic_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example, "ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ ЖИНОЯТ КОДЕКСИ", Ugolovniy_kodeks_kir.getActs_Subtitle(),R.drawable.ic_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example, "ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ ҚОНУНИ ХУСУСИЙ КОРХОНА ТЎҒРИСИДА", Chastnoe_Predpriyatie.getActs_Subtitle(),R.drawable.ic_arrow_down));
+        acts.add(new Acts(R.drawable.ic_tomejenniy_kodeks, "ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ БОЖХОНА КОДЕКСИ", Tamojenniy_kodeks_kir.getActs_Subtitle(),R.drawable.ic_arrow_down));
+        acts.add(new Acts(R.drawable.ic_trudovoy_kodeks, "ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ МЕҲНАТ КОДЕКСИ", Trudovoy_kodeks_kir.getActs_Subtitle(),R.drawable.ic_arrow_down));
+        acts.add(new Acts(R.drawable.ic_ugolovniy_kodeks, "ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ ЖИНОЯТ КОДЕКСИ", Ugolovniy_kodeks_kir.getActs_Subtitle(),R.drawable.ic_arrow_down));
+        acts.add(new Acts(R.drawable.ic_chastnoe_predpriyatie, "ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ ҚОНУНИ ХУСУСИЙ КОРХОНА ТЎҒРИСИДА", Chastnoe_Predpriyatie.getActs_Subtitle(),R.drawable.ic_arrow_down));
 
         return acts;
 
@@ -205,18 +226,18 @@ public class Fragment_Main_Activity extends Fragment {
     public static List<Acts> Acts_Dark() {
         List<Acts> acts = new ArrayList<>();
 
-        acts.add(new Acts(R.drawable.ic_pattern_example_dark, "Административный кодекс", Administrativniy_kodeks_kir.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example_dark, "Бюджетный кодекс", Byudjetniy_kodeks_kir.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example_dark, "Гражданский кодекс", Grajdanskiy_kodeks_kir.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example_dark, "Уголовный процессуальный кодекс", Ugolovniy_protssesualniy_kodeks_kir.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example_dark, "Земельный кодекс", Zemelniy_kodeks_kir.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example_dark, "Налоговый кодекс", Nalogoviy_kodeks_kir.getActs_Subtitles(),R.drawable.ic_dark_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example_dark, "Общественный кодекс", Obshestvenniy_lodeks_kir.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example_dark, "Семейный кодекс", Semeyniy_kodeks_kir.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example_dark, "Таможенный кодекс", Tamojenniy_kodeks_kir.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example_dark, "Трудовой кодекс", Trudovoy_kodeks_kir.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example_dark, "Уголовный кодекс", Ugolovniy_kodeks_kir.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example_dark, "Частное предприятие", Chastnoe_Predpriyatie.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
+        acts.add(new Acts(R.drawable.ic_administrativniy_kodeks, "ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ МАЪМУРИЙ ЖАВОБГАРЛИК ТЎҒРИСИДАГИ КОДЕКСИ", Administrativniy_kodeks_kir.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
+        acts.add(new Acts(R.drawable.ic_byudjetniy_kodeks, "ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ БЮДЖЕТ КОДЕКСИ", Byudjetniy_kodeks_kir.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
+        acts.add(new Acts(R.drawable.ic_grajdanskiy_kodeks, "ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ ФУҚАРОЛИК КОДЕКСИ", Grajdanskiy_kodeks_kir.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
+        acts.add(new Acts(R.drawable.ic_protsesualniy, "ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ ЖИНОЯТ-ПРОЦЕССУАЛ КОДЕКСИ", Ugolovniy_protssesualniy_kodeks_kir.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
+        acts.add(new Acts(R.drawable.ic_zemelniy_kodeks, "ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ ЕР КОДЕКСИ", Zemelniy_kodeks_kir.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
+        acts.add(new Acts(R.drawable.ic_nalogoviy_kodeks, "ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ СОЛИҚ КОДЕКСИ", Nalogoviy_kodeks_kir.getActs_Subtitles(),R.drawable.ic_dark_arrow_down));
+        acts.add(new Acts(R.drawable.ic_pattern_example_dark, "ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ ҚОНУНИ МАСЪУЛИЯТИ ЧЕКЛАНГАН ҲАМДА ҚЎШИМЧА МАСЪУЛИЯТЛИ ЖАМИЯТЛАР ТЎҒРИСИДА", Obshestvenniy_lodeks_kir.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
+        acts.add(new Acts(R.drawable.ic_pattern_example_dark, "ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ ОИЛА КОДЕКСИ", Semeyniy_kodeks_kir.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
+        acts.add(new Acts(R.drawable.ic_tomejenniy_kodeks, "ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ БОЖХОНА КОДЕКСИ", Tamojenniy_kodeks_kir.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
+        acts.add(new Acts(R.drawable.ic_trudovoy_kodeks, "ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ МЕҲНАТ КОДЕКСИ", Trudovoy_kodeks_kir.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
+        acts.add(new Acts(R.drawable.ic_ugolovniy_kodeks, "ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ ЖИНОЯТ КОДЕКСИ", Ugolovniy_kodeks_kir.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
+        acts.add(new Acts(R.drawable.ic_chastnoe_predpriyatie, "ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ ҚОНУНИ ХУСУСИЙ КОРХОНА ТЎҒРИСИДА", Chastnoe_Predpriyatie.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
 
         return acts;
 
@@ -226,18 +247,18 @@ public class Fragment_Main_Activity extends Fragment {
     public static List<Acts> Acts_lat() {
         List<Acts> acts = new ArrayList<>();
 
-        acts.add(new Acts(R.drawable.ic_pattern_example, "O‘ZBEKISTON RESPUBLIKASINING MA’MURIY JAVOBGARLIK TO‘G‘RISIDAGI KODEKSI", Administrativniy_kodeks_uz.getActs_Subtitle(),R.drawable.ic_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example, "O‘ZBEKISTON RESPUBLIKASINING BYUDJET KODEKSI", Byudjetniy_kodeks_uz.getActs_Subtitle(),R.drawable.ic_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example, "O‘ZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI", Grajdanskiy_kodeks_uz.getActs_Subtitle(),R.drawable.ic_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example, "O‘ZBEKISTON RESPUBLIKASINING JINOYAT-PROSESSUAL KODEKSI", Ugolovniy_protssesualniy_kodeks_uz.getActs_Subtitle(),R.drawable.ic_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example, "O‘ZBEKISTON RESPUBLIKASINING YER KODEKSI", Zemelniy_kodeks_uz.getActs_Subtitle(),R.drawable.ic_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example, "O‘ZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI", Nalogoviy_kodeks_uz.getActs_Subtitles(),R.drawable.ic_arrow_down));
+        acts.add(new Acts(R.drawable.ic_administrativniy_kodeks, "O‘ZBEKISTON RESPUBLIKASINING MA’MURIY JAVOBGARLIK TO‘G‘RISIDAGI KODEKSI", Administrativniy_kodeks_uz.getActs_Subtitle(),R.drawable.ic_arrow_down));
+        acts.add(new Acts(R.drawable.ic_byudjetniy_kodeks, "O‘ZBEKISTON RESPUBLIKASINING BYUDJET KODEKSI", Byudjetniy_kodeks_uz.getActs_Subtitle(),R.drawable.ic_arrow_down));
+        acts.add(new Acts(R.drawable.ic_grajdanskiy_kodeks, "O‘ZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI", Grajdanskiy_kodeks_uz.getActs_Subtitle(),R.drawable.ic_arrow_down));
+        acts.add(new Acts(R.drawable.ic_protsesualniy, "O‘ZBEKISTON RESPUBLIKASINING JINOYAT-PROSESSUAL KODEKSI", Ugolovniy_protssesualniy_kodeks_uz.getActs_Subtitle(),R.drawable.ic_arrow_down));
+        acts.add(new Acts(R.drawable.ic_zemelniy_kodeks, "O‘ZBEKISTON RESPUBLIKASINING YER KODEKSI", Zemelniy_kodeks_uz.getActs_Subtitle(),R.drawable.ic_arrow_down));
+        acts.add(new Acts(R.drawable.ic_nalogoviy_kodeks, "O‘ZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI", Nalogoviy_kodeks_uz.getActs_Subtitles(),R.drawable.ic_arrow_down));
         acts.add(new Acts(R.drawable.ic_pattern_example, "O‘ZBEKISTON RESPUBLIKASINING QONUNI MAS’ULIYATI CHEKLANGAN HAMDA QO‘SHIMCHA MAS’ULIYATLI JAMIYATLAR TO‘G‘RISIDA", Obshestvenniy_lodeks_uz.getActs_Subtitle(),R.drawable.ic_arrow_down));
         acts.add(new Acts(R.drawable.ic_pattern_example, "O‘ZBEKISTON RESPUBLIKASINING OILA KODEKSI", Semeyniy_kodeks_lat.getActs_Subtitle(),R.drawable.ic_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example, "O‘ZBEKISTON RESPUBLIKASINING BOJXONA KODEKSI", Tamojenniy_kodeks_uz.getActs_Subtitle(),R.drawable.ic_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example, "O‘ZBEKISTON RESPUBLIKASINING MEHNAT KODEKSI", Trudovoy_kodeks_uz.getActs_Subtitle(),R.drawable.ic_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example, "O‘ZBEKISTON RESPUBLIKASINING JINOYAT KODEKSI", Ugolovniy_kodeks_uz.getActs_Subtitle(),R.drawable.ic_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example, "O‘ZBEKISTON RESPUBLIKASINING QONUNI XUSUSIY KORXONA TO‘G‘RISIDA", Chastnoe_Predpriyatie_uz.getActs_Subtitle(),R.drawable.ic_arrow_down));
+        acts.add(new Acts(R.drawable.ic_tomejenniy_kodeks, "O‘ZBEKISTON RESPUBLIKASINING BOJXONA KODEKSI", Tamojenniy_kodeks_uz.getActs_Subtitle(),R.drawable.ic_arrow_down));
+        acts.add(new Acts(R.drawable.ic_trudovoy_kodeks, "O‘ZBEKISTON RESPUBLIKASINING MEHNAT KODEKSI", Trudovoy_kodeks_uz.getActs_Subtitle(),R.drawable.ic_arrow_down));
+        acts.add(new Acts(R.drawable.ic_ugolovniy_kodeks, "O‘ZBEKISTON RESPUBLIKASINING JINOYAT KODEKSI", Ugolovniy_kodeks_uz.getActs_Subtitle(),R.drawable.ic_arrow_down));
+        acts.add(new Acts(R.drawable.ic_chastnoe_predpriyatie, "O‘ZBEKISTON RESPUBLIKASINING QONUNI XUSUSIY KORXONA TO‘G‘RISIDA", Chastnoe_Predpriyatie_uz.getActs_Subtitle(),R.drawable.ic_arrow_down));
 
         return acts;
 
@@ -246,18 +267,18 @@ public class Fragment_Main_Activity extends Fragment {
     public static List<Acts> Acts_lat_Dark() {
         List<Acts> acts = new ArrayList<>();
 
-        acts.add(new Acts(R.drawable.ic_pattern_example_dark, "O‘ZBEKISTON RESPUBLIKASINING MA’MURIY JAVOBGARLIK TO‘G‘RISIDAGI KODEKSI", Administrativniy_kodeks_uz.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example_dark, "O‘ZBEKISTON RESPUBLIKASINING BYUDJET KODEKSI", Byudjetniy_kodeks_uz.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example_dark, "O‘ZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI", Grajdanskiy_kodeks_uz.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example_dark, "O‘ZBEKISTON RESPUBLIKASINING JINOYAT-PROSESSUAL KODEKSI", Ugolovniy_protssesualniy_kodeks_uz.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example_dark, "O‘ZBEKISTON RESPUBLIKASINING YER KODEKSI", Zemelniy_kodeks_uz.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example_dark, "O‘ZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI", Nalogoviy_kodeks_uz.getActs_Subtitles(),R.drawable.ic_dark_arrow_down));
+        acts.add(new Acts(R.drawable.ic_administrativniy_kodeks, "O‘ZBEKISTON RESPUBLIKASINING MA’MURIY JAVOBGARLIK TO‘G‘RISIDAGI KODEKSI", Administrativniy_kodeks_uz.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
+        acts.add(new Acts(R.drawable.ic_byudjetniy_kodeks, "O‘ZBEKISTON RESPUBLIKASINING BYUDJET KODEKSI", Byudjetniy_kodeks_uz.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
+        acts.add(new Acts(R.drawable.ic_grajdanskiy_kodeks, "O‘ZBEKISTON RESPUBLIKASINING FUQAROLIK KODEKSI", Grajdanskiy_kodeks_uz.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
+        acts.add(new Acts(R.drawable.ic_protsesualniy, "O‘ZBEKISTON RESPUBLIKASINING JINOYAT-PROSESSUAL KODEKSI", Ugolovniy_protssesualniy_kodeks_uz.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
+        acts.add(new Acts(R.drawable.ic_zemelniy_kodeks, "O‘ZBEKISTON RESPUBLIKASINING YER KODEKSI", Zemelniy_kodeks_uz.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
+        acts.add(new Acts(R.drawable.ic_nalogoviy_kodeks, "O‘ZBEKISTON RESPUBLIKASINING SOLIQ KODEKSI", Nalogoviy_kodeks_uz.getActs_Subtitles(),R.drawable.ic_dark_arrow_down));
         acts.add(new Acts(R.drawable.ic_pattern_example_dark, "O‘ZBEKISTON RESPUBLIKASINING QONUNI MAS’ULIYATI CHEKLANGAN HAMDA QO‘SHIMCHA MAS’ULIYATLI JAMIYATLAR TO‘G‘RISIDA", Obshestvenniy_lodeks_uz.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
         acts.add(new Acts(R.drawable.ic_pattern_example_dark, "O‘ZBEKISTON RESPUBLIKASINING OILA KODEKSI", Semeyniy_kodeks_lat.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example_dark, "O‘ZBEKISTON RESPUBLIKASINING BOJXONA KODEKSI", Tamojenniy_kodeks_uz.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example_dark, "O‘ZBEKISTON RESPUBLIKASINING MEHNAT KODEKSI", Trudovoy_kodeks_uz.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example_dark, "O‘ZBEKISTON RESPUBLIKASINING JINOYAT KODEKSI", Ugolovniy_kodeks_uz.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example_dark, "O‘ZBEKISTON RESPUBLIKASINING QONUNI XUSUSIY KORXONA TO‘G‘RISIDA", Chastnoe_Predpriyatie_uz.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
+        acts.add(new Acts(R.drawable.ic_tomejenniy_kodeks, "O‘ZBEKISTON RESPUBLIKASINING BOJXONA KODEKSI", Tamojenniy_kodeks_uz.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
+        acts.add(new Acts(R.drawable.ic_trudovoy_kodeks, "O‘ZBEKISTON RESPUBLIKASINING MEHNAT KODEKSI", Trudovoy_kodeks_uz.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
+        acts.add(new Acts(R.drawable.ic_ugolovniy_kodeks, "O‘ZBEKISTON RESPUBLIKASINING JINOYAT KODEKSI", Ugolovniy_kodeks_uz.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
+        acts.add(new Acts(R.drawable.ic_chastnoe_predpriyatie, "O‘ZBEKISTON RESPUBLIKASINING QONUNI XUSUSIY KORXONA TO‘G‘RISIDA", Chastnoe_Predpriyatie_uz.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
 
         return acts;
 
@@ -268,18 +289,18 @@ public class Fragment_Main_Activity extends Fragment {
     public static List<Acts> Acts_Rus() {
         List<Acts> acts = new ArrayList<>();
 
-        acts.add(new Acts(R.drawable.ic_pattern_example, "Административный кодекс", Administrativniy_kodeks_ru.getActs_Subtitle(),R.drawable.ic_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example, "Бюджетный кодекс", Byudjetniy_kodeks_ru.getActs_Subtitle(),R.drawable.ic_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example, "Гражданский кодекс", Grajdanskiy_kodeks_ru.getActs_Subtitle(),R.drawable.ic_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example, "Уголовный процессуальный кодекс", Ugolovniy_protssesualniy_kodeks_ru.getActs_Subtitle(),R.drawable.ic_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example, "Земельный кодекс", Zemelniy_kodeks_ru.getActs_Subtitle(),R.drawable.ic_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example, "Налоговый кодекс", Nalogoviy_kodeks_ru.getActs_Subtitles(),R.drawable.ic_arrow_down));
+        acts.add(new Acts(R.drawable.ic_administrativniy_kodeks, "Административный кодекс", Administrativniy_kodeks_ru.getActs_Subtitle(),R.drawable.ic_arrow_down));
+        acts.add(new Acts(R.drawable.ic_byudjetniy_kodeks, "Бюджетный кодекс", Byudjetniy_kodeks_ru.getActs_Subtitle(),R.drawable.ic_arrow_down));
+        acts.add(new Acts(R.drawable.ic_grajdanskiy_kodeks, "Гражданский кодекс", Grajdanskiy_kodeks_ru.getActs_Subtitle(),R.drawable.ic_arrow_down));
+        acts.add(new Acts(R.drawable.ic_protsesualniy, "Уголовный процессуальный кодекс", Ugolovniy_protssesualniy_kodeks_ru.getActs_Subtitle(),R.drawable.ic_arrow_down));
+        acts.add(new Acts(R.drawable.ic_zemelniy_kodeks, "Земельный кодекс", Zemelniy_kodeks_ru.getActs_Subtitle(),R.drawable.ic_arrow_down));
+        acts.add(new Acts(R.drawable.ic_nalogoviy_kodeks, "Налоговый кодекс", Nalogoviy_kodeks_ru.getActs_Subtitles(),R.drawable.ic_arrow_down));
         acts.add(new Acts(R.drawable.ic_pattern_example, "Общественный кодекс", Obshestvenniy_kodeks_ru.getActs_Subtitle(),R.drawable.ic_arrow_down));
         acts.add(new Acts(R.drawable.ic_pattern_example, "Семейный кодекс", Semeyniy_kodeks_ru.getActs_Subtitle(),R.drawable.ic_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example, "Таможенный кодекс", Tamojenniy_kodeks_ru.getActs_Subtitle(),R.drawable.ic_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example, "Трудовой кодекс", Trudovoy_kodeks_ru.getActs_Subtitle(),R.drawable.ic_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example, "Уголовный кодекс", Ugolovniy_kodeks_ru.getActs_Subtitle(),R.drawable.ic_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example, "Частное предприятие", Chastnoe_Predpriyatie_ru.getActs_Subtitle(),R.drawable.ic_arrow_down));
+        acts.add(new Acts(R.drawable.ic_tomejenniy_kodeks, "Таможенный кодекс", Tamojenniy_kodeks_ru.getActs_Subtitle(),R.drawable.ic_arrow_down));
+        acts.add(new Acts(R.drawable.ic_trudovoy_kodeks, "Трудовой кодекс", Trudovoy_kodeks_ru.getActs_Subtitle(),R.drawable.ic_arrow_down));
+        acts.add(new Acts(R.drawable.ic_ugolovniy_kodeks, "Уголовный кодекс", Ugolovniy_kodeks_ru.getActs_Subtitle(),R.drawable.ic_arrow_down));
+        acts.add(new Acts(R.drawable.ic_chastnoe_predpriyatie, "Частное предприятие", Chastnoe_Predpriyatie_ru.getActs_Subtitle(),R.drawable.ic_arrow_down));
 
 
         return acts;
@@ -289,18 +310,18 @@ public class Fragment_Main_Activity extends Fragment {
     public static List<Acts> Acts_Dark_Rus() {
         List<Acts> acts = new ArrayList<>();
 
-        acts.add(new Acts(R.drawable.ic_pattern_example_dark, "Административный кодекс", Administrativniy_kodeks_ru.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example_dark, "Бюджетный кодекс", Byudjetniy_kodeks_ru.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example_dark, "Гражданский кодекс", Grajdanskiy_kodeks_ru.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example_dark, "Уголовный процессуальный кодекс", Ugolovniy_protssesualniy_kodeks_ru.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example_dark, "Земельный кодекс", Zemelniy_kodeks_ru.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example_dark, "Налоговый кодекс", Nalogoviy_kodeks_ru.getActs_Subtitles(),R.drawable.ic_dark_arrow_down));
+        acts.add(new Acts(R.drawable.ic_administrativniy_kodeks, "Административный кодекс", Administrativniy_kodeks_ru.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
+        acts.add(new Acts(R.drawable.ic_byudjetniy_kodeks, "Бюджетный кодекс", Byudjetniy_kodeks_ru.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
+        acts.add(new Acts(R.drawable.ic_grajdanskiy_kodeks, "Гражданский кодекс", Grajdanskiy_kodeks_ru.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
+        acts.add(new Acts(R.drawable.ic_protsesualniy, "Уголовный процессуальный кодекс", Ugolovniy_protssesualniy_kodeks_ru.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
+        acts.add(new Acts(R.drawable.ic_zemelniy_kodeks, "Земельный кодекс", Zemelniy_kodeks_ru.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
+        acts.add(new Acts(R.drawable.ic_nalogoviy_kodeks, "Налоговый кодекс", Nalogoviy_kodeks_ru.getActs_Subtitles(),R.drawable.ic_dark_arrow_down));
         acts.add(new Acts(R.drawable.ic_pattern_example_dark, "Общественный кодекс", Obshestvenniy_kodeks_ru.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
         acts.add(new Acts(R.drawable.ic_pattern_example_dark, "Семейный кодекс", Semeyniy_kodeks_ru.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example_dark, "Таможенный кодекс", Tamojenniy_kodeks_ru.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example_dark, "Трудовой кодекс", Trudovoy_kodeks_ru.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example_dark, "Уголовный кодекс", Ugolovniy_kodeks_ru.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
-        acts.add(new Acts(R.drawable.ic_pattern_example_dark, "Частное предприятие", Chastnoe_Predpriyatie_ru.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
+        acts.add(new Acts(R.drawable.ic_tomejenniy_kodeks, "Таможенный кодекс", Tamojenniy_kodeks_ru.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
+        acts.add(new Acts(R.drawable.ic_trudovoy_kodeks, "Трудовой кодекс", Trudovoy_kodeks_ru.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
+        acts.add(new Acts(R.drawable.ic_ugolovniy_kodeks, "Уголовный кодекс", Ugolovniy_kodeks_ru.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
+        acts.add(new Acts(R.drawable.ic_chastnoe_predpriyatie, "Частное предприятие", Chastnoe_Predpriyatie_ru.getActs_Subtitle(),R.drawable.ic_dark_arrow_down));
 
         return acts;
 
