@@ -13,4 +13,35 @@
     <string name="connect_with_us_lang">Biz bilan bog\'lanish</string>
     <string name="about">“Moliya studiyasi” – бухгалтерия ҳисобини ўргатишга ва шу билан биргаликда бухгалтерия хизматларини амалга оширишга ихтисослашган ўқув муассасаси. Ўқув курсимизда сиз 4 ой мобайнида бухгалтерияни 0 дан бошлаб балансга қадар ўрганиш имкониятини қўлга киритасиз. Дарсимиз ҳафтасига 3 маротаба 2 ярим соатдан бўлиб ўтади. Курс давомида 1С 8.3 дастурида қийинчиликсиз ишлай оладиган етук кадр бўлиб, ўқиш сўнгида диплом ҳамда мукаммал иш ўрнига эга бўласиз. Бундан ташқари курс давомида сизга солиқ ҳисоботлари, банк клиент иш давомида керак бўладиган вазифалар ўргатиб борилади. Агарда сиз якка тартибдаги дарсларни хоҳласангиз бизда бу имконият ҳам мавжуд.\n\n       4 ой давомида сиз:\n - Бухгалтерия ҳисоби фани;\n - Корхона қай тартибда очилиши ва ҳужжатларнинг қай тартибда расмийлаштирилиши;\n - Корхона ишининг қандай тартибда амалга оширилиши;\n - Шартномалар;\n - Ҳисоб фактуралар;\n - Икки ёқламали ёзув бўйича бухгалтерия ҳисобини юритиш;\n - Давлат солиқ инспекциясига топширилиши лозим бўлган солиқлар;\n - Барча турдаги корхоналарнинг ойлик, чорак ва йиллик ҳисоботларини ҳисоблаш;\n - Банк клиент, випискалар ва уларни қай тартибда киритилиши каби билим ва кўникмаларга эга бўласиз ҳамда кусрни тамомлаганингиздан сўнг ўқитувчиларимиз билан биргаликда амалиёт ҳам ўташингиз мумкин.</string>
 
+
+    <string name="named_title">Ko\'deksning nomi: </string>
+    <string name="named_section">Bo\'limning nomi:</string>
+    <string name="named_chapter">Mavzuning nomi:</string>
+
+    <string name="about_raqamli_dunyo">
+       <b>Raqamli Dunyo MCHJ</b> ning asosiy faoliyati Toshkent va O\'zbekistonning boshqa hududlarida biznes va elektron tijorat uchun dasturiy ta\'minot ishlab chiqish. Bizning jamoa o\'z mijozlariga yuqori sifatli dasturiy ta\'minotlarni yuqori tezlikda yetkazibgina qolmay, har bir mahsulotini axborot xavfsizligi va zamonaviy dizayn bilan kafolatlaydi. Malakali dasturchilarimiz tajribalari evaziga yaratilgan  dasturiy taminot tizimingizni doim ishonchli ishlashini ta\'minlaydi.Bizning jamoamiz rivojlanishga iloji boricha har tomonlama yondashadi. Biz web-portal (forum, elonlar taxtasi, ijtimoiy tarmoq) va korporativ saytlar yaratish, internet do’kon va katalog saytlarni ishlab chiqarish bilan shug\'ullanamiz, shuningdek sizning biznesingizni rivojlantiruvchi yechimlarni loyihalashtiramiz. Web-studiyasi ochilganidan buyon bir necha kichik korxonalar bilan birga katta kompaniyalar bilan ham ishlashga ulgurdi. Buning natijasida biz mijozlarimizning muammolarini samarali hal etish imkonini beruvchi usullar va texnologiyalarni ishlab chiqdik. Bu texnologiyalar, loyihalar qanchalik murakkab bo\'lmasin ularni mukammal darajada oxiriga yetkazadi. Loyiha aniq va o\'lchovli maqsadlarni belgilaydi. Biz sizning biznesingiz uchun ishlaydigan va savdo qiladigan veb-saytni yaratamiz. Zamonaviy texnologiyalarni ishlab chiqishda loyihani yanada qo\'llab-quvvatlash va rivojlantirishga yordam beradi.\n\n
+       <b>Biz xizmat ko\'rsatadigan yo\'nalish turlari</b>\n
+       Mobil ilovalar ishlab chiqish, Web saytlar yaratish, Kompyuterlar uchun dasturlar tuzish.\n\n
+       <b>Nega aynan biz?</b>\n
+       Bizda hammasi siz istagandek. Qulaylik, milliylik va zamonaviylik uyg\'unligi. Biz sizga yordam berishga doim tayyormiz!\n\n
+       <b>Ish tizimi qanday?</b>\n
+       Barchasi juda oddiy! Mijoz bilan uchrashamiz. O\'zaro kelishamiz va juda qisqa muddatda saytni tayyorlab beramiz.\n\n
+       <b>Ishimizning sifati</b>\n
+       Bizga topshirilgan ishlar, albatta, yuqori sifatga ega bo\'ladi - har bir kichik detal mukammal va to\'g\'ri bo\'ladi!\n\n
+       <b>Qulaylik va oddiylik</b>\n
+       Buyurtma bergan loyihangizga tashrif buyuruvchilar va loyiha administratori uchun qulay va tushunarli bo\'lgan sayt va boshqaruv tizimlarini yaratamiz. Ahir mijozlar uchun qayg\'urish kerak emasmi?\n\n
+       <b>Alohida yondashuv</b>\n
+       Har bir mijozga individual yondashuv kafolatlanadi! Ahir sizga barcha savollarga javob beradigan ma\'sul menejer kerakku?\n\n
+       <b>Saytning yuklanish tezligi</b>\n
+       Biz yaratgan loyihalar juda tez ishlaydi va yuklanadi.\n\n
+       <b>Mukammal tizim</b>\n
+       Eng muhimi, biz yaratgan tizimlar siz hozirgi vaqtda to\'qnash kelgan masalalarni yechimini topadi: tashkilotingiz haqidagi ma\'lumotlarni internetda mukammal tarzda joylashtirishdan boshlab maxsulotlaringiz va xizmatlaringizni sotish va yangi mijozlarni jalb qilishgacha.\n\n
+       <b>Xamyonbop narxlar</b>\n
+       Va albatta bizda eng maqbul narxlar. Siz eksklyuziv saytlarni bizda hamyonbop narxlarda buyurtma berishingiz mumkin.
+
+
+   </string>
+
+    <string name="adress_company">Toshkent shahri, Yunusobod tumani, Sharof Rashidov koʼchasi 16-uy</string>
+
 </resources>

@@ -11,11 +11,11 @@ public class Administrativniy_kodeks_kir {
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
 
-        acts_subtitles.add(new Acts_Subtitle("I.БИРИНЧИ БЎЛИМ. УМУМИЙ ҚОИДАЛАР"));
-        acts_subtitles.add(new Acts_Subtitle("II.ИККИНЧИ БЎЛИМ. МАЪМУРИЙ ҲУҚУҚБУЗАРЛИК ВА МАЪМУРИЙ ЖАВОБГАРЛИК"));
-        acts_subtitles.add(new Acts_Subtitle("III.УЧИНЧИ БЎЛИМ. МАЪМУРИЙ ҲУҚУҚБУЗАРЛИКЛАР ТЎҒРИСИДАГИ ИШЛАРНИ КЎРИБ ЧИҚИШГА ВАКОЛАТИ БЎЛГАН ОРГАНЛАР (МАНСАБДОР ШАХСЛАР)"));
-        acts_subtitles.add(new Acts_Subtitle("IV.ТЎРТИНЧИ БЎЛИМ. МАЪМУРИЙ ҲУҚУҚБУЗАРЛИК ТЎҒРИСИДАГИ ИШЛАРНИ ЮРИТИШ"));
-        acts_subtitles.add(new Acts_Subtitle("V.БЕШИНЧИ БЎЛИМ. МАЪМУРИЙ ЖА3О ҚЎЛЛАНИШ ТЎҒРИСИДАГИ ҚАРОРЛАРНИ ИЖРО ЭТИШ"));
+        acts_subtitles.add(new Acts_Subtitle("I.Биринчи бўлим. Умумий қоидалар"));
+        acts_subtitles.add(new Acts_Subtitle("II.Иккинчи бўлим. Маъмурий ҳуқуқбузарлик ва маъмурий жавобгарлик"));
+        acts_subtitles.add(new Acts_Subtitle("III.Учинчи бўлим. Маъмурий ҳуқуқбузарликлар тўғрисидаги ишларни кўриб чиқишга ваколати бўлган органлар (мансабдор шахслар)"));
+        acts_subtitles.add(new Acts_Subtitle("IV.Тўртинчи бўлим. Маъмурий ҳуқуқбузарлик тўғрисидаги ишларни юритиш"));
+        acts_subtitles.add(new Acts_Subtitle("V.Бешинчи бўлим. Маъмурий жа3о қўлланиш тўғрисидаги қарорларни ижро этиш"));
 
         return acts_subtitles;
     }
@@ -23,29 +23,29 @@ public class Administrativniy_kodeks_kir {
     public static List<Acts_Subtitle> getActs_Chapter_1()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("1-боб. АСОСИЙ ҚОИДАЛАР"));
+        acts_subtitles.add(new Acts_Subtitle("1-боб. Асосий қоидалар"));
 
         return acts_subtitles;
     }
     public static List<Acts_Subtitle> getActs_Chapter_2()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("2-боб.ИККИНЧИ БЎЛИМ МАЪМУРИЙ ҲУҚУҚБУЗАРЛИК ВА МАЪМУРИЙ ЖАВОБГАРЛИК"));
-        acts_subtitles.add(new Acts_Subtitle("3-боб. МАЪМУРИЙ ЖАЗО ВА МАЖБУРЛОВ ЧОРАСИ"));
-        acts_subtitles.add(new Acts_Subtitle("4-боб.МАЪМУРИЙ ЖАЗОНИНГ ҚЎЛЛАНИЛИШИ"));
-        acts_subtitles.add(new Acts_Subtitle("5-боб. ФУҚАРОЛАРНИНГ ҲУҚУҚ ВА ЭРКИНЛИКЛАРИГА ТАЖОВУЗ ҚИЛАДИГАН ҲУҚУҚБУЗАРЛИКЛАР УЧУН МАЪМУРИЙ ЖАВОБГАРЛИК"));
+        acts_subtitles.add(new Acts_Subtitle("2-боб. Иккинчи бўлим маъмурий ҳуқуқбузарлик ва маъмурий жавобгарлик"));
+        acts_subtitles.add(new Acts_Subtitle("3-боб. Маъмурий жазо ва мажбурлов чораси"));
+        acts_subtitles.add(new Acts_Subtitle("4-боб. Маъмурий жазонинг қўлланилиши"));
+        acts_subtitles.add(new Acts_Subtitle("5-боб. Фуқароларнинг ҳуқуқ ва эркинликларига тажовуз қиладиган ҳуқуқбузарликлар учун маъмурий жавобгарлик"));
         acts_subtitles.add(new Acts_Subtitle("5.1-боб. Сайлов ва референдумни ташкил этиш ҳамда ўтказиш соҳасидаги ҳуқуқбузарликлар учун маъмурий жавобгарлик"));
-        acts_subtitles.add(new Acts_Subtitle("6-боб. АҲОЛИ СОҒЛИҒИНИ САҚЛАШ СОҲАСИДАГИ ҲУҚУҚБУЗАРЛИКЛАР УЧУН МАЪМУРИЙ ЖАВОБГАРЛИК"));
-        acts_subtitles.add(new Acts_Subtitle("7-боб. МУЛККА ТАЖОВУЗ ҚИЛУВЧИ ҲУҚУҚБУЗАРЛИКЛАР УЧУН МАЪМУРИЙ ЖАВОБГАРЛИК"));
-        acts_subtitles.add(new Acts_Subtitle("8-боб. ЭКОЛОГИЯ, АТРОФ-МУҲИТНИ МУҲОФАЗА ҚИЛИШ ВА ТАБИАТДАН ФОЙДАЛАНИШ СОҲАСИДАГИ ҲУҚУҚБУЗАРЛИКЛАР УЧУН"));
-        acts_subtitles.add(new Acts_Subtitle("9-боб. САНОАТДАГИ, ҚУРИЛИШДАГИ ВА ИССИҚЛИК ҲАМДА ЭЛЕКТР ЭНЕРГИЯСИДАН ФОЙДАЛАНИШ СОҲАСИДАГИ ҲУҚУҚБУЗАРЛИ"));
-        acts_subtitles.add(new Acts_Subtitle("10-боб. ҚИШЛОҚ ХЎЖАЛИГИДАГИ ҲУҚУҚБУЗАРЛИК, ВЕТЕРИНАРИЯ, ВЕТЕРИНАРИЯ-САНИТАРИЯ ҚОИДАЛАРИ ВА НОРМАЛАРИНИ"));
-        acts_subtitles.add(new Acts_Subtitle("11-боб. ТРАНСПОРТДАГИ, ЙЎЛ ХЎЖАЛИГИ ВА АЛОҚА СОҲАЛАРИДАГИ ҲУҚУҚБУЗАРЛИКЛАР УЧУН МАЪМУРИЙ ЖАВОБГАРЛИК"));
-        acts_subtitles.add(new Acts_Subtitle("12-боб. ФУҚАРОЛАРНИНГ ТУРАР ЖОЙ ҲУҚУҚЛАРИГА ТААЛЛУҚЛИ, КОММУНАЛ ХИЗМАТ ВА ОБОДОНЛАШТИРИШ СОҲАСИДАГИ ҲУ"));
-        acts_subtitles.add(new Acts_Subtitle("13-боб. САВДО, ТАДБИРКОРЛИК ВА МОЛИЯ СОҲАЛАРИДАГИ ҲУҚУҚБУЗАРЛИКЛАР УЧУН МАЪМУРИЙ ЖАВОБГАРЛИК"));
-        acts_subtitles.add(new Acts_Subtitle("14-боб. ОДИЛ СУДЛОВГА ТАЖОВУЗ ҚИЛУВЧИ ҲУҚУҚБУЗАРЛИКЛАР УЧУН МАЪМУРИЙ ЖАВОБГАРЛИК"));
-        acts_subtitles.add(new Acts_Subtitle("15-боб. ЖАМОАТ ТАРТИБИГА ТАЖОВУЗ ҚИЛУВЧИ ҲУҚУҚБУЗАРЛИКЛАР УЧУН МАЪМУРИЙ ЖАВОБГАРЛИК"));
-        acts_subtitles.add(new Acts_Subtitle("16-боб. БОШҚАРУВНИНГ БЕЛГИЛАНГАН ТАРТИБИГА ТАЖОВУЗ ҚИЛУВЧИ ҲУҚУҚБУЗАРЛИКЛАР УЧУН МАЪМУРИЙ ЖАВОБГАРЛИК"));
+        acts_subtitles.add(new Acts_Subtitle("6-боб. Аҳоли соғлиғини сақлаш соҳасидаги ҳуқуқбузарликлар учун маъмурий жавобгарлик"));
+        acts_subtitles.add(new Acts_Subtitle("7-боб. Мулкка тажовуз қилувчи ҳуқуқбузарликлар учун маъмурий жавобгарлик"));
+        acts_subtitles.add(new Acts_Subtitle("8-боб. Экология, атроф-муҳитни муҳофаза қилиш ва табиатдан фойдаланиш соҳасидаги ҳуқуқбузарликлар учун"));
+        acts_subtitles.add(new Acts_Subtitle("9-боб. Саноатдаги, қурилишдаги ва иссиқлик ҳамда электр энергиясидан фойдаланиш соҳасидаги ҳуқуқбузарли"));
+        acts_subtitles.add(new Acts_Subtitle("10-боб. Қишлоқ хўжалигидаги ҳуқуқбузарлик, ветеринария, ветеринария-санитария қоидалари ва нормаларини"));
+        acts_subtitles.add(new Acts_Subtitle("11-боб. Транспортдаги, йўл хўжалиги ва алоқа соҳаларидаги ҳуқуқбузарликлар учун маъмурий жавобгарлик"));
+        acts_subtitles.add(new Acts_Subtitle("12-боб. Фуқароларнинг турар жой ҳуқуқларига тааллуқли, коммунал хизмат ва ободонлаштириш соҳасидаги ҳу"));
+        acts_subtitles.add(new Acts_Subtitle("13-боб. Савдо, тадбиркорлик ва молия соҳаларидаги ҳуқуқбузарликлар учун маъмурий жавобгарлик"));
+        acts_subtitles.add(new Acts_Subtitle("14-боб. Одил судловга тажовуз қилувчи ҳуқуқбузарликлар учун маъмурий жавобгарлик"));
+        acts_subtitles.add(new Acts_Subtitle("15-боб. Жамоат тартибига тажовуз қилувчи ҳуқуқбузарликлар учун маъмурий жавобгарлик"));
+        acts_subtitles.add(new Acts_Subtitle("16-боб. Бошқарувнинг белгиланган тартибига тажовуз қилувчи ҳуқуқбузарликлар учун маъмурий жавобгарлик"));
         acts_subtitles.add(new Acts_Subtitle("16.1-боб. Тадбиркорлик фаолиятига тўсқинлик қилганлик, қонунга хилоф равишда аралашганлик ҳамда хўжали"));
 
         return acts_subtitles;
@@ -54,8 +54,8 @@ public class Administrativniy_kodeks_kir {
     public static List<Acts_Subtitle> getActs_Chapter_3()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("17-боб. УМУМИЙ ҚОИДАЛАР"));
-        acts_subtitles.add(new Acts_Subtitle("18-боб. МАЪМУРИЙ ҲУҚУҚБУЗАРЛИКЛАР ТЎҒРИСИДАГИ"));
+        acts_subtitles.add(new Acts_Subtitle("17-боб. Умумий қоидалар"));
+        acts_subtitles.add(new Acts_Subtitle("18-боб. Маъмурий ҳуқуқбузарликлар тўғрисидаги"));
 
         return acts_subtitles;
     }
@@ -63,12 +63,12 @@ public class Administrativniy_kodeks_kir {
     public static List<Acts_Subtitle> getActs_Chapter_4()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("19-боб. УМУМИЙ ҚОИДАЛАР"));
-        acts_subtitles.add(new Acts_Subtitle("20-боб. МАЪМУРИЙ ҲУҚУҚБУЗАРЛИК ТЎҒРИСИДАГИ БАЁННОМА"));
-        acts_subtitles.add(new Acts_Subtitle("21-боб. МАЪМУРИЙ ЙЎЛ БИЛАН УШЛАБ ТУРИШ, АШЁЛАР ВА ТРАНСПОРТ ВОСИТАЛАРИНИ КЎЗДАН КЕЧИРИШ, АШЁЛАР ВА"));
-        acts_subtitles.add(new Acts_Subtitle("22-боб. МАЪМУРИЙ ҲУҚУҚБУЗАРЛИК ТЎҒРИСИДАГИ ИШНИ ЮРИТИШДА ҚАТНАШУВЧИ ШАХСЛАР"));
-        acts_subtitles.add(new Acts_Subtitle("23-боб. МАЪМУРИЙ ҲУҚУҚБУЗАРЛИК ТЎҒРИСИДАГИ ИШЛАРНИ КЎРИБ ЧИҚИШ"));
-        acts_subtitles.add(new Acts_Subtitle("24-боб. МАЪМУРИЙ ҲУҚУҚБУЗАРЛИК ТЎҒРИСИДАГИ ИШ Ю3АСИДАН ЧИҚАРИЛГАН ҚАРОР ХУСУСИДА ШИКОЯТ БЕРИШ ВА ПР"));
+        acts_subtitles.add(new Acts_Subtitle("19-боб. Умумий қоидалар"));
+        acts_subtitles.add(new Acts_Subtitle("20-боб. Маъмурий ҳуқуқбузарлик тўғрисидаги баённома"));
+        acts_subtitles.add(new Acts_Subtitle("21-боб. Маъмурий йўл билан ушлаб туриш, ашёлар ва транспорт воситаларини кўздан кечириш, ашёлар ва"));
+        acts_subtitles.add(new Acts_Subtitle("22-боб. Маъмурий ҳуқуқбузарлик тўғрисидаги ишни юритишда қатнашувчи шахслар"));
+        acts_subtitles.add(new Acts_Subtitle("23-боб. Маъмурий ҳуқуқбузарлик тўғрисидаги ишларни кўриб чиқиш"));
+        acts_subtitles.add(new Acts_Subtitle("24-боб. Маъмурий ҳуқуқбузарлик тўғрисидаги иш ю3асидан чиқарилган қарор хусусида шикоят бериш ва пр"));
         acts_subtitles.add(new Acts_Subtitle("24.1-боб. Маъмурий суднинг маъмурий ҳуқуқбузарлик тўғрисидаги иш юзасидан қарорини қайта кўриш бўйи"));
 
         return acts_subtitles;
@@ -77,14 +77,14 @@ public class Administrativniy_kodeks_kir {
     public static List<Acts_Subtitle> getActs_Chapter_5()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("25-боб. АСОСИЙ ҚОИДАЛАР"));
-        acts_subtitles.add(new Acts_Subtitle("26-боб. ЖАРИМА СОЛИШ ТЎҒРИСИДАГИ ҚАРОРНИ ИЖРО ЭТИШ БЎЙИЧА ИШ ЮРИТИШ"));
-        acts_subtitles.add(new Acts_Subtitle("27-боб. НАРСАНИ ҲАҚИНИ ТЎЛАШ ШАРТИ БИЛАН ОЛИБ ҚЎЙИШ ТЎҒРИСИДАГИ ҚАРОРНИ ИЖРО ЭТИШ БЎЙИЧА ИШ ЮРИТИШ"));
-        acts_subtitles.add(new Acts_Subtitle("28-боб. НАРСАНИ МУСОДАРА ҚИЛИШ ТЎҒРИСИДАГИ ҚАРОРНИ ИЖРО ЭТИШ БЎЙИЧА ИШ ЮРИТИШ"));
-        acts_subtitles.add(new Acts_Subtitle("29-боб. МАХСУС ҲУҚУҚДАН МАҲРУМ ЭТИШ ТЎҒРИСИДАГИ ҚАРОРНИ ИЖРО ЭТИШ БЎЙИЧА ИШ ЮРИТИШ"));
-        acts_subtitles.add(new Acts_Subtitle("30-боб. МАЪМУРИЙ ҚАМОҚҚА ОЛИШ ТЎҒРИСИДАГИ ҚАРОРНИ ИЖРО ЭТИШ БЎЙИЧА ИШ ЮРИТИШ"));
+        acts_subtitles.add(new Acts_Subtitle("25-боб. Асосий қоидалар"));
+        acts_subtitles.add(new Acts_Subtitle("26-боб. Жарима солиш тўғрисидаги қарорни ижро этиш бўйича иш юритиш"));
+        acts_subtitles.add(new Acts_Subtitle("27-боб. Нарсани ҳақини тўлаш шарти билан олиб қўйиш тўғрисидаги қарорни ижро этиш бўйича иш юритиш"));
+        acts_subtitles.add(new Acts_Subtitle("28-боб. Нарсани мусодара қилиш тўғрисидаги қарорни ижро этиш бўйича иш юритиш"));
+        acts_subtitles.add(new Acts_Subtitle("29-боб. Махсус ҳуқуқдан маҳрум этиш тўғрисидаги қарорни ижро этиш бўйича иш юритиш"));
+        acts_subtitles.add(new Acts_Subtitle("30-боб. Маъмурий қамоққа олиш тўғрисидаги қарорни ижро этиш бўйича иш юритиш"));
         acts_subtitles.add(new Acts_Subtitle("30.1-боб. Чет эл фуқароларини ва фуқаролиги бўлмаган шахсларни Ўзбекистон Республикаси ҳудудид"));
-        acts_subtitles.add(new Acts_Subtitle("31-боб. ҚАРОРНИНГ МУЛКИЙ ЗАРАРНИ УНДИРИБ ОЛИШ ХУСУСИДАГИ ҚИСМИНИ ИЖРО ЭТИШ БЎЙИЧА ИШ ЮРИТИШ"));
+        acts_subtitles.add(new Acts_Subtitle("31-боб. Қарорнинг мулкий зарарни ундириб олиш хусусидаги қисмини ижро этиш бўйича иш юритиш"));
 
         return acts_subtitles;
     }

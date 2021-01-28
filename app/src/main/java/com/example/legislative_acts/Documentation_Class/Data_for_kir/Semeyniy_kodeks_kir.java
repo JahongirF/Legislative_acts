@@ -10,14 +10,14 @@ public class Semeyniy_kodeks_kir {
     public static List<Acts_Subtitle> getActs_Subtitle()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("I БЎЛИМ УМУМИЙ ҚОИДАЛАР"));
-        acts_subtitles.add(new Acts_Subtitle("II БЎЛИМ НИКОҲ"));
-        acts_subtitles.add(new Acts_Subtitle("III БЎЛИМ ҚОН-ҚАРИНДОШЛИК ВА БОЛАЛАРНИНГ НАСЛ-НАСАБИНИ БЕЛГИЛАШ"));
-        acts_subtitles.add(new Acts_Subtitle("IV БЎЛИМ ОТА-ОНА ҲАМДА ВОЯГА ЕТМАГАН БОЛАЛАРНИНГ ҲУҚУҚ ВА МАЖБУРИЯТЛАРИ"));
-        acts_subtitles.add(new Acts_Subtitle("V БЎЛИМ ОИЛА АЪЗОЛАРИНИНГ ВА БОШҚА ШАХСЛАРНИНГ АЛИМЕНТ МАЖБУРИЯТЛАРИ"));
-        acts_subtitles.add(new Acts_Subtitle("VI БЎЛИМ ОТА-ОНА ҚАРАМОҒИДАН МАҲРУМ БЎЛГАН БОЛАЛАРНИ ЖОЙЛАШТИРИШ ШАКЛЛАРИ"));
-        acts_subtitles.add(new Acts_Subtitle("VII БЎЛИМ ФУҚАРОЛИК ҲОЛАТИ ДАЛОЛАТНОМАЛАРИНИ ҚАЙД ЭТИШ"));
-        acts_subtitles.add(new Acts_Subtitle("VIII БЎЛИМ ЧЕТ ЭЛ ФУҚАРОЛАРИ ВА ФУҚАРОЛИГИ БЎЛМАГАН ШАХСЛАР ИШТИРОКИДАГИ ОИЛАВИЙ МУНОСАБАТЛАРНИ ТАРТИБГА СОЛИШ"));
+        acts_subtitles.add(new Acts_Subtitle("I бўлим. Умумий қоидалар"));
+        acts_subtitles.add(new Acts_Subtitle("II бўлим. Никоҳ"));
+        acts_subtitles.add(new Acts_Subtitle("III бўлим. Қон-қариндошлик ва болаларнинг насл-насабини белгилаш"));
+        acts_subtitles.add(new Acts_Subtitle("IV бўлим. Ота-она ҳамда вояга етмаган болаларнинг ҳуқуқ ва мажбуриятлари"));
+        acts_subtitles.add(new Acts_Subtitle("V бўлим. Оила аъзоларининг ва бошқа шахсларнинг алимент мажбуриятлари"));
+        acts_subtitles.add(new Acts_Subtitle("VI бўлим. Ота-она қарамоғидан маҳрум бўлган болаларни жойлаштириш шакллари"));
+        acts_subtitles.add(new Acts_Subtitle("VII бўлим. Фуқаролик ҳолати далолатномаларини қайд этиш"));
+        acts_subtitles.add(new Acts_Subtitle("VIII бўлим. Чет эл фуқаролари ва фуқаролиги бўлмаган шахслар иштирокидаги оилавий муносабатларни тартибга солиш"));
 
         return acts_subtitles;
     }
@@ -97,7 +97,7 @@ public class Semeyniy_kodeks_kir {
     public static List<Acts_Subtitle> getActs_Chapter_8()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-       acts_subtitles.add(new Acts_Subtitle("VIII БЎЛИМ. ЧЕТ ЭЛ ФУҚАРОЛАРИ ВА ФУҚАРОЛИГИ БЎЛМАГАН ШАХСЛАР ИШТИРОКИДА"));
+       acts_subtitles.add(new Acts_Subtitle("VIII бўлим. Чет эл фуқаролари ва фуқаролиги бўлмаган шахслар иштирокидаги оилавий муносабатларни тартибга солиш"));
         return acts_subtitles;
     }
 

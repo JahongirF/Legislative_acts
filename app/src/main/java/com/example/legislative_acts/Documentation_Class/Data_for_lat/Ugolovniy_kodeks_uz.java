@@ -10,14 +10,14 @@ public class Ugolovniy_kodeks_uz {
     public static List<Acts_Subtitle> getActs_Subtitle()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("I.BIRINChI BO‘LIM. UMUMIY QOIDALAR"));
-        acts_subtitles.add(new Acts_Subtitle("II.IKKINChI BO‘LIM. JAVOBGARLIK ASOSLARI"));
-        acts_subtitles.add(new Acts_Subtitle("III.UChINChI BO‘LIM. QILMIShNING JINOIYLIGINI ISTISNO QILADIGAN HOLATLAR"));
-        acts_subtitles.add(new Acts_Subtitle("IV.TO‘RTINChI BO‘LIM. JAZO VA UNI TAYINLASh"));
-        acts_subtitles.add(new Acts_Subtitle("V.BEShINChI BO‘LIM. JAVOBGARLIKDAN VA JAZODAN OZOD QILISh"));
-        acts_subtitles.add(new Acts_Subtitle("VI.OLTINChI BO‘LIM. VOYAGA YETMAGANLAR JAVOBGARLIGINING XUSUSIYATLARI"));
-        acts_subtitles.add(new Acts_Subtitle("VII.YETTINChI BO'LIM. TIBBIY YO‘SINDAGI MAJBURLOV ChORALARI"));
-        acts_subtitles.add(new Acts_Subtitle("VIII.SAKKIZINChI BO‘LIM. ATAMALARNING HUQUQIY MA’NOSI"));
+        acts_subtitles.add(new Acts_Subtitle("I.Birinchi bo‘lim. Umumiy qoidalar"));
+        acts_subtitles.add(new Acts_Subtitle("II.Ikkinchi bo‘lim. Javobgarlik asoslari"));
+        acts_subtitles.add(new Acts_Subtitle("III.Uchinchi bo‘lim. Qilmishning jinoiyligini istisno qiladigan holatlar"));
+        acts_subtitles.add(new Acts_Subtitle("IV.To‘rtinchi bo‘lim. Jazo va uni tayinlash"));
+        acts_subtitles.add(new Acts_Subtitle("V.Beshinchi bo‘lim. Javobgarlikdan va jazodan ozod qilish"));
+        acts_subtitles.add(new Acts_Subtitle("VI.Oltinchi bo‘lim. Voyaga yetmaganlar javobgarligining xususiyatlari"));
+        acts_subtitles.add(new Acts_Subtitle("VII.Yettinchi bo‘lim. Tibbiy yo‘sindagi majburlov choralari"));
+        acts_subtitles.add(new Acts_Subtitle("VIII.Sakkizinchi bo‘lim. Atamalarning huquqiy ma’nosi"));
 
         return acts_subtitles;
     }
@@ -96,7 +96,7 @@ public class Ugolovniy_kodeks_uz {
     public static List<Acts_Subtitle> getActs_Chapter_8()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("ATAMALARNING HUQUQIY MA’NOSI"));
+        acts_subtitles.add(new Acts_Subtitle("Atamalarning huquqiy ma’nosi"));
         return acts_subtitles;
     }
 

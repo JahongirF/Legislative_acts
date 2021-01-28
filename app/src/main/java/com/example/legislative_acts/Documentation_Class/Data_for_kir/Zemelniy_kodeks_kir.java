@@ -10,20 +10,20 @@ public class Zemelniy_kodeks_kir {
     public static List<Acts_Subtitle> getActs_Subtitle()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("1-БОБ. УМУМИЙ ҚОИДАЛАР"));
-        acts_subtitles.add(new Acts_Subtitle("2-БОБ. ЕР ФОНДИ"));
-        acts_subtitles.add(new Acts_Subtitle("3-БОБ. ЕР ТУЗИШ"));
-        acts_subtitles.add(new Acts_Subtitle("4-БОБ. ЕРГА БЎЛГАН МУЛКЧИЛИК, ЮРИДИК ВА ЖИСМОНИЙ ШАХСЛАРНИНГ ЕР УЧАСТКАЛАРИГА БЎЛГАН ҲУҚУҚЛАРИ"));
-        acts_subtitles.add(new Acts_Subtitle("5-БОБ. ЕР ЭГАСИ, ЕРДАН ФОЙДАЛАНУВЧИ, ИЖАРАЧИ ВА ЕР УЧАСТКАСИ МУЛКДОРИНИНГ ҲУҚУҚ ВА МАЖБУРИЯТЛАРИ"));
-        acts_subtitles.add(new Acts_Subtitle("6-БОБ. ҚИШЛОҚ ХЎЖАЛИГИГА МЎЛЖАЛЛАНГАН ЕРЛАР"));
-        acts_subtitles.add(new Acts_Subtitle("7-БОБ. АҲОЛИ ПУНКТЛАРИНИНГ (ШАҲАРЛАР, ПОСЁЛКАЛАР ВА ҚИШЛОҚ АҲОЛИ ПУНКТЛАРИНИНГ) ЕРЛАРИ"));
-        acts_subtitles.add(new Acts_Subtitle("8-БОБ. САНОАТ, ТРАНСПОРТ, АЛОҚА, МУДОФАА ВА БОШҚА МАҚСАДЛАРГА МЎЛЖАЛЛАНГАН ЕРЛАР"));
-        acts_subtitles.add(new Acts_Subtitle("9-БОБ. Табиатни муҳофаза қилиш, соғломлаштириш, рекреация мақсадларига"));
-        acts_subtitles.add(new Acts_Subtitle("10-БОБ. ЎРМОН ФОНДИ, СУВ ФОНДИ ЕРЛАРИ ВА ЗАХИРА ЕРЛАР"));
-        acts_subtitles.add(new Acts_Subtitle("11-БОБ. ЕРЛАРНИ МУҲОФАЗА ҚИЛИШ"));
-        acts_subtitles.add(new Acts_Subtitle("12-БОБ. ЕРЛАРДАН ФОЙДАЛАНИШ ҲАМДА УЛАРНИ МУҲОФАЗА ҚИЛИШ УСТИДАН НАЗОРАТ"));
-        acts_subtitles.add(new Acts_Subtitle("13-БОБ. ЕР ЭГАЛАРИ, ЕРДАН ФОЙДАЛАНУВЧИЛАР"));
-        acts_subtitles.add(new Acts_Subtitle("14-БОБ. ЕР ХУСУСИДАГИ НИЗОЛАРНИ ҲАЛ ЭТИШ ҲАМДА ЕР ТЎFРИСИДАГИ ҚОНУН ҲУЖЖАТЛАРИНИ БУЗГАНЛИК УЧУН ЖАВОБГАРЛИК"));
+        acts_subtitles.add(new Acts_Subtitle("I-боб. Умумий қоидалар"));
+        acts_subtitles.add(new Acts_Subtitle("II-боб. Ер фонди"));
+        acts_subtitles.add(new Acts_Subtitle("III-боб. Ер тузиш"));
+        acts_subtitles.add(new Acts_Subtitle("IV-боб. Ерга бўлган мулкчилик, юридик ва жисмоний шахсларнинг ер участкаларига бўлган ҳуқуқлари"));
+        acts_subtitles.add(new Acts_Subtitle("V-боб. Ер эгаси, ердан фойдаланувчи, ижарачи ва ер участкаси мулкдорининг ҳуқуқ ва мажбуриятлари"));
+        acts_subtitles.add(new Acts_Subtitle("VI-боб. Қишлоқ хўжалигига мўлжалланган ерлар"));
+        acts_subtitles.add(new Acts_Subtitle("VII-боб. Аҳоли пунктларининг (шаҳарлар, посёлкалар ва қишлоқ аҳоли пунктларининг) ерлари"));
+        acts_subtitles.add(new Acts_Subtitle("VIII-боб. Саноат, транспорт, алоқа, мудофаа ва бошқа мақсадларга мўлжалланган ерлар"));
+        acts_subtitles.add(new Acts_Subtitle("IX-боб. Табиатни муҳофаза қилиш, соғломлаштириш, рекреация мақсадларига"));
+        acts_subtitles.add(new Acts_Subtitle("X-боб. Ўрмон фонди, сув фонди ерлари ва захира ерлар"));
+        acts_subtitles.add(new Acts_Subtitle("XI-боб. Ерларни муҳофаза қилиш"));
+        acts_subtitles.add(new Acts_Subtitle("XII-боб. Ерлардан фойдаланиш ҳамда уларни муҳофаза қилиш устидан назорат"));
+        acts_subtitles.add(new Acts_Subtitle("XIII-боб. Ер эгалари, ердан фойдаланувчилар"));
+        acts_subtitles.add(new Acts_Subtitle("XIV-боб. Ер хусусидаги низоларни ҳал этиш ҳамда ер тўfрисидаги қонун ҳужжатларини бузганлик учун жавобгарлик"));
 
         return acts_subtitles;
 

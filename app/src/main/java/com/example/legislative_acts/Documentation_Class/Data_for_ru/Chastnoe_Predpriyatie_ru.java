@@ -13,7 +13,7 @@ public class Chastnoe_Predpriyatie_ru {
        acts_subtitles.add(new Acts_Subtitle("Глава I. Общие положения"));
        acts_subtitles.add(new Acts_Subtitle("Глава II. Создание частного предприятия и его государственная регистрация"));
        acts_subtitles.add(new Acts_Subtitle("Глава III. Управление частным предприятием"));
-       acts_subtitles.add(new Acts_Subtitle("Глава IV. Трудовые отношения на частном предприяти"));
+       acts_subtitles.add(new Acts_Subtitle("Глава IV. Трудовые отношения на частном предприятии"));
        acts_subtitles.add(new Acts_Subtitle("Глава V. Гарантия свободы деятельности частного предприятия"));
        acts_subtitles.add(new Acts_Subtitle("Глава VI. Заключительные положения"));
 

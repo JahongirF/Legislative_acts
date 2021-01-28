@@ -15,9 +15,9 @@ public class Grajdanskiy_kodeks_kir {
     public static List<Acts_Subtitle> getActs_Subtitle()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("I.БЎЛИМ УМУМИЙ ҚОИДАЛАР"));
-        acts_subtitles.add(new Acts_Subtitle("II.БЎЛИМ МУЛК ҲУҚУҚИ ВА БОШҚА АШЁВИЙ ҲУҚУҚЛАР"));
-        acts_subtitles.add(new Acts_Subtitle("III.БЎЛИМ МАЖБУРИЯТ ҲУҚУҚИ"));
+        acts_subtitles.add(new Acts_Subtitle("I бўлим. Умумий қоидалар"));
+        acts_subtitles.add(new Acts_Subtitle("II бўлим. Мулк ҳуқуқи ва бошқа ашёвий ҳуқуқлар"));
+        acts_subtitles.add(new Acts_Subtitle("III бўлим. Мажбурият ҳуқуқи"));
 
         return acts_subtitles;
     }
@@ -25,18 +25,18 @@ public class Grajdanskiy_kodeks_kir {
     public static List<Acts_Subtitle> getActs_Chapter_1()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("1-БОБ ФУҚАРОЛИК ҚОНУН ҲУЖЖАТЛАРИ"));
-        acts_subtitles.add(new Acts_Subtitle("2-БОБ ФУҚАРОЛИК ҲУҚУҚ ВА БУРЧЛАРИНИНГ ВУЖУДГА КЕЛИШИ. ФУҚАРОЛИК ҲУҚУҚЛАРИНИ АМАЛГА ОШИРИШ ВА ҲИМОЯ ҚИЛИШ"));
-        acts_subtitles.add(new Acts_Subtitle("3-БОБ ФУҚАРОЛАР (ЖИСМОНИЙ ШАХСЛАР)"));
-        acts_subtitles.add(new Acts_Subtitle("4-БОБ ЮРИДИК ШАХСЛАР"));
-        acts_subtitles.add(new Acts_Subtitle("5-БОБ ДАВЛАТ ФУҚАРОЛИК-ҲУҚУҚИЙ МУНОСАБАТЛАР ИШТИРОКЧИСИ СИФАТИДА"));
-        acts_subtitles.add(new Acts_Subtitle("6-БОБ УМУМИЙ ҚОИДАЛАР"));
-        acts_subtitles.add(new Acts_Subtitle("7-БОБ МОДДИЙ НЕЪМАТЛАР"));
-        acts_subtitles.add(new Acts_Subtitle("8-БОБ НОМОДДИЙ НЕЪМАТЛАР"));
-        acts_subtitles.add(new Acts_Subtitle("9-БОБ БИТИМЛАР"));
-        acts_subtitles.add(new Acts_Subtitle("10-БОБ ВАКИЛЛИК ВА ИШОНЧНОМА"));
-        acts_subtitles.add(new Acts_Subtitle("11-БОБ МУДДАТЛАРНИ ҲИСОБЛАШ"));
-        acts_subtitles.add(new Acts_Subtitle("12-БОБ ДАЪВО МУДДАТИ"));
+        acts_subtitles.add(new Acts_Subtitle("1-боб. Фуқаролик қонун ҳужжатлари"));
+        acts_subtitles.add(new Acts_Subtitle("2-боб. Фуқаролик ҳуқуқ ва бурчларининг вужудга келиши. фуқаролик ҳуқуқларини амалга ошириш ва ҳимоя қилиш"));
+        acts_subtitles.add(new Acts_Subtitle("3-боб. Фуқаролар (жисмоний шахслар)"));
+        acts_subtitles.add(new Acts_Subtitle("4-боб. Юридик шахслар"));
+        acts_subtitles.add(new Acts_Subtitle("5-боб. Давлат фуқаролик-ҳуқуқий муносабатлар иштирокчиси сифатида"));
+        acts_subtitles.add(new Acts_Subtitle("6-боб. Умумий қоидалар"));
+        acts_subtitles.add(new Acts_Subtitle("7-боб. Моддий неъматлар"));
+        acts_subtitles.add(new Acts_Subtitle("8-боб. Номоддий неъматлар"));
+        acts_subtitles.add(new Acts_Subtitle("9-боб. Битимлар"));
+        acts_subtitles.add(new Acts_Subtitle("10-боб. Вакиллик ва ишончнома"));
+        acts_subtitles.add(new Acts_Subtitle("11-боб. Муддатларни ҳисоблаш"));
+        acts_subtitles.add(new Acts_Subtitle("12-боб. Даъво муддати"));
 
         return acts_subtitles;
 
@@ -45,13 +45,13 @@ public class Grajdanskiy_kodeks_kir {
     public static List<Acts_Subtitle> getActs_Chapter_2()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("13-БОБ УМУМИЙ ҚОИДАЛАР"));
-        acts_subtitles.add(new Acts_Subtitle("14-БОБ ХЎЖАЛИК ЮРИТИШ ҲУҚУҚИ. ОПЕРАТИВ БОШҚАРИШ ҲУҚУҚИ"));
-        acts_subtitles.add(new Acts_Subtitle("15-БОБ МУЛК ҲУҚУҚИНИНГ ВУЖУДГА КЕЛИШИ ВА УНИНГ БЕКОР БЎЛИШИ"));
-        acts_subtitles.add(new Acts_Subtitle("16-БОБ ХУСУСИЙ МУЛК"));
-        acts_subtitles.add(new Acts_Subtitle("17-БОБ ОММАВИЙ МУЛК"));
-        acts_subtitles.add(new Acts_Subtitle("18-БОБ УМУМИЙ МУЛК"));
-        acts_subtitles.add(new Acts_Subtitle("19-БОБ МУЛК ҲУҚУҚИНИ ВА БОШҚА АШЁВИЙ ҲУҚУҚЛАРНИ ҲИМОЯ ҚИЛИШ"));
+        acts_subtitles.add(new Acts_Subtitle("13-боб. Умумий қоидалар"));
+        acts_subtitles.add(new Acts_Subtitle("14-боб. Хўжалик юритиш ҳуқуқи. оператив бошқариш ҳуқуқи"));
+        acts_subtitles.add(new Acts_Subtitle("15-боб. Мулк ҳуқуқининг вужудга келиши ва унинг бекор бўлиши"));
+        acts_subtitles.add(new Acts_Subtitle("16-боб. Хусусий мулк"));
+        acts_subtitles.add(new Acts_Subtitle("17-боб. Оммавий мулк"));
+        acts_subtitles.add(new Acts_Subtitle("18-боб. Умумий мулк"));
+        acts_subtitles.add(new Acts_Subtitle("19-боб. Мулк ҳуқуқини ва бошқа ашёвий ҳуқуқларни ҳимоя қилиш"));
 
         return acts_subtitles;
 
@@ -60,15 +60,15 @@ public class Grajdanskiy_kodeks_kir {
     public static List<Acts_Subtitle> getActs_Chapter_3()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("20-БОБ МАЖБУРИЯТ ТУШУНЧАСИ ВА ТАРАФЛАРИ"));
-        acts_subtitles.add(new Acts_Subtitle("21-БОБ МАЖБУРИЯТЛАРНИ БАЖАРИШ"));
-        acts_subtitles.add(new Acts_Subtitle("22-БОБ МАЖБУРИЯТЛАРНИНГ БАЖАРИЛИШИНИ ТАЪМИНЛАШ"));
-        acts_subtitles.add(new Acts_Subtitle("23-БОБ МАЖБУРИЯТДАГИ ШАХСЛАРНИНГ ЎЗГАРИШИ"));
-        acts_subtitles.add(new Acts_Subtitle("24-БОБ МАЖБУРИЯТЛАРНИ БУЗГАНЛИК УЧУН ЖАВОБГАРЛИК"));
-        acts_subtitles.add(new Acts_Subtitle("25-БОБ МАЖБУРИЯТЛАРНИНГ БЕКОР БЎЛИШИ"));
-        acts_subtitles.add(new Acts_Subtitle("26-БОБ ШАРТНОМА ТУШУНЧАСИ ВА ШАРТЛАРИ"));
-        acts_subtitles.add(new Acts_Subtitle("27-БОБ ШАРТНОМА ТУЗИШ"));
-        acts_subtitles.add(new Acts_Subtitle("28-БОБ ШАРТНОМАНИ ЎЗГАРТИРИШ ВА БЕКОР ҚИЛИШ"));
+        acts_subtitles.add(new Acts_Subtitle("20-боб. Мажбурият тушунчаси ва тарафлари"));
+        acts_subtitles.add(new Acts_Subtitle("21-боб. Мажбуриятларни бажариш"));
+        acts_subtitles.add(new Acts_Subtitle("22-боб. Мажбуриятларнинг бажарилишини таъминлаш"));
+        acts_subtitles.add(new Acts_Subtitle("23-боб. Мажбуриятдаги шахсларнинг ўзгариши"));
+        acts_subtitles.add(new Acts_Subtitle("24-боб. Мажбуриятларни бузганлик учун жавобгарлик"));
+        acts_subtitles.add(new Acts_Subtitle("25-боб. Мажбуриятларнинг бекор бўлиши"));
+        acts_subtitles.add(new Acts_Subtitle("26-боб. Шартнома тушунчаси ва шартлари"));
+        acts_subtitles.add(new Acts_Subtitle("27-боб. Шартнома тузиш"));
+        acts_subtitles.add(new Acts_Subtitle("28-боб. Шартномани ўзгартириш ва бекор қилиш"));
 
         return acts_subtitles;
 

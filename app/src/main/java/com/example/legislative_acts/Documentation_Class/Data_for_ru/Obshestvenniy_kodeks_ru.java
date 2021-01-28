@@ -10,13 +10,13 @@ public class Obshestvenniy_kodeks_ru {
     public static List<Acts_Subtitle> getActs_Subtitle()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("Глава I. ОБЩИЕ ПОЛОЖЕНИЯ"));
-        acts_subtitles.add(new Acts_Subtitle("Глава II. УЧРЕЖДЕНИЕ ОБЩЕСТВА"));
-        acts_subtitles.add(new Acts_Subtitle("Глава III. УСТАВНЫЙ ФОНД (УСТАВНЫЙ КАПИТАЛ) ОБЩЕСТВА"));
-        acts_subtitles.add(new Acts_Subtitle("Глава IV. УПРАВЛЕНИЕ В ОБЩЕСТВЕ"));
-        acts_subtitles.add(new Acts_Subtitle("Глава V. ЗАИНТЕРЕСОВАННОСТЬ В СОВЕРШЕНИИ ОБЩЕСТВОМ СДЕЛКИ. КРУПНЫЕ СДЕЛКИ"));
-        acts_subtitles.add(new Acts_Subtitle("Глава VI. КОНТРОЛЬ ЗА ДЕЯТЕЛЬНОСТЬЮ ОБЩЕСТВА"));
-        acts_subtitles.add(new Acts_Subtitle("Глава VII. РЕОРГАНИЗАЦИЯ И ЛИКВИДАЦИЯ ОБЩЕСТВА"));
+        acts_subtitles.add(new Acts_Subtitle("Глава I. Общие положения"));
+        acts_subtitles.add(new Acts_Subtitle("Глава II. Учреждение общества"));
+        acts_subtitles.add(new Acts_Subtitle("Глава III. Уставный фонд (уставный капитал) общества"));
+        acts_subtitles.add(new Acts_Subtitle("Глава IV. Управление в обществе"));
+        acts_subtitles.add(new Acts_Subtitle("Глава V. Заинтересованность в совершении обществом сделки. крупные сделки"));
+        acts_subtitles.add(new Acts_Subtitle("Глава VI. Контроль за деятельностью общества"));
+        acts_subtitles.add(new Acts_Subtitle("Глава VII. Реорганизация и ликвидация общества"));
 
         return acts_subtitles;
     }

@@ -3,21 +3,25 @@
     package="com.example.legislative_acts">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
+        android:name="uz.star.mardexworker.app.MyApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:name="uz.star.mardexworker.app.MyApp"
         android:supportsRtl="true"
         android:theme="@style/Theme.Legislative_Acts">
+        <activity android:name=".FavouriteActivity"></activity>
         <activity android:name=".CodeActivity">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
 
         </activity>
 
@@ -51,7 +55,5 @@
                 android:resource="@xml/file_provider" />
         </provider>
     </application>
-
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
 
 </manifest>

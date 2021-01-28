@@ -9,27 +9,27 @@ public class Nalogoviy_kodeks_kir {
 
     public static List<Acts_Subtitle> getActs_Subtitles() {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("I БЎЛИМ УМУМИЙ ҚОИДАЛАР"));
-        acts_subtitles.add(new Acts_Subtitle("II БЎЛИМ СОЛИҚ ҲИСОБИ ВА СОЛИҚ ҲИСОБОТЛАРИ"));
-        acts_subtitles.add(new Acts_Subtitle("III БЎЛИМ СОЛИҚ МАЖБУРИЯТИНИ БАЖАРИШ"));
-        acts_subtitles.add(new Acts_Subtitle("IV БЎЛИМ СОЛИҚ ТЎЛОВЧИЛАРНИ ВА СОЛИҚ СОЛИШ ОБЪЕКТЛАРИНИ ҲИСОБГА ОЛИШ"));
-        acts_subtitles.add(new Acts_Subtitle("V БЎЛИМ СОЛИҚ НАЗОРАТИ"));
-        acts_subtitles.add(new Acts_Subtitle("VI БЎЛИМ ТРАНСФЕРТ НАРХНИ БЕЛГИЛАШДА СОЛИҚ НАЗОРАТИ"));
-        acts_subtitles.add(new Acts_Subtitle("VII БЎЛИМ НАЗОРАТ ҚИЛИНАДИГАН ЧЕТ ЭЛ КОМПАНИЯЛАРИНИНГ ФОЙДАСИГА СОЛИҚ СОЛИШ ШАРТЛАРИ ВА УМУМИЙ ҚОИДАЛАРИ"));
-        acts_subtitles.add(new Acts_Subtitle("VIII БЎЛИМ СОЛИҚҚА ОИД ҲУҚУҚБУЗАРЛИКЛАР ВА УЛАРНИ СОДИР ЭТГАНЛИК УЧУН ЖАВОБГАРЛИК"));
-        acts_subtitles.add(new Acts_Subtitle("IX БЎЛИМ СОЛИҚ ОРГАНЛАРИНИНГ ҲУЖЖАТЛАРИ ВА УЛАР МАНСАБДОР ШАХСЛАРИНИНГ ҲАРАКАТЛАРИ (ҲАРАКАТСИЗЛИГИ) УСТИДАН ШИКОЯТ БЕРИШ"));
-        acts_subtitles.add(new Acts_Subtitle("X БЎЛИМ ҚЎШИЛГАН ҚИЙМАТ СОЛИҒИ"));
-        acts_subtitles.add(new Acts_Subtitle("ХI БЎЛИМ АКЦИЗ СОЛИҒИ"));
-        acts_subtitles.add(new Acts_Subtitle("XII БЎЛИМ ФОЙДА СОЛИҒИ"));
-        acts_subtitles.add(new Acts_Subtitle("XIII БЎЛИМ ЖИСМОНИЙ ШАХСЛАРДАН ОЛИНАДИГАН ДАРОМАД СОЛИҒИ"));
-        acts_subtitles.add(new Acts_Subtitle("XIV БЎЛИМ ИЖТИМОИЙ СОЛИҚ"));
-        acts_subtitles.add(new Acts_Subtitle("XV БЎЛИМ МОЛ-МУЛК СОЛИҒИ"));
-        acts_subtitles.add(new Acts_Subtitle("XVI БЎЛИМ ЕР СОЛИҒИ"));
-        acts_subtitles.add(new Acts_Subtitle("XVII БЎЛИМ СУВ РЕСУРСЛАРИДАН ФОЙДАЛАНГАНЛИК УЧУН СОЛИҚ"));
-        acts_subtitles.add(new Acts_Subtitle("XVIII БЎЛИМ ЕР ҚАЪРИДАН ФОЙДАЛАНГАНЛИК УЧУН СОЛИҚ"));
-        acts_subtitles.add(new Acts_Subtitle("XIX БЎЛИМ ЙИҒИМЛАР"));
-        acts_subtitles.add(new Acts_Subtitle("XX БЎЛИМ АЙЛАНМАДАН ОЛИНАДИГАН СОЛИҚ"));
-        acts_subtitles.add(new Acts_Subtitle("ХХI БЎЛИМ СОЛИҚ ТЎЛОВЧИЛАРНИНГ АЙРИМ ТОИФАЛАРИГА СОЛИҚ СОЛИШНИНГ ЎЗИГА ХОС ХУСУСИЯТЛАРИ"));
+        acts_subtitles.add(new Acts_Subtitle("I бўлим. Умумий қоидалар"));
+        acts_subtitles.add(new Acts_Subtitle("II бўлим. Солиқ ҳисоби ва солиқ ҳисоботлари"));
+        acts_subtitles.add(new Acts_Subtitle("III бўлим. Солиқ мажбуриятини бажариш"));
+        acts_subtitles.add(new Acts_Subtitle("IV бўлим. Солиқ тўловчиларни ва солиқ солиш объектларини ҳисобга олиш"));
+        acts_subtitles.add(new Acts_Subtitle("V бўлим. Солиқ назорати"));
+            acts_subtitles.add(new Acts_Subtitle("VI бўлим. Трансферт нархни белгилашда солиқ назорати"));
+        acts_subtitles.add(new Acts_Subtitle("VII бўлим. Назорат қилинадиган чет эл компанияларининг фойдасига солиқ солиш шартлари ва умумий қоидалари"));
+        acts_subtitles.add(new Acts_Subtitle("VIII бўлим. Солиққа оид ҳуқуқбузарликлар ва уларни содир этганлик учун жавобгарлик"));
+            acts_subtitles.add(new Acts_Subtitle("IX бўлим. Солиқ органларининг ҳужжатлари ва улар мансабдор шахсларининг ҳаракатлари (ҳаракатсизлиги) устидан шикоят бериш"));
+        acts_subtitles.add(new Acts_Subtitle("X бўлим. Қўшилган қиймат солиғи"));
+        acts_subtitles.add(new Acts_Subtitle("ХI бўлим. Акциз солиғи"));
+            acts_subtitles.add(new Acts_Subtitle("XII бўлим. Фойда солиғи"));
+        acts_subtitles.add(new Acts_Subtitle("XIII бўлим. Жисмоний шахслардан олинадиган даромад солиғи"));
+        acts_subtitles.add(new Acts_Subtitle("XIV бўлим. Ижтимоий солиқ"));
+        acts_subtitles.add(new Acts_Subtitle("XV бўлим. Мол-мулк солиғи"));
+        acts_subtitles.add(new Acts_Subtitle("XVI бўлим. Ер солиғи"));
+            acts_subtitles.add(new Acts_Subtitle("XVII бўлим. Сув ресурсларидан фойдаланганлик учун солиқ"));
+        acts_subtitles.add(new Acts_Subtitle("XVIII бўлим. Ер қаъридан фойдаланганлик учун солиқ"));
+        acts_subtitles.add(new Acts_Subtitle("XIX бўлим. Йиғимлар"));
+        acts_subtitles.add(new Acts_Subtitle("XX бўлим. Айланмадан олинадиган солиқ"));
+        acts_subtitles.add(new Acts_Subtitle("ХХI бўлим. Солиқ тўловчиларнинг айрим тоифаларига солиқ солишнинг ўзига хос хусусиятлари"));
 
         return acts_subtitles;
     }

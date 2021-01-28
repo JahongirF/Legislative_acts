@@ -10,14 +10,14 @@ public class Semeyniy_kodeks_lat {
     public static List<Acts_Subtitle> getActs_Subtitle()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("I BO‘LIM. UMUMIY QOIDALAR"));
-        acts_subtitles.add(new Acts_Subtitle("II BO‘LIM. NIKOH"));
-        acts_subtitles.add(new Acts_Subtitle("III BO‘LIM. QON-QARINDOShLIK VA BOLALARNING NASL-NASABINI BELGILASh"));
-        acts_subtitles.add(new Acts_Subtitle("IV BO‘LIM. OTA-ONA HAMDA VOYAGA YETMAGAN BOLALARNING HUQUQ VA MAJBURIYATLARI"));
-        acts_subtitles.add(new Acts_Subtitle("V BO‘LIM. OILA A’ZOLARINING VA BOShQA ShAXSLARNING ALIMENT MAJBURIYATLARI"));
-        acts_subtitles.add(new Acts_Subtitle("VI BO‘LIM. OTA-ONA QARAMOG‘IDAN MAHRUM BO‘LGAN BOLALARNI JOYLAShTIRISh ShAKLLARI"));
-        acts_subtitles.add(new Acts_Subtitle("VII BO‘LIM. FUQAROLIK HOLATI DALOLATNOMALARINI QAYD ETISh"));
-        acts_subtitles.add(new Acts_Subtitle("VIII BO‘LIM. ChET EL FUQAROLARI VA FUQAROLIGI BO‘LMAGAN ShAXSLAR IShTIROKIDAGI OILAVIY MUNOSABATLARNI TARTIBGA SOLISh"));
+        acts_subtitles.add(new Acts_Subtitle("I bo‘lim. Umumiy qoidalar"));
+        acts_subtitles.add(new Acts_Subtitle("II bo‘lim. Nikoh"));
+        acts_subtitles.add(new Acts_Subtitle("III bo‘lim. Qon-qarindoshlik va bolalarning nasl-nasabini belgilash"));
+        acts_subtitles.add(new Acts_Subtitle("IV bo‘lim. Ota-ona hamda voyaga yetmagan bolalarning huquq va majburiyatlari"));
+        acts_subtitles.add(new Acts_Subtitle("V bo‘lim. Oila a’zolarining va boshqa shaxslarning aliment majburiyatlari"));
+        acts_subtitles.add(new Acts_Subtitle("VI bo‘lim. Ota-ona qaramog‘idan mahrum bo‘lgan bolalarni joylashtirish shakllari"));
+        acts_subtitles.add(new Acts_Subtitle("VII bo‘lim. Fuqarolik holati dalolatnomalarini qayd etish"));
+        acts_subtitles.add(new Acts_Subtitle("VIII bo‘lim. Chet el fuqarolari va fuqaroligi bo‘lmagan shaxslar ishtirokidagi oilaviy munosabatlarni tartibga solish"));
 
         return acts_subtitles;
     }
@@ -97,7 +97,7 @@ public class Semeyniy_kodeks_lat {
     public static List<Acts_Subtitle> getActs_Chapter_8()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-       acts_subtitles.add(new Acts_Subtitle("VIII BO‘LIM. ChET EL FUQAROLARI VA FUQAROLIGI BO‘LMAGAN ShAXSLAR IShTIROKIDAGI OILAVIY MUNOSABATLARNI TARTIBGA SOLISh"));
+       acts_subtitles.add(new Acts_Subtitle("VIII bo‘lim. Chet el fuqarolari va fuqaroligi bo‘lmagan shaxslar ishtirokidagi oilaviy munosabatlarni tartibga solish"));
         return acts_subtitles;
     }
 

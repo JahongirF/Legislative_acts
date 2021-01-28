@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
+    <group >
         <item
             android:id="@+id/main_activity"
             android:icon="@drawable/ic_main"

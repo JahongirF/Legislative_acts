@@ -10,14 +10,14 @@ public class Ugolovniy_kodeks_kir {
     public static List<Acts_Subtitle> getActs_Subtitle()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("I.БИРИНЧИ БЎЛИМ УМУМИЙ ҚОИДАЛАР"));
-        acts_subtitles.add(new Acts_Subtitle("II.ИККИНЧИ БЎЛИМ ЖАВОБГАРЛИК АСОСЛАРИ"));
-        acts_subtitles.add(new Acts_Subtitle("III.УЧИНЧИ БЎЛИМ ҚИЛМИШНИНГ ЖИНОИЙЛИГИНИ ИСТИСНО ҚИЛАДИГАН ҲОЛАТЛАР"));
-        acts_subtitles.add(new Acts_Subtitle("IV.ТЎРТИНЧИ БЎЛИМ ЖАЗО ВА УНИ ТАЙИНЛАШ"));
-        acts_subtitles.add(new Acts_Subtitle("V.БЕШИНЧИ БЎЛИМ ЖАВОБГАРЛИКДАН ВА ЖАЗОДАН ОЗОД ҚИЛИШ"));
-        acts_subtitles.add(new Acts_Subtitle("VI.ОЛТИНЧИ БЎЛИМ ВОЯГА ЕТМАГАНЛАР ЖАВОБГАРЛИГИНИНГ ХУСУСИЯТЛАРИ, БОШҚАРУВ ВА ЖАМОАТ БИРЛАШМАЛАРИ ОРГАНЛАРИНИНГ ФАОЛИЯТ ТАРТИБИГА ҚАРШИ ЖИНОЯТЛАР"));
-        acts_subtitles.add(new Acts_Subtitle("VII.ЕТТИНЧИ БЎЛИМ ТИББИЙ ЙЎСИНДАГИ МАЖБУРЛОВ ЧОРАЛАРИ"));
-        acts_subtitles.add(new Acts_Subtitle("VIII.САККИЗИНЧИ БЎЛИМ АТАМАЛАРНИНГ ҲУҚУҚИЙ МАЪНОСИ"));
+        acts_subtitles.add(new Acts_Subtitle("I.Биринчи бўлим. Умумий қоидалар"));
+        acts_subtitles.add(new Acts_Subtitle("II.Иккинчи бўлим. Жавобгарлик асослари"));
+        acts_subtitles.add(new Acts_Subtitle("III.Учинчи бўлим. Қилмишнинг жиноийлигини истисно қиладиган ҳолатлар"));
+        acts_subtitles.add(new Acts_Subtitle("IV.Тўртинчи бўлим. Жазо ва уни тайинлаш"));
+        acts_subtitles.add(new Acts_Subtitle("V.Бешинчи бўлим. Жавобгарликдан ва жазодан озод қилиш"));
+        acts_subtitles.add(new Acts_Subtitle("VI.Олтинчи бўлим. Вояга етмаганлар жавобгарлигининг хусусиятлари, бошқарув ва жамоат бирлашмалари органларининг фаолият тартибига қарши жиноятлар"));
+        acts_subtitles.add(new Acts_Subtitle("VII.Елтинчи бўлим. Тиббий йўсиндаги мажбурлов чоралари"));
+        acts_subtitles.add(new Acts_Subtitle("VIII.Саккизинчи бўлим. Атамаларнинг ҳуқуқий маъноси"));
 
         return acts_subtitles;
     }
@@ -96,7 +96,7 @@ public class Ugolovniy_kodeks_kir {
     public static List<Acts_Subtitle> getActs_Chapter_8()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("АТАМАЛАРНИНГ ҲУҚУҚИЙ МАЪНОСИ"));
+        acts_subtitles.add(new Acts_Subtitle("Атамаларнинг ҳуқуқий маъноси"));
         return acts_subtitles;
     }
 

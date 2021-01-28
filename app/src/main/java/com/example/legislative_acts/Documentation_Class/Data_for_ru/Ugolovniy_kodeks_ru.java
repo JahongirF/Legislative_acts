@@ -10,14 +10,14 @@ public class Ugolovniy_kodeks_ru {
     public static List<Acts_Subtitle> getActs_Subtitle()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ 1. ОБЩИЕ ПОЛОЖЕНИЯ"));
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ 2. ОСНОВАНИЯ ОТВЕТСТВЕННОСТИ"));
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ 3. ОБСТОЯТЕЛЬСТВА, ИСКЛЮЧАЮЩИЕ ПРЕСТУПНОСТЬ ДЕЯНИЯ"));
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ 4. НАКАЗАНИЕ И ЕГО НАЗНАЧЕНИЕ"));
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ 5. ОСВОБОЖДЕНИЕ ОТ ОТВЕТСТВЕННОСТИ И НАКАЗАНИЯ"));
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ 6. ОСОБЕННОСТИ ОТВЕТСТВЕННОСТИ НЕСОВЕРШЕННОЛЕТНИХ"));
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ 7. ПРИНУДИТЕЛЬНЫЕ МЕРЫ МЕДИЦИНСКОГО ХАРАКТЕРА"));
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ 8. ПРАВОВОЕ ЗНАЧЕНИЕ ТЕРМИНОВ"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел I. Общие положения"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел II. Основания ответственности"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел III. Обстоятельства, исключающие преступность деяния"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел IV. Наказание и его назначение"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел V. Освобождение от ответственности и наказания"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел VI. Особенности ответственности несовершеннолетних"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел VII. Принудительные меры медицинского характера"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел VIII. Правовое значение терминов"));
         return acts_subtitles;
     }
 
@@ -94,7 +94,7 @@ public class Ugolovniy_kodeks_ru {
     public static List<Acts_Subtitle> getActs_Chapter_8()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("ПРАВОВОЕ ЗНАЧЕНИЕ ТЕРМИНОВ"));
+        acts_subtitles.add(new Acts_Subtitle("Правовое значение терминов"));
         return acts_subtitles;
     }
 

@@ -9,24 +9,24 @@ public class Nalogoviy_kodeks_ru {
 
     public static List<Acts_Subtitle> getActs_Subtitles() {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ I. ОБЩИЕ ПОЛОЖЕНИЯ"));
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ II. ИСПОЛНЕНИЕ НАЛОГОВОГО ОБЯЗАТЕЛЬСТВА"));
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ III. НАЛОГОВЫЙ КОНТРОЛЬ"));
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ IV. ОТВЕТСТВЕННОСТЬ ЗА НАЛОГОВОЕ ПРАВОНАРУШЕНИЕ"));
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ V. НАЛОГ НА ПРИБЫЛЬ ЮРИДИЧЕСКИХ ЛИЦ"));
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ VI. НАЛОГ НА ДОХОДЫ ФИЗИЧЕСКИХ ЛИЦ"));
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ VII. НАЛОГ НА ДОБАВЛЕННУЮ СТОИМОСТЬ"));
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ VIII. АКЦИЗНЫЙ НАЛОГ"));
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ IX. НАЛОГИ И СПЕЦИАЛЬНЫЕ ПЛАТЕЖИ ДЛЯ НЕДРОПОЛЬЗОВАТЕЛЕЙ"));
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ X. НАЛОГ ЗА ПОЛЬЗОВАНИЕ ВОДНЫМИ РЕСУРСАМИ"));
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ XI. НАЛОГ НА ИМУЩЕСТВО"));
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ XII. ЗЕМЕЛЬНЫЙ НАЛОГ"));
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ XV. ОБЯЗАТЕЛЬНЫЕ ПЛАТЕЖИ В ГОСУДАРСТВЕННЫЕ ЦЕЛЕВЫЕ ФОНДЫ"));
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ XVII. ГОСУДАРСТВЕННАЯ ПОШЛИНА"));
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ XVIII. ТАМОЖЕННЫЕ ПЛАТЕЖИ"));
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ XIX. СБОР ЗА ПРАВО РОЗНИЧНОЙ ТОРГОВЛИ ОТДЕЛЬНЫМИ ВИДАМИ ТОВАРОВ И ОКАЗАНИЕ ОТДЕЛЬНЫХ ВИДОВ УСЛУГ"));
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ XX. УПРОЩЕННЫЙ ПОРЯДОК НАЛОГООБЛОЖЕНИЯ"));
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ XXI. ОСОБЕННОСТИ НАЛОГООБЛОЖЕНИЯ ОТДЕЛЬНЫХ КАТЕГОРИЙ НАЛОГОПЛАТЕЛЬЩИКОВ"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел I. Общие положения"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел II. Исполнение налогового обязательства"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел III. Налоговый контроль"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел IV. Ответственность за налоговое правонарушение"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел V. Налог на прибыль юридических лиц"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел VI. Налог на доходы физических лиц"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел VII. Налог на добавленную стоимость"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел VIII. Акцизный налог"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел IX. Налоги и специальные платежи для недропользователей"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел X. Налог за пользование водными ресурсами"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел XI. Налог на имущество"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел XII. Земельный налог"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел XV. Обязательные платежи в государственные целевые фонды"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел XVII. Государственная пошлина"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел XVIII. Таможенные платежи"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел XIX. Сбор за право розничной торговли отдельными видами товаров и оказание отдельных видов услуг"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел XX. Упрощенный порядок налогообложения"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел XXI. Особенности налогообложения отдельных категорий налогоплательщиков"));
 
         return acts_subtitles;
     }

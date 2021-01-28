@@ -10,14 +10,14 @@ public class Semeyniy_kodeks_ru {
     public static List<Acts_Subtitle> getActs_Subtitle()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ I. ОБЩИЕ ПОЛОЖЕНИЯ"));
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ II. БРАК"));
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ III. КРОВНОЕ РОДСТВО И УСТАНОВЛЕНИЕ ПРОИСХОЖДЕНИЯ ДЕТЕЙ"));
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ IV. ПРАВА И ОБЯЗАННОСТИ РОДИТЕЛЕЙ И НЕСОВЕРШЕННОЛЕТНИХ ДЕТЕЙ"));
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ V. АЛИМЕНТНЫЕ ОБЯЗАТЕЛЬСТВА ЧЛЕНОВ СЕМЬИ И ДРУГИХ ЛИЦ"));
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ VI. ФОРМЫ УСТРОЙСТВА ДЕТЕЙ, ОСТАВШИХСЯ БЕЗ ПОПЕЧЕНИЯ РОДИТЕЛЕЙ"));
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ VII. РЕГИСТРАЦИЯ АКТОВ ГРАЖДАНСКОГО СОСТОЯНИЯ"));
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ VIII. РЕГУЛИРОВАНИЕ СЕМЕЙНЫХ ОТНОШЕНИЙ С УЧАСТИЕМ ИНОСТРАННЫХ ГРАЖДАН И ЛИЦ БЕЗ ГРАЖДАНСТВА"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел I. Общие положения"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел II. Брак"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел III. Кровное родство и установление происхождения детей"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел IV. Права и обязанности родителей и несовершеннолетних детей"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел V. Алиментные обязательства членов семьи и других лиц"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел VI. Формы устройства детей, оставшихся без попечения родителей"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел VII. Регистрация актов гражданского состояния"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел VIII. Регулирование семейных отношений с участием иностранных граждан и лиц без гражданства"));
 
         return acts_subtitles;
     }
@@ -98,7 +98,7 @@ public class Semeyniy_kodeks_ru {
     public static List<Acts_Subtitle> getActs_Chapter_8()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-       acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ VIII. РЕГУЛИРОВАНИЕ СЕМЕЙНЫХ ОТНОШЕНИЙ С УЧАСТИЕМ ИНОСТРАННЫХ ГРАЖДАН И ЛИЦ БЕЗ ГРАЖДАНСТВА"));
+       acts_subtitles.add(new Acts_Subtitle("Раздел VIII. Регулирование семейных отношений с участием иностранных граждан и лиц без гражданства"));
         return acts_subtitles;
     }
 

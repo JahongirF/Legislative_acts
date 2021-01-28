@@ -10,20 +10,20 @@ public class Zemelniy_kodeks_uz {
     public static List<Acts_Subtitle> getActs_Subtitle()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("1-BOB. UMUMIY QOIDALAR"));
-        acts_subtitles.add(new Acts_Subtitle("2-BOB. YER FONDI"));
-        acts_subtitles.add(new Acts_Subtitle("3-BOB. YER TUZISH"));
-        acts_subtitles.add(new Acts_Subtitle("4-BOB. YERGA BO‘LGAN MULKChILIK, YuRIDIK VA JISMONIY SHAXSLARNING YER"));
-        acts_subtitles.add(new Acts_Subtitle("5-BOB. YER EGASI, YERDAN FOYDALANUVChI, IJARAChI VA YER UChASTKASI MULKDORINING HUQUQ VA MAJBURIYATLARI"));
-        acts_subtitles.add(new Acts_Subtitle("6-BOB. QISHLOQ XO‘JALIGIGA MO‘LJALLANGAN YERLAR"));
-        acts_subtitles.add(new Acts_Subtitle("7-BOB. AHOLI PUNKTLARINING (SHAHARLAR, POSYOLKALAR VA QISHLOQ AHOLI PUNKTLARINING)"));
-        acts_subtitles.add(new Acts_Subtitle("8-BOB. SANOAT, TRANSPORT, ALOQA, MUDOFAA VA BOSHQA MAQSADLARGA MO‘LJALLANGAN YERLAR"));
-        acts_subtitles.add(new Acts_Subtitle("9-bob. Tabiatni muhofaza qilish, sog‘lomlashtirish, rekreasiya maqsadlariga mo‘ljallangan yerlar va tarixiy-madaniy ahamiyatga molik yerlar"));
-        acts_subtitles.add(new Acts_Subtitle("10-BOB. O‘RMON FONDI, SUV FONDI YERLARI VA ZAXIRA YERLAR"));
-        acts_subtitles.add(new Acts_Subtitle("11-BOB. YERLARNI MUHOFAZA QILISH"));
-        acts_subtitles.add(new Acts_Subtitle("12-BOB. YERLARDAN FOYDALANISH HAMDA ULARNI MUHOFAZA QILISH USTIDAN NAZORAT"));
-        acts_subtitles.add(new Acts_Subtitle("13-BOB. YER EGALARI, YERDAN FOYDALANUVChILAR"));
-        acts_subtitles.add(new Acts_Subtitle("14-BOB. YER XUSUSIDAGI NIZOLARNI HAL ETISH HAMDA YER TO‘FRISIDAGI QONUN HUJJATLARINI BUZGANLIK UChUN JAVOBGARLIK"));
+        acts_subtitles.add(new Acts_Subtitle("I bob. Umumiy qoidalar"));
+        acts_subtitles.add(new Acts_Subtitle("II bob. Yer fondi"));
+        acts_subtitles.add(new Acts_Subtitle("III bob. Yer tuzish"));
+        acts_subtitles.add(new Acts_Subtitle("IV bob. Yerga bo‘lgan mulkchilik, yuridik va jismoniy shaxslarning yer"));
+        acts_subtitles.add(new Acts_Subtitle("V bob. Yer egasi, yerdan foydalanuvchi, ijarachi va yer uchastkasi mulkdorining huquq va majburiyatlari"));
+        acts_subtitles.add(new Acts_Subtitle("VI bob. Qishloq xo‘jaligiga mo‘ljallangan yerlar"));
+        acts_subtitles.add(new Acts_Subtitle("VII bob. Aholi punktlarining (shaharlar, posyolkalar va qishloq aholi punktlarining)"));
+        acts_subtitles.add(new Acts_Subtitle("VIII bob. Sanoat, transport, aloqa, mudofaa va boshqa maqsadlarga mo‘ljallangan yerlar"));
+        acts_subtitles.add(new Acts_Subtitle("IX bob. Tabiatni muhofaza qilish, sog‘lomlashtirish, rekreasiya maqsadlariga mo‘ljallangan yerlar va tarixiy-madaniy ahamiyatga molik yerlar"));
+        acts_subtitles.add(new Acts_Subtitle("X bob. O‘rmon fondi, suv fondi yerlari va zaxira yerlar"));
+        acts_subtitles.add(new Acts_Subtitle("XI bob. Yerlarni muhofaza qilish"));
+        acts_subtitles.add(new Acts_Subtitle("XII bob. Yerlardan foydalanish hamda ularni muhofaza qilish ustidan nazorat"));
+        acts_subtitles.add(new Acts_Subtitle("XIII bob. Yer egalari, yerdan foydalanuvchilar"));
+        acts_subtitles.add(new Acts_Subtitle("XIV bob. Yer xususidagi nizolarni hal etish hamda yer to‘frisidagi qonun hujjatlarini buzganlik uchun javobgarlik"));
 
         return acts_subtitles;
 

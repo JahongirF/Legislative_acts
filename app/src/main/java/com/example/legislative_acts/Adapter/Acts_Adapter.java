@@ -16,6 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -84,7 +85,7 @@ public class Acts_Adapter extends RecyclerView.Adapter<Acts_Adapter.Acts_ViewHol
             public void onSubtitleClick(int position, Acts_Subtitle acts_subtitle) {
              //  Toast.makeText(holder.itemView.getContext(), ""+acts_subtitle.getTitle() + " " + actsList.get(positionTitle).getTitle() , Toast.LENGTH_SHORT).show();
 
-                if (actsList.get(positionTitle).getTitle().equals("ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ ЕР КОДЕКСИ") || actsList.get(positionTitle).getTitle().equals("ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ МЕҲНАТ КОДЕКСИ") || actsList.get(positionTitle).getTitle().equals("ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ ҚОНУНИ МАСЪУЛИЯТИ ЧЕКЛАНГАН ҲАМДА ҚЎШИМЧА МАСЪУЛИЯТЛИ ЖАМИЯТЛАР ТЎҒРИСИДА") || actsList.get(positionTitle).getTitle().equals("ЎЗБЕКИСТОН РЕСПУБЛИКАСИНИНГ ҚОНУНИ ХУСУСИЙ КОРХОНА ТЎҒРИСИДА") || actsList.get(positionTitle).getTitle().equals("O‘ZBEKISTON RESPUBLIKASINING YER KODEKSI") || actsList.get(positionTitle).getTitle().equals("O‘ZBEKISTON RESPUBLIKASINING QONUNI MAS’ULIYATI CHEKLANGAN HAMDA QO‘SHIMCHA MAS’ULIYATLI JAMIYATLAR TO‘G‘RISIDA") || actsList.get(positionTitle).getTitle().equals("O‘ZBEKISTON RESPUBLIKASINING MEHNAT KODEKSI") || actsList.get(positionTitle).getTitle().equals("O‘ZBEKISTON RESPUBLIKASINING QONUNI XUSUSIY KORXONA TO‘G‘RISIDA") || actsList.get(positionTitle).getTitle().equals("Общественный кодекс") || actsList.get(positionTitle).getTitle().equals("Трудовой кодекс") || actsList.get(positionTitle).getTitle().equals("Частное предприятие") || actsList.get(positionTitle).getTitle().equals("Земельный кодекс")) {
+                if (actsList.get(positionTitle).getTitle().equals("Ер кодекси") || actsList.get(positionTitle).getTitle().equals("Меҳнат кодекси") || actsList.get(positionTitle).getTitle().equals("Масъулияти чекланган ҳамда қўшимча масъулиятли жамиятлар тўғрисидаги кодекси") || actsList.get(positionTitle).getTitle().equals("Хусусий корхона тоғрисидаги кодекси") || actsList.get(positionTitle).getTitle().equals("Yer kodeksi")  || actsList.get(positionTitle).getTitle().equals("Mas’suliyati cheklangan hamda qo‘shimcha mas’uliyatli jamiyatlar to‘g‘risidagi kodeksi") || actsList.get(positionTitle).getTitle().equals("Mehnat kodeksi") || actsList.get(positionTitle).getTitle().equals("Xususiy korxona to‘g‘risidagi kodeksi") || actsList.get(positionTitle).getTitle().equals("Общество с  ограниченной и дополнительной ответсятвенностью") || actsList.get(positionTitle).getTitle().equals("Трудовой кодекс") || actsList.get(positionTitle).getTitle().equals("Частное предприятие") || actsList.get(positionTitle).getTitle().equals("Земельный кодекс")) {
                     Intent intent = new Intent(holder.itemView.getContext(), Detail_Activity.class);
                     intent.putExtra("title", actsList.get(positionTitle).getTitle());
                     intent.putExtra("position", positionTitle);
@@ -111,9 +112,54 @@ public class Acts_Adapter extends RecyclerView.Adapter<Acts_Adapter.Acts_ViewHol
         holder.recyclerView_acts_subtitle.setVisibility(isExpanded ? View.VISIBLE : View.GONE);
 
         if (isExpanded) {
-            holder.linearLayout.setBackgroundColor(holder.itemView.getResources().getColor(R.color.color_item_stroke));
+            holder.constraintLayout.setBackgroundColor(holder.itemView.getResources().getColor(R.color.color_item_stroke));
             holder.imageView_arrow.setImageResource(R.drawable.ic_arrow_up);
-            holder.imageView_acts.setImageResource(R.drawable.ic_pattern_example_white);
+            if (actsList.get(position).getTitle().equals("Административный кодекс") || actsList.get(position).getTitle().equals("Ma’muriy javobkarlik to‘g‘risidagi kodeksi") || actsList.get(position).getTitle().equals("Маъмурий жавобгарлик тўғрисидаги кодекси"))
+            {
+
+                holder.imageView_acts.setImageResource(R.drawable.ic_administrativniy_kodeks_white);
+            }
+            else if (actsList.get(position).getTitle().equals("Бюджетный кодекс") || actsList.get(position).getTitle().equals("Byudjet kodeksi") || actsList.get(position).getTitle().equals("Бюджет кодекси")){
+                holder.imageView_acts.setImageResource(R.drawable.ic_byudjetniy_kodeks_white);
+            }
+            else if (actsList.get(position).getTitle().equals("Гражданский кодекс") || actsList.get(position).getTitle().equals("Fuqorolik kodeksi") || actsList.get(position).getTitle().equals("Фуқоролик кодекси")){
+                holder.imageView_acts.setImageResource(R.drawable.ic_grajdanskiy_kodeks_white);
+            }
+            else if (actsList.get(position).getTitle().equals("Уголовный процессуальный кодекс") || actsList.get(position).getTitle().equals("Jinoyat-prosessual kodeksi") || actsList.get(position).getTitle().equals("Жиноят-процессуал кодекси")){
+                holder.imageView_acts.setImageResource(R.drawable.ic_protsesualniy_white);
+            }
+            else if (actsList.get(position).getTitle().equals("Земельный кодекс") || actsList.get(position).getTitle().equals("Yer kodeksi") || actsList.get(position).getTitle().equals("Ер кодекси")){
+                holder.imageView_acts.setImageResource(R.drawable.ic_zemelniy_kodeks_white);
+            }
+            else if (actsList.get(position).getTitle().equals("Налоговый кодекс") || actsList.get(position).getTitle().equals("Soliq kodeksi") || actsList.get(position).getTitle().equals("Солиқ кодекси")){
+                holder.imageView_acts.setImageResource(R.drawable.ic_nalogoviy_kodeks_white);
+            }
+            else if (actsList.get(position).getTitle().equals("Таможенный кодекс") || actsList.get(position).getTitle().equals("Bojxona kodeksi") || actsList.get(position).getTitle().equals("Божхона кодекси")){
+                holder.imageView_acts.setImageResource(R.drawable.ic_tomejenniy_kodeks_white);
+            }
+            else if (actsList.get(position).getTitle().equals("Трудовой кодекс") || actsList.get(position).getTitle().equals("Mehnat kodeksi") || actsList.get(position).getTitle().equals("Меҳнат кодекси")){
+                holder.imageView_acts.setImageResource(R.drawable.ic_trudovoy_kodeks_white);
+            }
+
+            else if (actsList.get(position).getTitle().equals("Уголовный кодекс") || actsList.get(position).getTitle().equals("Jinoyat kodeksi") || actsList.get(position).getTitle().equals("Жиноят кодекси")){
+                holder.imageView_acts.setImageResource(R.drawable.ic_ugolovniy_kodeks_white);
+            }
+
+            else if (actsList.get(position).getTitle().equals("Масъулияти чекланган ҳамда қўшимча масъулиятли жамиятлар тўғрисидаги кодекси") || actsList.get(position).getTitle().equals("Mas’suliyati cheklangan hamda qo‘shimcha mas’uliyatli jamiyatlar to‘g‘risidagi kodeksi") || actsList.get(position).getTitle().equals("Общество с  ограниченной и дополнительной ответсятвенностью")){
+                holder.imageView_acts.setImageResource(R.drawable.ic_llc_white);
+            }
+
+            else if (actsList.get(position).getTitle().equals("Оила кодекси") || actsList.get(position).getTitle().equals("Oila kodeksi") || actsList.get(position).getTitle().equals("Семейный кодекс")){
+                holder.imageView_acts.setImageResource(R.drawable.ic_family_white);
+            }
+
+            else if (actsList.get(position).getTitle().equals("Частное предприятие") || actsList.get(position).getTitle().equals("Xususiy korxona to‘g‘risidagi kodeksi") || actsList.get(position).getTitle().equals("Хусусий корхона тоғрисидаги кодекси")){
+                holder.imageView_acts.setImageResource(R.drawable.ic_chastnoe_predpriyatie_white);
+            }
+            else {
+                holder.imageView_acts.setImageResource(R.drawable.ic_pattern_example_white);
+            }
+
             holder.textView_acts.setTextColor(holder.itemView.getResources().getColor(R.color.white));
 
         }
@@ -126,6 +172,8 @@ public class Acts_Adapter extends RecyclerView.Adapter<Acts_Adapter.Acts_ViewHol
         return actsList.size();
     }
 
+
+
     @Override
     public int getItemViewType(int position) {
         return position;
@@ -136,7 +184,7 @@ public class Acts_Adapter extends RecyclerView.Adapter<Acts_Adapter.Acts_ViewHol
         private ImageView imageView_acts;
         private TextView textView_acts;
         private RecyclerView recyclerView_acts_subtitle;
-        private LinearLayout linearLayout;
+        private ConstraintLayout constraintLayout;
         private ImageView imageView_arrow;
 
         public Acts_ViewHolder(@NonNull View itemView) {
@@ -146,7 +194,7 @@ public class Acts_Adapter extends RecyclerView.Adapter<Acts_Adapter.Acts_ViewHol
             imageView_arrow = itemView.findViewById(R.id.imageView2);
             textView_acts = itemView.findViewById(R.id.textView_item);
             recyclerView_acts_subtitle = itemView.findViewById(R.id.recyclerView_item);
-            linearLayout = itemView.findViewById(R.id.linear_id);
+            constraintLayout = itemView.findViewById(R.id.linear_id);
 
 
             itemView.setOnClickListener(new View.OnClickListener() {
@@ -160,6 +208,7 @@ public class Acts_Adapter extends RecyclerView.Adapter<Acts_Adapter.Acts_ViewHol
 
                     if (onActsClickListener != null) {
                         onActsClickListener.onActsClick(getAdapterPosition(), actsList.get(getAdapterPosition()));
+
                     }
                 }
             });
@@ -167,5 +216,9 @@ public class Acts_Adapter extends RecyclerView.Adapter<Acts_Adapter.Acts_ViewHol
 
         }
     }
+
+
+
+
 
 }

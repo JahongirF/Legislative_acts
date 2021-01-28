@@ -10,14 +10,14 @@ public class Byudjetniy_kodeks_kir {
     public static List<Acts_Subtitle> getActs_Subtitle()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("I бўлим Умумий қоидалар"));
-        acts_subtitles.add(new Acts_Subtitle("II бўлим Бюджет тизими бюджетлари"));
-        acts_subtitles.add(new Acts_Subtitle("III бўлим Ўзбекистон Республикасининг консолидациялашган бюджети. Ўзбекистон Республикасининг тикланиш ва тараққиёт жамғармаси"));
-        acts_subtitles.add(new Acts_Subtitle("IV бўлим Бюджет тизими бюджетларининг даромадлари"));
-        acts_subtitles.add(new Acts_Subtitle("V бўлим Бюджет тизими бюджетларининг харажатлари"));
-        acts_subtitles.add(new Acts_Subtitle("VI бўлим Давлат бюджетини ва давлат мақсадли жамғармалари бюджетларини тузиш, кўриб чиқиш, қабул қилиш ҳамда тасдиқлаш"));
-        acts_subtitles.add(new Acts_Subtitle("VII бўлим Бюджет тизими бюджетларининг ижроси"));
-        acts_subtitles.add(new Acts_Subtitle("VIII бўлим Бюджет ҳисоби ва ҳисоботи"));
+        acts_subtitles.add(new Acts_Subtitle("I бўлим. Умумий қоидалар"));
+        acts_subtitles.add(new Acts_Subtitle("II бўлим. Бюджет тизими бюджетлари"));
+        acts_subtitles.add(new Acts_Subtitle("III бўлим. Ўзбекистон Республикасининг консолидациялашган бюджети. Ўзбекистон Республикасининг тикланиш ва тараққиёт жамғармаси"));
+        acts_subtitles.add(new Acts_Subtitle("IV бўлим. Бюджет тизими бюджетларининг даромадлари"));
+        acts_subtitles.add(new Acts_Subtitle("V бўлим. Бюджет тизими бюджетларининг харажатлари"));
+        acts_subtitles.add(new Acts_Subtitle("VI бўлим. Давлат бюджетини ва давлат мақсадли жамғармалари бюджетларини тузиш, кўриб чиқиш, қабул қилиш ҳамда тасдиқлаш"));
+        acts_subtitles.add(new Acts_Subtitle("VII бўлим. Бюджет тизими бюджетларининг ижроси"));
+        acts_subtitles.add(new Acts_Subtitle("VIII бўлим. Бюджет ҳисоби ва ҳисоботи"));
 
         return acts_subtitles;
     }

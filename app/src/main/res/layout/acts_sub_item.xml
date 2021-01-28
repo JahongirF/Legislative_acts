@@ -7,6 +7,7 @@
     android:background="@drawable/item_sub_background"
     android:layout_margin="5dp"
     android:weightSum="5"
+    android:id="@+id/linear_acts_sub_item_id"
     >
 
 
@@ -17,11 +18,10 @@
         android:layout_gravity="center"
         android:layout_marginStart="5dp"
         android:layout_weight="6"
-        android:fontFamily="@font/frank_ruhl_libre_black"
         android:gravity="start"
         android:padding="10dp"
         android:text="Title"
-        android:textColor="@color/color_item_stroke"
+        android:textColor="@color/bxms_stroke_color"
         android:textStyle="bold" />
 
     <ImageView

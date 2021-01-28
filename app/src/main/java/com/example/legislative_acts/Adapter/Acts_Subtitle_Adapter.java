@@ -1,9 +1,13 @@
 package com.example.legislative_acts.Adapter;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -49,6 +53,16 @@ public class Acts_Subtitle_Adapter extends RecyclerView.Adapter<Acts_Subtitle_Ad
     @Override
     public void onBindViewHolder(@NonNull Acts_Subtitle_ViewHolder holder, int position) {
         holder.textView_sub_title.setText(acts_subtitleList.get(position).getTitle());
+        if (holder.textView_sub_title.length() > 90)
+        {
+            holder.linearLayout.getLayoutParams().height = 300;
+            holder.linearLayout.requestLayout();
+        }
+        else {
+            holder.linearLayout.getLayoutParams().height = 193;
+            holder.linearLayout.requestLayout();
+        }
+
     }
 
     @Override
@@ -60,12 +74,15 @@ public class Acts_Subtitle_Adapter extends RecyclerView.Adapter<Acts_Subtitle_Ad
 
         private TextView textView_sub_id;
         private TextView textView_sub_title;
+        private LinearLayout linearLayout;
 
 
         public Acts_Subtitle_ViewHolder(@NonNull View itemView) {
             super(itemView);
 
             textView_sub_title = itemView.findViewById(R.id.textView_sub_title);
+            linearLayout = itemView.findViewById(R.id.linear_acts_sub_item_id);
+
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

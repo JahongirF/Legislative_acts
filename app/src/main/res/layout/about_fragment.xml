@@ -24,7 +24,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Moliya Studio"
+            android:text="Raqamli Dunyo"
             android:layout_gravity="center"
             android:gravity="center"
             android:textSize="32sp"
@@ -40,7 +40,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/about"
+            android:text="@string/about_raqamli_dunyo"
             android:layout_gravity="center"
             android:layout_margin="20dp"
             android:textColor="@color/bxms_title_color"
@@ -78,7 +78,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:textColor="@color/bxms_title_color"
-                        android:text="Тошкент шаҳри, Юнусобод тумани, Шароф Рашидов кўчаси 16-уй" />
+                        android:text="@string/adress_company" />
 
                 </LinearLayout>
 

@@ -10,22 +10,22 @@ public class Trudovoy_kodeks_ru {
     public static List<Acts_Subtitle> getActs_Subtitle()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА I. ОСНОВНЫЕ ПОЛОЖЕНИЯ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА II. СУБЪЕКТЫ ТРУДОВЫХ ОТНОШЕНИЙ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА III. ПРЕДСТАВИТЕЛЬСТВО РАБОТНИКОВ И РАБОТОДАТЕЛЕЙ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА IV. КОЛЛЕКТИВНЫЕ ДОГОВОРЫ И СОГЛАШЕНИЯ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА V. ТРУДОУСТРОЙСТВО"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА VI. ТРУДОВОЙ ДОГОВОР"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА VII. РАБОЧЕЕ ВРЕМЯ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА VIII. ВРЕМЯ ОТДЫХА"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА IX. ОПЛАТА ТРУДА"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА X. ГАРАНТИЙНЫЕ И КОМПЕНСАЦИОННЫЕ ВЫПЛАТЫ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА XI. ДИСЦИПЛИНА ТРУДА"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА XII. МАТЕРИАЛЬНАЯ ОТВЕТСТВЕННОСТЬ СТОРОН ТРУДОВОГО ДОГОВОРА"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА XIII. ОХРАНА ТРУДА"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА XIV. ДОПОЛНИТЕЛЬНЫЕ ГАРАНТИИ И ЛЬГОТЫ ОТДЕЛЬНЫМ КАТЕГОРИЯМ РАБОТНИКОВ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА XV. ТРУДОВЫЕ СПОРЫ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА XVI. ГОСУДАРСТВЕННОЕ СОЦИАЛЬНОЕ СТРАХОВАНИЕ"));
+        acts_subtitles.add(new Acts_Subtitle("Глава I. Основные положения"));
+        acts_subtitles.add(new Acts_Subtitle("Глава II. Субъекты трудовых отношений"));
+        acts_subtitles.add(new Acts_Subtitle("Глава III. Представительство работников и работодателей"));
+        acts_subtitles.add(new Acts_Subtitle("Глава IV. Коллективные договоры и соглашения"));
+        acts_subtitles.add(new Acts_Subtitle("Глава V. Трудоустройство"));
+        acts_subtitles.add(new Acts_Subtitle("Глава VI. Трудовой договор"));
+        acts_subtitles.add(new Acts_Subtitle("Глава VII. Рабочее время"));
+        acts_subtitles.add(new Acts_Subtitle("Глава VIII. Время отдыха"));
+        acts_subtitles.add(new Acts_Subtitle("Глава IX. Оплата труда"));
+        acts_subtitles.add(new Acts_Subtitle("Глава X. Гарантийные и компенсационные выплаты"));
+        acts_subtitles.add(new Acts_Subtitle("Глава XI. Дисциплина труда"));
+        acts_subtitles.add(new Acts_Subtitle("Глава XII. Материальная ответственность сторон трудового договора"));
+        acts_subtitles.add(new Acts_Subtitle("Глава XIII. Охрана труда"));
+        acts_subtitles.add(new Acts_Subtitle("Глава XIV. Дополнительные гарантии и льготы отдельным категориям работников"));
+        acts_subtitles.add(new Acts_Subtitle("Глава XV. Трудовые споры"));
+        acts_subtitles.add(new Acts_Subtitle("Глава XVI. Государственное социальное страхование"));
 
         return acts_subtitles;
     }

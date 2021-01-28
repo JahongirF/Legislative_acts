@@ -66,12 +66,7 @@ public class About_Activity_Fragment extends Fragment {
             }
         });
 
-//        imageView_phone.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                phoneCall();
-//            }
-//        });
+
 
         return view;
     }
@@ -87,7 +82,7 @@ public class About_Activity_Fragment extends Fragment {
             }
             else {
                 String dial = "tel:" + phone;
-                startActivity(new Intent(Intent.ACTION_CALL, Uri.parse(dial)));
+                startActivity(new Intent(Intent.ACTION_DIAL, Uri.parse(dial)));
             }
         }
         else {
@@ -108,7 +103,7 @@ public class About_Activity_Fragment extends Fragment {
             }
             else {
                 String dial = "tel:" + phone;
-                startActivity(new Intent(Intent.ACTION_CALL, Uri.parse(dial)));
+                startActivity(new Intent(Intent.ACTION_DIAL, Uri.parse(dial)));
             }
         }
         else {

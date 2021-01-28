@@ -10,13 +10,13 @@ public class Obshestvenniy_lodeks_uz {
     public static List<Acts_Subtitle> getActs_Subtitle()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("I BOB. UMUMIY QOIDALAR"));
-        acts_subtitles.add(new Acts_Subtitle("II BOB. JAMIYATNI TA’SIS ETISH"));
-        acts_subtitles.add(new Acts_Subtitle("III BOB. JAMIYATNING USTAV FONDI (USTAV KAPITALI)"));
-        acts_subtitles.add(new Acts_Subtitle("IV BOB. JAMIYATDA BOSHQARUV"));
-        acts_subtitles.add(new Acts_Subtitle("V BOB. JAMIYATNING BITIM TUZISHDAN MANFAATDORLIGI. YIRIK BITIMLAR"));
-        acts_subtitles.add(new Acts_Subtitle("VI BOB. JAMIYATNING FAOLIYATI USTIDAN NAZORAT QILISH"));
-        acts_subtitles.add(new Acts_Subtitle("VII BOB. JAMIYATNI QAYTA TASHKIL ETISH VA TUGATISH"));
+        acts_subtitles.add(new Acts_Subtitle("I bob. Umumiy qoidalar"));
+        acts_subtitles.add(new Acts_Subtitle("II bob. Jamiyatni ta’sis etish"));
+        acts_subtitles.add(new Acts_Subtitle("III bob. Jamiyatning ustav fondi (ustav kapitali)"));
+        acts_subtitles.add(new Acts_Subtitle("IV bob. Jamiyatda boshqaruv"));
+        acts_subtitles.add(new Acts_Subtitle("V bob. Jamiyatning bitim tuzishdan manfaatdorligi. yirik bitimlar"));
+        acts_subtitles.add(new Acts_Subtitle("VI bob. Jamiyatning faoliyati ustidan nazorat qilish"));
+        acts_subtitles.add(new Acts_Subtitle("VII bob. Jamiyatni qayta tashkil etish va tugatish"));
 
         return acts_subtitles;
     }

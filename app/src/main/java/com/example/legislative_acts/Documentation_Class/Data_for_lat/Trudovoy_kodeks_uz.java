@@ -10,22 +10,22 @@ public class Trudovoy_kodeks_uz {
     public static List<Acts_Subtitle> getActs_Subtitle()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("I BOB. ASOSIY QOIDALAR"));
-        acts_subtitles.add(new Acts_Subtitle("II BOB. MEHNATGA OID MUNOSABATLARNING SUBYEKTLARI"));
-        acts_subtitles.add(new Acts_Subtitle("III BOB. XODIMLAR VA ISh BERUVChILARNING VAKILLIGI"));
-        acts_subtitles.add(new Acts_Subtitle("IV BOB. JAMOA ShARTNOMALARI VA KELIShUVLARI"));
-        acts_subtitles.add(new Acts_Subtitle("V BOB. IShGA JOYLAShTIRISh"));
-        acts_subtitles.add(new Acts_Subtitle("VI BOB. MEHNAT ShARTNOMASI"));
-        acts_subtitles.add(new Acts_Subtitle("VII BOB. ISh VAQTI"));
-        acts_subtitles.add(new Acts_Subtitle("VIII BOB. DAM OLISh VAQTI"));
-        acts_subtitles.add(new Acts_Subtitle("IX BOB. MEHNATGA HAQ TO‘LASh"));
-        acts_subtitles.add(new Acts_Subtitle("X BOB. KAFOLATLI TO‘LOVLAR VA KOMPENSATSIYA TO‘LOVLARI"));
-        acts_subtitles.add(new Acts_Subtitle("XI BOB. MEHNAT INTIZOMI"));
-        acts_subtitles.add(new Acts_Subtitle("XII BOB. MEHNAT ShARTNOMASI TARAFLARINING MODDIY JAVOBGARLIGI"));
-        acts_subtitles.add(new Acts_Subtitle("XIII BOB. MEHNATNI MUHOFAZA QILISh"));
-        acts_subtitles.add(new Acts_Subtitle("XIV BOB. AYRIM TOIFADAGI XODIMLARGA BERILADIGAN QO‘ShIMChA KAFOLAT VA IMTIYOZLAR"));
-        acts_subtitles.add(new Acts_Subtitle("XV BOB. MEHNAT NIZOLARI"));
-        acts_subtitles.add(new Acts_Subtitle("XVI BOB. DAVLAT IJTIMOIY SUG‘URTASI"));
+        acts_subtitles.add(new Acts_Subtitle("I bob. Asosiy qoidalar"));
+        acts_subtitles.add(new Acts_Subtitle("II bob. Mehnatga oid munosabatlarning subyektlari"));
+        acts_subtitles.add(new Acts_Subtitle("III bob. Xodimlar va ish beruvchilarning vakilligi"));
+        acts_subtitles.add(new Acts_Subtitle("IV bob. Jamoa shartnomalari va kelishuvlari"));
+        acts_subtitles.add(new Acts_Subtitle("V bob. Ishga joylashtirish"));
+        acts_subtitles.add(new Acts_Subtitle("VI bob. Mehnat shartnomasi"));
+        acts_subtitles.add(new Acts_Subtitle("VII bob. Ish vaqti"));
+        acts_subtitles.add(new Acts_Subtitle("VIII bob. Dam olish vaqti"));
+        acts_subtitles.add(new Acts_Subtitle("IX bob. Mehnatga haq to‘lash"));
+        acts_subtitles.add(new Acts_Subtitle("X bob. Kafolatli to‘lovlar va kompensatsiya to‘lovlari"));
+        acts_subtitles.add(new Acts_Subtitle("XI bob. Mehnat intizomi"));
+        acts_subtitles.add(new Acts_Subtitle("XII bob. Mehnat shartnomasi taraflarining moddiy javobgarligi"));
+        acts_subtitles.add(new Acts_Subtitle("XIII bob. Mehnatni muhofaza qilish"));
+        acts_subtitles.add(new Acts_Subtitle("XIV bob. Ayrim toifadagi xodimlarga beriladigan qo‘shimcha kafolat va imtiyozlar"));
+        acts_subtitles.add(new Acts_Subtitle("XV bob. Mehnat nizolari"));
+        acts_subtitles.add(new Acts_Subtitle("XVI bob. Davlat ijtimoiy sug‘urtasi"));
 
         return acts_subtitles;
     }

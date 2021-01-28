@@ -20,7 +20,7 @@
         android:id="@+id/textView_title_language"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Выберите язык"
+        android:text="@string/lang_activity_lang"
         android:textSize="20sp"
         android:gravity="center"
         android:layout_marginTop="30dp"

@@ -10,13 +10,13 @@ public class Obshestvenniy_lodeks_kir {
     public static List<Acts_Subtitle> getActs_Subtitle()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("1-БОБ. УМУМИЙ ҚОИДАЛАР"));
-        acts_subtitles.add(new Acts_Subtitle("2-БОБ. ЖАМИЯТНИ ТАЪСИС ЭТИШ"));
-        acts_subtitles.add(new Acts_Subtitle("3-БОБ. ЖАМИЯТНИНГ УСТАВ ФОНДИ (УСТАВ КАПИТАЛИ)"));
-        acts_subtitles.add(new Acts_Subtitle("4-БОБ. ЖАМИЯТДА БОШҚАРУВ"));
-        acts_subtitles.add(new Acts_Subtitle("5-БОБ. ЖАМИЯТНИНГ БИТИМ ТУЗИШДАН МАНФААТДОРЛИГИ. ЙИРИК БИТИМЛАР"));
-        acts_subtitles.add(new Acts_Subtitle("6-БОБ. ЖАМИЯТНИНГ ФАОЛИЯТИ УСТИДАН НАЗОРАТ ҚИЛИШ"));
-        acts_subtitles.add(new Acts_Subtitle("7-БОБ. ЖАМИЯТНИ ҚАЙТА ТАШКИЛ ЭТИШ ВА ТУГАТИШ"));
+        acts_subtitles.add(new Acts_Subtitle("I-боб. Умумий қоидалар"));
+        acts_subtitles.add(new Acts_Subtitle("II-боб. Жамиятни таъсис этиш"));
+        acts_subtitles.add(new Acts_Subtitle("III-боб. Жамиятнинг устав фонди (устав капитали)"));
+        acts_subtitles.add(new Acts_Subtitle("IV-боб. Жамиятда бошқарув"));
+        acts_subtitles.add(new Acts_Subtitle("V-боб. Жамиятнинг битим тузишдан манфаатдорлиги. йирик битимлар"));
+        acts_subtitles.add(new Acts_Subtitle("VI-боб. Жамиятнинг фаолияти устидан назорат қилиш"));
+        acts_subtitles.add(new Acts_Subtitle("VII-боб. Жамиятни қайта ташкил этиш ва тугатиш"));
 
         return acts_subtitles;
     }

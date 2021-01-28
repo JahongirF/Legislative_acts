@@ -10,9 +10,9 @@ public class Grajdanskiy_kodeks_ru {
     public static List<Acts_Subtitle> getActs_Subtitle()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ I. ОБЩИЕ ПОЛОЖЕНИЯ"));
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ II. ПРАВО СОБСТВЕННОСТИ И ДРУГИЕ ВЕЩНЫЕ ПРАВА"));
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ III. ОБЯЗАТЕЛЬСТВЕННОЕ ПРАВО"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел I. Общие положения"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел II. Право собственности и другие вещные права"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел III. Обязательственное право"));
 
         return acts_subtitles;
     }
@@ -20,18 +20,18 @@ public class Grajdanskiy_kodeks_ru {
     public static List<Acts_Subtitle> getActs_Chapter_1()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 1. ГРАЖДАНСКОЕ ЗАКОНОДАТЕЛЬСТВО"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 2. ВОЗНИКНОВЕНИЕ ГРАЖДАНСКИХ ПРАВ И ОБЯЗАННОСТЕЙ. ОСУЩЕСТВЛЕНИЕ И ЗАЩИТА ГРАЖДАНСКИХ ПРАВ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 3. ГРАЖДАНЕ (ФИЗИЧЕСКИЕ ЛИЦА)"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 4. ЮРИДИЧЕСКИЕ ЛИЦА"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 5. ГОСУДАРСТВО КАК УЧАСТНИК ГРАЖДАНСКО-ПРАВОВЫХ ОТНОШЕНИЙ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 6. ОБЩИЕ ПОЛОЖЕНИЯ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 7. МАТЕРИАЛЬНЫЕ БЛАГА"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 8. НЕМАТЕРИАЛЬНЫЕ БЛАГА"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 9. СДЕЛКИ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 10. ПРЕДСТАВИТЕЛЬСТВО И ДОВЕРЕННОСТЬ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 11. ИСЧИСЛЕНИЕ СРОКОВ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 12. ИСКОВАЯ ДАВНОСТЬ"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 1. Гражданское законодательство"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 2. Возникновение гражданских прав и обязанностей. осуществление и защита гражданских прав"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 3. Граждане (физические лица)"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 4. Юридические лица"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 5. Государство как участник гражданско-правовых отношений"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 6. Общие положения"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 7. Материальные блага"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 8. Нематериальные блага"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 9. Сделки"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 10. Представительство и доверенность"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 11. Исчисление сроков"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 12. Исковая давность"));
 
         return acts_subtitles;
 
@@ -40,13 +40,13 @@ public class Grajdanskiy_kodeks_ru {
     public static List<Acts_Subtitle> getActs_Chapter_2()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 13. ОБЩИЕ ПОЛОЖЕНИЯ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 14. ПРАВО ХОЗЯЙСТВЕННОГО ВЕДЕНИЯ. ПРАВО ОПЕРАТИВНОГО УПРАВЛЕНИЯ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 15. ПРИОБРЕТЕНИЕ И ПРЕКРАЩЕНИЕ ПРАВА СОБСТВЕННОСТИ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 16. ЧАСТНАЯ СОБСТВЕННОСТЬ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 17. ПУБЛИЧНАЯ СОБСТВЕННОСТЬ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 18. ОБЩАЯ СОБСТВЕННОСТЬ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 19. ЗАЩИТА ПРАВА СОБСТВЕННОСТИ И ДРУГИХ ВЕЩНЫХ ПРАВ"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 13. Общие положения"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 14. Право хозяйственного ведения. право оперативного управления"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 15. Приобретение и прекращение права собственности"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 16. Частная собственность"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 17. Публичная собственность"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 18. Общая собственность"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 19. Защита права собственности и других вещных прав"));
 
         return acts_subtitles;
 
@@ -55,15 +55,15 @@ public class Grajdanskiy_kodeks_ru {
     public static List<Acts_Subtitle> getActs_Chapter_3()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 20. ПОНЯТИЕ И СТОРОНЫ ОБЯЗАТЕЛЬСТВА"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 21. ИСПОЛНЕНИЕ ОБЯЗАТЕЛЬСТВ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 22. ОБЕСПЕЧЕНИЕ ИСПОЛНЕНИЯ ОБЯЗАТЕЛЬСТВ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 23. ПЕРЕМЕНА ЛИЦ В ОБЯЗАТЕЛЬСТВЕ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 24. ОТВЕТСТВЕННОСТЬ ЗА НАРУШЕНИЕ ОБЯЗАТЕЛЬСТВ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 25. ПРЕКРАЩЕНИЕ ОБЯЗАТЕЛЬСТВ"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 26. ПОНЯТИЕ И УСЛОВИЯ ДОГОВОРА"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 27. ЗАКЛЮЧЕНИЕ ДОГОВОРА"));
-        acts_subtitles.add(new Acts_Subtitle("ГЛАВА 28. ИЗМЕНЕНИЕ И РАСТОРЖЕНИЕ ДОГОВОРА"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 20. Понятие и стороны обязательства"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 21. Исполнение обязательств"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 22. Обеспечение исполнения обязательств"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 23. Перемена лиц в обязательстве"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 24. Ответственность за нарушение обязательств"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 25. Прекращение обязательств"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 26. Понятие и условия договора"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 27. Заключение договора"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 28. Изменение и расторжение договора"));
 
         return acts_subtitles;
 

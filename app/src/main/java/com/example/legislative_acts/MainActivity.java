@@ -29,6 +29,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.LayoutAnimationController;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.legislative_acts.Adapter.Acts_Adapter;
@@ -52,6 +53,32 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private NavigationView navigationView;
     private Toolbar toolbar;
 
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_main_item,menu);
+
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        int id = item.getItemId();
+
+        switch (id)
+        {
+            case R.id.favourite_date:
+
+                startActivity(new Intent(this,FavouriteActivity.class));
+
+                break;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,12 +110,24 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         View header = navigationView.getHeaderView(0);
         ImageView imageViewdark = header.findViewById(R.id.imageViewDark);
+
+        ImageView imageViewLogo = header.findViewById(R.id.imageViewLogo);
+
+        TextView textViewLogo = header.findViewById(R.id.textViewLogotip);
+
+        if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES)
+        {
+            imageViewdark.setImageResource(R.drawable.ic_sun);
+            imageViewLogo.setImageResource(R.drawable.logotip_dark);
+            textViewLogo.setTextColor(getResources().getColor(R.color.bxms_stroke_color));
+        }
         imageViewdark.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES) {
                     AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
                     sharedPreferences.edit().putString("darkMode","no").apply();
+
                 } else {
                     AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
                     sharedPreferences.edit().putString("darkMode","yes").apply();
@@ -175,7 +214,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
 
             case R.id.about_activity:
-                toolbar.setVisibility(View.GONE);
+
                 getSupportFragmentManager().beginTransaction().addToBackStack("about").replace(R.id.fragment_container, new About_Activity_Fragment()).commit();
 
                 break;
@@ -232,5 +271,20 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         binding.drawerLayout.closeDrawer(GravityCompat.START);
 
         return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+
+        Intent intent = getIntent();
+
+        if (binding.drawerLayout.isDrawerOpen(GravityCompat.START)) {
+            binding.drawerLayout.closeDrawer(GravityCompat.START);
+        }
+
+        else {
+            super.onBackPressed();
+        }
+
     }
 }
