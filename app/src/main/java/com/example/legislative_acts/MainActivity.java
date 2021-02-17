@@ -10,6 +10,7 @@ import androidx.constraintlayout.widget.ConstraintSet;
 import androidx.core.content.FileProvider;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
@@ -23,6 +24,7 @@ import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.preference.PreferenceManager;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -35,6 +37,7 @@ import android.widget.Toast;
 import com.example.legislative_acts.Adapter.Acts_Adapter;
 import com.example.legislative_acts.Data.Acts_Subtitle;
 import com.example.legislative_acts.Fragment.About_Activity_Fragment;
+import com.example.legislative_acts.Fragment.DrawerLocker;
 import com.example.legislative_acts.Fragment.Fragment_Main_Activity;
 import com.example.legislative_acts.Fragment.Language_Activity_Fragment;
 import com.example.legislative_acts.Fragment.Other_Activity_Fragment;
@@ -46,12 +49,20 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, DrawerLocker {
 
     private ActivityMainBinding binding;
     private SharedPreferences sharedPreferences;
     private NavigationView navigationView;
     private Toolbar toolbar;
+    private ActionBarDrawerToggle toggle;
+
+    //Fragments
+    private Fragment_Main_Activity fragment_main_activity;
+    private About_Activity_Fragment about_activity_fragment;
+    private Other_Activity_Fragment other_activity_fragment;
+
+    private Boolean isMenuOpened;
 
 
     @Override
@@ -84,7 +95,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
+        fragment_main_activity = new Fragment_Main_Activity();
+        about_activity_fragment = new About_Activity_Fragment();
+        other_activity_fragment = new Other_Activity_Fragment();
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
@@ -183,15 +196,20 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         navigationView.setNavigationItemSelectedListener(this);
 
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, binding.drawerLayout, toolbar, R.string.open, R.string.close);
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, fragment_main_activity).commit();
+
+        toggle = new ActionBarDrawerToggle(this, binding.drawerLayout, toolbar, R.string.open, R.string.close);
+
         binding.drawerLayout.addDrawerListener(toggle);
+
+
         toggle.syncState();
 
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Fragment_Main_Activity()).commit();
 
 
     }
+
 
 
     @Override
@@ -199,7 +217,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         switch (item.getItemId()) {
             case R.id.main_activity:
-                getSupportFragmentManager().beginTransaction().addToBackStack("main").replace(R.id.fragment_container, new Fragment_Main_Activity()).commit();
+
+                getSupportFragmentManager().beginTransaction().addToBackStack("main").replace(R.id.fragment_container, fragment_main_activity).commit();
+
                 break;
 
             case R.id.lang_activity:
@@ -215,16 +235,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
             case R.id.about_activity:
 
-                getSupportFragmentManager().beginTransaction().addToBackStack("about").replace(R.id.fragment_container, new About_Activity_Fragment()).commit();
+                getSupportFragmentManager().beginTransaction().addToBackStack("about").replace(R.id.fragment_container, about_activity_fragment).commit();
+                getSupportActionBar().hide();
+
+
 
                 break;
 
             case R.id.other_activity:
-                getSupportFragmentManager().beginTransaction().addToBackStack("other").replace(R.id.fragment_container, new Other_Activity_Fragment()).commit();
+                getSupportFragmentManager().beginTransaction().addToBackStack("other").replace(R.id.fragment_container, other_activity_fragment).commit();
+                getSupportActionBar().hide();
                 break;
-
-
-
 
             case R.id.share_activity:
                 try {
@@ -273,10 +294,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         return true;
     }
 
+
+
     @Override
     public void onBackPressed() {
 
-        Intent intent = getIntent();
 
         if (binding.drawerLayout.isDrawerOpen(GravityCompat.START)) {
             binding.drawerLayout.closeDrawer(GravityCompat.START);
@@ -286,5 +308,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             super.onBackPressed();
         }
 
+    }
+
+    @Override
+    public void setDrawerEnabled(boolean enabled) {
+        if(enabled){
+            binding.drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
+        }else{
+            binding.drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED);
+        }
     }
 }

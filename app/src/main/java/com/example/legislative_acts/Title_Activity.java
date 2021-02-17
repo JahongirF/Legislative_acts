@@ -1,11 +1,13 @@
 package com.example.legislative_acts;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.animation.AnimationUtils;
 import android.view.animation.LayoutAnimationController;
 
@@ -35,6 +37,7 @@ import com.example.legislative_acts.Documentation_Class.Data_for_ru.Semeyniy_kod
 import com.example.legislative_acts.Documentation_Class.Data_for_ru.Tamojenniy_kodeks_ru;
 import com.example.legislative_acts.Documentation_Class.Data_for_ru.Ugolovniy_kodeks_ru;
 import com.example.legislative_acts.Documentation_Class.Data_for_ru.Ugolovniy_protssesualniy_kodeks_ru;
+import com.google.android.material.appbar.MaterialToolbar;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -50,6 +53,7 @@ public class Title_Activity extends AppCompatActivity {
     private int positionActs;
     private String titleSubject;
     private int positionSubject;
+    private MaterialToolbar materialToolbar;
 
 
     @Override
@@ -57,7 +61,23 @@ public class Title_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_title_);
 
+        materialToolbar = findViewById(R.id.toolBarTitle);
+
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null)
+        {
+            actionBar.hide();
+        }
+
+        materialToolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+
         Intent intent = getIntent();
+
 
         if (intent.hasExtra("title") && intent.hasExtra("position") && intent.hasExtra("positionSubject") && intent.hasExtra("titleSubject"))
 
@@ -1249,6 +1269,7 @@ public class Title_Activity extends AppCompatActivity {
                 intent1.putExtra("positionSubject",positionSubject);
                 intent1.putExtra("titleChapter", acts_subtitle.getTitle());
                 intent1.putExtra("positionChapter", position);
+                intent1.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
                 startActivity(intent1);
 
             }

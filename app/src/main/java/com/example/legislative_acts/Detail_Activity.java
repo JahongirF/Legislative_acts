@@ -85,6 +85,9 @@ public class Detail_Activity extends AppCompatActivity {
 
         switch (id)
         {
+
+
+
             case R.id.save_date:
 
                 Intent intent = getIntent();
@@ -133,6 +136,10 @@ public class Detail_Activity extends AppCompatActivity {
 
         switch (id)
         {
+            case android.R.id.home:
+                onBackPressed();
+                break;
+
             case R.id.save_date:
 
                 Intent intent = getIntent();
@@ -181,6 +188,8 @@ public class Detail_Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         pdfView = findViewById(R.id.pdfView);
         viewModal = ViewModelProviders.of(this).get(ActsViewModal.class);

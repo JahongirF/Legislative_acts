@@ -18,9 +18,13 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
+import com.example.legislative_acts.MainActivity;
 import com.example.legislative_acts.R;
+import com.example.legislative_acts.databinding.ActivityMainBinding;
+import com.google.android.material.appbar.MaterialToolbar;
 
 public class About_Activity_Fragment extends Fragment {
 
@@ -31,12 +35,28 @@ public class About_Activity_Fragment extends Fragment {
     private TextView textView_phone_2;
     private LinearLayout call_id;
     private LinearLayout call_id_2;
+    private MaterialToolbar toolbar;
+
+
+
+
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.about_fragment, container, false);
+
+        toolbar = view.findViewById(R.id.toolbar);
+
+        toolbar.setNavigationOnClickListener(v -> {
+            requireActivity().getSupportFragmentManager().popBackStack();
+            ((MainActivity)getActivity()).getSupportActionBar().show();
+
+
+        });
+
+        ((DrawerLocker)getActivity()).setDrawerEnabled(true);
 
 
 
@@ -125,5 +145,11 @@ public class About_Activity_Fragment extends Fragment {
                 Toast.makeText(getContext(), "Permission denied", Toast.LENGTH_SHORT).show();
             }
         }
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        ((DrawerLocker)getActivity()).setDrawerEnabled(false);
     }
 }

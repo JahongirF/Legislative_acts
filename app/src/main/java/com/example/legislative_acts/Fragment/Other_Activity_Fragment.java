@@ -15,7 +15,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.legislative_acts.Adapter.Other_Adapter;
+import com.example.legislative_acts.MainActivity;
 import com.example.legislative_acts.R;
+import com.google.android.material.appbar.MaterialToolbar;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,12 +28,26 @@ public class Other_Activity_Fragment extends Fragment {
     private List<Other> otherList;
     private Other_Adapter adapter;
     private LayoutAnimationController layoutAnimationController;
+    private MaterialToolbar materialToolbar;
 
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.other_app_fragment, container, false);
+
+        materialToolbar = view.findViewById(R.id.toolBarOther);
+
+        materialToolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                requireActivity().getSupportFragmentManager().popBackStack();
+                ((MainActivity)getActivity()).getSupportActionBar().show();
+            }
+        });
+
+        ((DrawerLocker)getActivity()).setDrawerEnabled(true);
+
         recyclerView = view.findViewById(R.id.recyclerView_other);
         layoutAnimationController = AnimationUtils.loadLayoutAnimation(getContext(),R.anim.layout_animation_fall_down);
         adapter = new Other_Adapter();
@@ -56,5 +72,11 @@ public class Other_Activity_Fragment extends Fragment {
         recyclerView.setLayoutAnimation(layoutAnimationController);
 
         return view;
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        ((DrawerLocker)getActivity()).setDrawerEnabled(false);
     }
 }

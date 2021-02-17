@@ -1,5 +1,6 @@
 package com.example.legislative_acts;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.Observer;
@@ -11,6 +12,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.view.View;
 import android.view.animation.AnimationUtils;
 import android.view.animation.LayoutAnimationController;
 import android.widget.Toast;
@@ -18,6 +20,7 @@ import android.widget.Toast;
 import com.example.legislative_acts.Adapter.Favourite_Adapter;
 import com.example.legislative_acts.Data.ActsData;
 import com.example.legislative_acts.Data.ActsViewModal;
+import com.google.android.material.appbar.MaterialToolbar;
 
 import java.util.List;
 
@@ -27,6 +30,7 @@ public class FavouriteActivity extends AppCompatActivity {
     private ActsViewModal viewModal;
     private Favourite_Adapter adapter;
     private LayoutAnimationController layoutAnimationController;
+    private MaterialToolbar materialToolbar;
 
     private SharedPreferences sharedPreferences;
 
@@ -34,6 +38,21 @@ public class FavouriteActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_favourite);
+
+
+        materialToolbar = findViewById(R.id.toolBarFavourite);
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null)
+        {
+            actionBar.hide();
+        }
+
+        materialToolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(FavouriteActivity.this,MainActivity.class));
+            }
+        });
 
         recyclerView = findViewById(R.id.recyclerView_favourite);
         viewModal = ViewModelProviders.of(this).get(ActsViewModal.class);
@@ -63,6 +82,7 @@ public class FavouriteActivity extends AppCompatActivity {
                         intent.putExtra("positionSubject",actsData.getPositionSection());
                         intent.putExtra("titleChapter", actsData.getTitleChapter());
                         intent.putExtra("positionChapter", actsData.getPositionChapter());
+                        intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
 //                        Toast.makeText(FavouriteActivity.this, ""+actsData.getTitleSection().length(), Toast.LENGTH_SHORT).show();
                         startActivity(intent);
                     }

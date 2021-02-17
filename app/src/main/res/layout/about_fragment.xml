@@ -1,168 +1,172 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-
-    >
-
-<androidx.cardview.widget.CardView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:cardCornerRadius="16dp"
-    android:layout_margin="10dp"
-    >
+    android:orientation="vertical">
 
-    <LinearLayout
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        >
+        android:layout_height="?android:actionBarSize"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+        app:title="@string/about_activity_lang"
+        android:background="@color/color_action_bar"
+        app:titleTextColor="@color/white"
+        />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Raqamli Dunyo"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:textSize="32sp"
-            android:layout_marginTop="10dp"
-            android:textColor="@color/bxms_title_color"
-            />
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:src="@drawable/building"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-        <TextView
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/about_raqamli_dunyo"
-            android:layout_gravity="center"
-            android:layout_margin="20dp"
-            android:textColor="@color/bxms_title_color"
-            />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:weightSum="3"
-            >
-
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="16dp">
 
             <LinearLayout
-                android:layout_width="238dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                <TextView
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:src="@drawable/ic_location" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:textColor="@color/bxms_title_color"
-                        android:text="@string/adress_company" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/call_id"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_marginTop="10dp"
-                    android:orientation="horizontal">
+                    android:gravity="center"
+                    android:text="Raqamli Dunyo"
+                    android:textColor="@color/bxms_title_color"
+                    android:textSize="32sp" />
 
-                    <ImageView
-                        android:id="@+id/phone_id"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:src="@drawable/ic_phone"
-                        android:tint="@color/bxms_title_color"
-                        />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/building" />
 
-                    <TextView
-                        android:id="@+id/phone_number_id"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:text="+99899 876 44 44"
-
-                        android:textColor="@color/bxms_title_color"
-                        />
-
-<!--                    \n+99893 919 99 19-->
-
-                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:text="@string/about_raqamli_dunyo"
+                    android:textColor="@color/bxms_title_color" />
 
                 <LinearLayout
-                    android:id="@+id/call_2_id"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
                     android:orientation="horizontal"
+                    android:weightSum="3">
 
-                    >
+
+                    <LinearLayout
+                        android:layout_width="238dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:src="@drawable/ic_location" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="@string/adress_company"
+                                android:textColor="@color/bxms_title_color" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/call_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/phone_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:src="@drawable/ic_phone"
+                                android:tint="@color/bxms_title_color" />
+
+                            <TextView
+                                android:id="@+id/phone_number_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="+99899 876 44 44"
+
+                                android:textColor="@color/bxms_title_color" />
+
+                            <!--                    \n+99893 919 99 19-->
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/call_2_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:orientation="horizontal"
+
+                            >
+
+                            <ImageView
+                                android:id="@+id/phone_2_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:src="@drawable/ic_phone"
+                                android:tint="@color/bxms_title_color" />
+
+                            <TextView
+                                android:id="@+id/phone_2_number_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="+99893 919 99 19"
+                                android:textColor="@color/bxms_title_color"
+
+                                />
+
+                            <!--                    \n+99893 919 99 19-->
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
 
                     <ImageView
-                        android:id="@+id/phone_2_id"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:src="@drawable/ic_phone"
-                        android:tint="@color/bxms_title_color"
-                        />
-
-                    <TextView
-                        android:id="@+id/phone_2_number_id"
+                        android:id="@+id/mapID"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
-                        android:text="+99893 919 99 19"
-                        android:textColor="@color/bxms_title_color"
-
-                        />
-
-                    <!--                    \n+99893 919 99 19-->
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/map" />
 
                 </LinearLayout>
-
-
 
             </LinearLayout>
 
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
 
-            <ImageView
-                android:id="@+id/mapID"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/map"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="20dp"
-                android:layout_weight="2"
-                />
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-</androidx.cardview.widget.CardView>
-
-</ScrollView>
+</LinearLayout>
