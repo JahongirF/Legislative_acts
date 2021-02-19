@@ -151,5 +151,9 @@ public class About_Activity_Fragment extends Fragment {
     public void onDestroyView() {
         super.onDestroyView();
         ((DrawerLocker)getActivity()).setDrawerEnabled(false);
+        requireActivity().getSupportFragmentManager().popBackStack();
+        ((MainActivity)getActivity()).getSupportActionBar().show();
     }
+
+
 }

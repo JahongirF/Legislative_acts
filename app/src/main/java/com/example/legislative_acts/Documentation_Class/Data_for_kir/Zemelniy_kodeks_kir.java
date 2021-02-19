@@ -22,7 +22,7 @@ public class Zemelniy_kodeks_kir {
         acts_subtitles.add(new Acts_Subtitle("X-боб. Ўрмон фонди, сув фонди ерлари ва захира ерлар"));
         acts_subtitles.add(new Acts_Subtitle("XI-боб. Ерларни муҳофаза қилиш"));
         acts_subtitles.add(new Acts_Subtitle("XII-боб. Ерлардан фойдаланиш ҳамда уларни муҳофаза қилиш устидан назорат"));
-        acts_subtitles.add(new Acts_Subtitle("XIII-боб. Ер эгалари, ердан фойдаланувчилар"));
+        acts_subtitles.add(new Acts_Subtitle("XIII-боб. Ер эгалари, ердан фойдаланувчилар, ер участкалари ижарачиларига ва мулкдорларига етказилган зарар ҳамда қишлоқ хўжалиги ва ўрмон хўжалиги ишлаб чиқариши нобудгарчиликларининг ўрнини қоплаш"));
         acts_subtitles.add(new Acts_Subtitle("XIV-боб. Ер хусусидаги низоларни ҳал этиш ҳамда ер тўfрисидаги қонун ҳужжатларини бузганлик учун жавобгарлик"));
 
         return acts_subtitles;

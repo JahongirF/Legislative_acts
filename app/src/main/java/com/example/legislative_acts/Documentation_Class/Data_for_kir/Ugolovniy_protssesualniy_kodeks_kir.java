@@ -50,7 +50,7 @@ public class Ugolovniy_protssesualniy_kodeks_kir {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
         acts_subtitles.add(new Acts_Subtitle("8-боб. Далиллар"));
         acts_subtitles.add(new Acts_Subtitle("9-боб. Исбот қилишнинг умумий шартлари"));
-        acts_subtitles.add(new Acts_Subtitle("10-боб. Сўроқ қилишнинг умумий қоидаларИ"));
+        acts_subtitles.add(new Acts_Subtitle("10-боб. Сўроқ қилишнинг умумий қоидалари"));
         acts_subtitles.add(new Acts_Subtitle("11-боб. Гумон қилинувчини ва айбланувчини сўроқ қилиш"));
         acts_subtitles.add(new Acts_Subtitle("12-боб. Гувоҳ ва жабрланувчини сўроқ қилиш"));
         acts_subtitles.add(new Acts_Subtitle("13-боб. Юзлаштириш"));
@@ -142,7 +142,7 @@ public class Ugolovniy_protssesualniy_kodeks_kir {
     public static List<Acts_Subtitle> getActs_Chapter_11() {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
         acts_subtitles.add(new Acts_Subtitle("55-боб. Ҳукм, ажрим ва қарорларнинг қонунийлиги, асослилиги ва адолатлилигини текширишнинг умумий шартлари"));
-        acts_subtitles.add(new Acts_Subtitle("55.1-боб. Апелляция тартибида иш юритиШ"));
+        acts_subtitles.add(new Acts_Subtitle("55.1-боб. Апелляция тартибида иш юритиш"));
         acts_subtitles.add(new Acts_Subtitle("56-боб. Кассация тартибида иш юритиш"));
         acts_subtitles.add(new Acts_Subtitle("57-боб. Назорат тартибида иш юритиш"));
 

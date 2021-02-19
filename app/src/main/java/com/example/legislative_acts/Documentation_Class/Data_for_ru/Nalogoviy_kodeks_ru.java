@@ -117,7 +117,7 @@ public class Nalogoviy_kodeks_ru {
 
     public static List<Acts_Subtitle> getActs_Chapter_8() {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ VIII. АКЦИЗНЫЙ НАЛОГ"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел VIII. Акцизный налог"));
 
         return acts_subtitles;
     }
@@ -135,7 +135,7 @@ public class Nalogoviy_kodeks_ru {
 
     public static List<Acts_Subtitle> getActs_Chapter_10() {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ X. НАЛОГ ЗА ПОЛЬЗОВАНИЕ ВОДНЫМИ РЕСУРСАМИ"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел X. Налог за пользование водными ресурсами"));
 
         return acts_subtitles;
     }
@@ -169,21 +169,21 @@ public class Nalogoviy_kodeks_ru {
 
     public static List<Acts_Subtitle> getActs_Chapter_17() {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ XVII. ГОСУДАРСТВЕННАЯ ПОШЛИНА"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел XVII. Государственная пошлина"));
 
         return acts_subtitles;
     }
 
     public static List<Acts_Subtitle> getActs_Chapter_18() {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ XVIII. ТАМОЖЕННЫЕ ПЛАТЕЖИ"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел XVIII. Таможенные платежи"));
 
         return acts_subtitles;
     }
 
     public static List<Acts_Subtitle> getActs_Chapter_19() {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("РАЗДЕЛ XIX. СБОР ЗА ПРАВО РОЗНИЧНОЙ ТОРГОВЛИ ОТ"));
+        acts_subtitles.add(new Acts_Subtitle("Раздел XIX. Сбор за право розничной торговли отдельными видами товаров и оказание отдельных видов услуг"));
 
         return acts_subtitles;
     }

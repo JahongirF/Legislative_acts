@@ -43,7 +43,7 @@ public class Byudjetniy_kodeks_kir {
     public static List<Acts_Subtitle> getActs_Chapter_3(){
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
         acts_subtitles.add(new Acts_Subtitle("7-боб. Ўзбекистон Республикасининг консолидациялашган бюджети"));
-        acts_subtitles.add(new Acts_Subtitle("8-боб. Ўзбекистон Республикасининг Тикланиш ва тараққиё"));
+        acts_subtitles.add(new Acts_Subtitle("8-боб. Ўзбекистон Республикасининг Тикланиш ва тараққиёт жамғармаси"));
 
         return acts_subtitles;
     }

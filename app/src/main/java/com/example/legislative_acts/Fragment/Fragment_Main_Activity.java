@@ -77,6 +77,8 @@ public class Fragment_Main_Activity extends Fragment {
         layoutAnimationController = AnimationUtils.loadLayoutAnimation(getContext(), R.anim.layout_animation_fall_down);
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
 
+
+
         Bundle bundle = this.getArguments();
 
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getContext());

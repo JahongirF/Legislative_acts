@@ -41,7 +41,7 @@ public class Ugolovniy_protssesualniy_kodeks_ru {
         acts_subtitles.add(new Acts_Subtitle("Глава 4. Общественные объединения, коллективы и их представители, участвующие в производстве по уголовному делу"));
         acts_subtitles.add(new Acts_Subtitle("Глава 5. Лица, отстаивающие в уголовном процессе свои интересы. защитники и представители"));
         acts_subtitles.add(new Acts_Subtitle("Глава 6. Иные лица, участвующие в уголовном процессе"));
-        acts_subtitles.add(new Acts_Subtitle("Глава 7. Обстоятельства, исключающие участие в уголовном процессе. отводы"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 7. Обстоятельства, исключающие участие в уголовном процессе. Отводы"));
 
         return acts_subtitles;
     }
@@ -82,13 +82,13 @@ public class Ugolovniy_protssesualniy_kodeks_ru {
         acts_subtitles.add(new Acts_Subtitle("Глава 29. Отстранение от должности"));
         acts_subtitles.add(new Acts_Subtitle("Глава 30. Приводы"));
         acts_subtitles.add(new Acts_Subtitle("Глава 31. Помещение лица в медицинское учреждение"));
-        acts_subtitles.add(new Acts_Subtitle("Глава 32. Обеспечение безопасности участников процесса. ответственность за нарушение процессуальных обязанностей и порядка на дознании, предварительном следствии и в суде"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 32. Обеспечение безопасности участников процесса. Ответственность за нарушение процессуальных обязанностей и порядка на дознании, предварительном следствии и в суде"));
         return acts_subtitles;
     }
 
     public static List<Acts_Subtitle> getActs_Chapter_5() {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("Глава 33. Гражданский иск в уголовном процессе. другие имущественные взыскания"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 33. Гражданский иск в уголовном процессе. Другие имущественные взыскания"));
         acts_subtitles.add(new Acts_Subtitle("Глава 34. Возвращение имущества потерпевшему или гражданскому истцу"));
         acts_subtitles.add(new Acts_Subtitle("Глава 35. Обеспечение исполнения приговора в части имущественных взысканий"));
         return acts_subtitles;
@@ -123,7 +123,7 @@ public class Ugolovniy_protssesualniy_kodeks_ru {
         acts_subtitles.add(new Acts_Subtitle("Глава 45. Приостановление и возобновление предварительного следствия"));
         acts_subtitles.add(new Acts_Subtitle("Глава 46. Окончание предварительного следствия"));
         acts_subtitles.add(new Acts_Subtitle("Глава 46.1. Общие условия дознания"));
-        acts_subtitles.add(new Acts_Subtitle("Глава 47. Надзор за исполнением законов органами дознания и предварительного следствия, а также органами"));
+        acts_subtitles.add(new Acts_Subtitle("Глава 47. Надзор за исполнением законов органами дознания и предварительного следствия, а также органами, осуществляющими доследственную проверку"));
         return acts_subtitles;
     }
 

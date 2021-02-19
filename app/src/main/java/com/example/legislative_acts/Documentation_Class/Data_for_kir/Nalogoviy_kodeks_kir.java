@@ -14,18 +14,18 @@ public class Nalogoviy_kodeks_kir {
         acts_subtitles.add(new Acts_Subtitle("III бўлим. Солиқ мажбуриятини бажариш"));
         acts_subtitles.add(new Acts_Subtitle("IV бўлим. Солиқ тўловчиларни ва солиқ солиш объектларини ҳисобга олиш"));
         acts_subtitles.add(new Acts_Subtitle("V бўлим. Солиқ назорати"));
-            acts_subtitles.add(new Acts_Subtitle("VI бўлим. Трансферт нархни белгилашда солиқ назорати"));
+        acts_subtitles.add(new Acts_Subtitle("VI бўлим. Трансферт нархни белгилашда солиқ назорати"));
         acts_subtitles.add(new Acts_Subtitle("VII бўлим. Назорат қилинадиган чет эл компанияларининг фойдасига солиқ солиш шартлари ва умумий қоидалари"));
         acts_subtitles.add(new Acts_Subtitle("VIII бўлим. Солиққа оид ҳуқуқбузарликлар ва уларни содир этганлик учун жавобгарлик"));
-            acts_subtitles.add(new Acts_Subtitle("IX бўлим. Солиқ органларининг ҳужжатлари ва улар мансабдор шахсларининг ҳаракатлари (ҳаракатсизлиги) устидан шикоят бериш"));
+        acts_subtitles.add(new Acts_Subtitle("IX бўлим. Солиқ органларининг ҳужжатлари ва улар мансабдор шахсларининг ҳаракатлари (ҳаракатсизлиги) устидан шикоят бериш"));
         acts_subtitles.add(new Acts_Subtitle("X бўлим. Қўшилган қиймат солиғи"));
         acts_subtitles.add(new Acts_Subtitle("ХI бўлим. Акциз солиғи"));
-            acts_subtitles.add(new Acts_Subtitle("XII бўлим. Фойда солиғи"));
+        acts_subtitles.add(new Acts_Subtitle("XII бўлим. Фойда солиғи"));
         acts_subtitles.add(new Acts_Subtitle("XIII бўлим. Жисмоний шахслардан олинадиган даромад солиғи"));
         acts_subtitles.add(new Acts_Subtitle("XIV бўлим. Ижтимоий солиқ"));
         acts_subtitles.add(new Acts_Subtitle("XV бўлим. Мол-мулк солиғи"));
         acts_subtitles.add(new Acts_Subtitle("XVI бўлим. Ер солиғи"));
-            acts_subtitles.add(new Acts_Subtitle("XVII бўлим. Сув ресурсларидан фойдаланганлик учун солиқ"));
+        acts_subtitles.add(new Acts_Subtitle("XVII бўлим. Сув ресурсларидан фойдаланганлик учун солиқ"));
         acts_subtitles.add(new Acts_Subtitle("XVIII бўлим. Ер қаъридан фойдаланганлик учун солиқ"));
         acts_subtitles.add(new Acts_Subtitle("XIX бўлим. Йиғимлар"));
         acts_subtitles.add(new Acts_Subtitle("XX бўлим. Айланмадан олинадиган солиқ"));
@@ -97,7 +97,7 @@ public class Nalogoviy_kodeks_kir {
 
     public static List<Acts_Subtitle> getActs_Chapter_7() {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("26-боб. Назорат қилинадиган чет эл компанияларининг фойдасига солиқ солишнинг"));
+        acts_subtitles.add(new Acts_Subtitle("26-боб. Назорат қилинадиган чет эл компанияларининг фойдасига солиқ солишнинг умумий қоидалари"));
 
         return acts_subtitles;
     }
@@ -113,7 +113,7 @@ public class Nalogoviy_kodeks_kir {
 
     public static List<Acts_Subtitle> getActs_Chapter_9() {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("30-боб. Солиқ органларининг ҳужжатлари ва улар мансабдор шахс"));
+        acts_subtitles.add(new Acts_Subtitle("30-боб. Солиқ органларининг ҳужжатлари ва улар мансабдор шахсларининг ҳаракатлари (ҳаракатсизлиги) устидан шикоят бериш тартиби"));
 
         return acts_subtitles;
     }
@@ -223,10 +223,10 @@ public class Nalogoviy_kodeks_kir {
 
     public static List<Acts_Subtitle> getActs_Chapter_21() {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("67-боб. Тўғридан-тўғри хусусий чет эл инвестициялари иштирокидаги юридик шахсларга солиқ солиш"));
+        acts_subtitles.add(new Acts_Subtitle("67-боб. Тўғридан-тўғри хусусий чет эл инвестициялари иштирокидаги юридик шахсларга солиқ солишнинг ўзига хос хусусиятлари"));
         acts_subtitles.add(new Acts_Subtitle("68-боб. Махсус иқтисодий зоналарнинг иштирокчиларига солиқ солишнинг ўзига хос хусусиятлари"));
-        acts_subtitles.add(new Acts_Subtitle("69-боб. Маҳсулот тақсимотига оид битим доирасида амалга ошириладиган фаолиятга солиқ солишнинг"));
-        acts_subtitles.add(new Acts_Subtitle("70-боб. Адвокатлар ҳайъатларига, адвокатлик фирмаларига, адвокатлик бюроларига ва адвокатларга"));
+        acts_subtitles.add(new Acts_Subtitle("69-боб. Маҳсулот тақсимотига оид битим доирасида амалга ошириладиган фаолиятга солиқ солишнинг ўзига хос хусусиятлари"));
+        acts_subtitles.add(new Acts_Subtitle("70-боб. Адвокатлар ҳайъатларига, адвокатлик фирмаларига, адвокатлик бюроларига ва адвокатларга солиқ солишнинг ўзига хос хусусиятлари"));
         acts_subtitles.add(new Acts_Subtitle("71-боб. Хусусий амалиёт билан шуғулланувчи нотариусларга солиқ солишнинг ўзига хос хусусиятлари"));
 
         return acts_subtitles;

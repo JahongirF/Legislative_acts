@@ -65,7 +65,7 @@ public class Byudjetniy_kodeks_uz {
 
     public static List<Acts_Subtitle> getActs_Chapter_6(){
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("16-bob. Davlat byudjeti va davlat maqsadli jamg‘armalari byudjetlar"));
+        acts_subtitles.add(new Acts_Subtitle("16-bob. Davlat byudjeti va davlat maqsadli jamg‘armalari byudjetlarining loyihasini tuzish tartibi"));
         acts_subtitles.add(new Acts_Subtitle("17-bob. Davlat byudjeti to‘g‘risidagi Qonunni qabul qilish tartibi"));
         acts_subtitles.add(new Acts_Subtitle("18-bob. Xarajatlar smetalarini va shtat jadvallarini tuzish hamda tasdiqlash, ularni ro‘yxatdan o‘tkazish tartibi"));
         return acts_subtitles;

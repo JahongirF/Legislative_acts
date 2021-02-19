@@ -10,7 +10,9 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.lifecycle.ViewModelProviders;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -57,6 +59,7 @@ import com.example.legislative_acts.Documentation_Class.Data_for_ru.Ugolovniy_ko
 import com.example.legislative_acts.Documentation_Class.Data_for_ru.Ugolovniy_protssesualniy_kodeks_ru;
 import com.example.legislative_acts.Documentation_Class.Data_for_ru.Zemelniy_kodeks_ru;
 import com.github.barteksc.pdfviewer.PDFView;
+import com.google.android.gms.dynamic.IFragmentWrapper;
 
 import java.util.List;
 
@@ -142,6 +145,9 @@ public class Detail_Activity extends AppCompatActivity {
 
             case R.id.save_date:
 
+                SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+                String lang = sharedPreferences.getString("lang", "kir");
+
                 Intent intent = getIntent();
                 ActsData actsData;
                 if (intent.hasExtra("title") && intent.hasExtra("position") && intent.hasExtra("titleSubject") && intent.hasExtra("positionSubject") && intent.hasExtra("titleChapter") && intent.hasExtra("positionChapter")) {
@@ -150,12 +156,35 @@ public class Detail_Activity extends AppCompatActivity {
                     if (actsData == null)
                     {
                         viewModal.insert(new ActsData(title,position,titleSubject,positionSubject,titleChapter,positionChapter));
-                        Toast.makeText(this, "Данные сохранены", Toast.LENGTH_SHORT).show();
+
+                        if (lang.equals("kir"))
+                        {
+                            Toast.makeText(this, "Маълумотлар базасига танланган маълумот кўшилди", Toast.LENGTH_SHORT).show();
+
+                        }
+                        else if (lang.equals("rus"))
+                        {
+                            Toast.makeText(this, "Данные добавлены в базу", Toast.LENGTH_SHORT).show();
+
+                        }
+                        else if (lang.equals("uz"))
+                        {
+                            Toast.makeText(this, "Ma\'lumotlar bazasiga tanlangan ma\'lumot qo\'shildi", Toast.LENGTH_SHORT).show();
+                        }
+
                         item.setIcon(R.drawable.ic_book_mark_delete);
                     }
                     else {
                         viewModal.delete(actsData);
-                        Toast.makeText(this, "Данные удалены", Toast.LENGTH_SHORT).show();
+                        if (lang.equals("kir")) {
+                            Toast.makeText(this, "Маълумотлар базасидан танланган маълумот ўчирилди", Toast.LENGTH_SHORT).show();
+
+                        } else if (lang.equals("rus")) {
+                            Toast.makeText(this, "Данные удалены из базу", Toast.LENGTH_SHORT).show();
+
+                        } else if (lang.equals("uz")) {
+                            Toast.makeText(this, "Ma\'lumotlar bazasidan tanlangan ma\'lumot o\'chirildi", Toast.LENGTH_SHORT).show();
+                        }
                         item.setIcon(R.drawable.ic_book_mark_add);
                     }
                      // Toast.makeText(this, "title:" + title + "\nposition:" + position + "\ntitleSubject:" + titleSubject + "\npositionSubject:" + positionSubject + "\ntitleChapter:" + titleChapter + "\npositionChapter:" + positionChapter, Toast.LENGTH_LONG).show();
@@ -166,13 +195,37 @@ public class Detail_Activity extends AppCompatActivity {
                     if (actsData == null)
                     {
                         viewModal.insert(new ActsData(title,position,titleSubject,positionSubject));
-                        Toast.makeText(this, "Данные сохранены", Toast.LENGTH_SHORT).show();
-                        item.setIcon(R.drawable.ic_book_mark_delete);
+                        if (lang.equals("kir"))
+                        {
+                            Toast.makeText(this, "Маълумотлар базасига танланган маълумот кўшилди", Toast.LENGTH_SHORT).show();
+
+                        }
+                        else if (lang.equals("rus"))
+                        {
+                            Toast.makeText(this, "Данные добавлены в базу", Toast.LENGTH_SHORT).show();
+
+                        }
+                        else if (lang.equals("uz"))
+                        {
+                            Toast.makeText(this, "Ma\'lumotlar bazasiga tanlangan ma\'lumot qo\'shildi", Toast.LENGTH_SHORT).show();
+                        }                        item.setIcon(R.drawable.ic_book_mark_delete);
                     }
                     else {
                         viewModal.delete(actsData);
-                        Toast.makeText(this, "Данные удалены", Toast.LENGTH_SHORT).show();
-                        item.setIcon(R.drawable.ic_book_mark_add);
+                        if (lang.equals("kir"))
+                        {
+                            Toast.makeText(this, "Маълумотлар базасидан танланган маълумот ўчирилди", Toast.LENGTH_SHORT).show();
+
+                        }
+                        else if (lang.equals("rus"))
+                        {
+                            Toast.makeText(this, "Данные удалены из базу", Toast.LENGTH_SHORT).show();
+
+                        }
+                        else if (lang.equals("uz"))
+                        {
+                            Toast.makeText(this, "Ma\'lumotlar bazasidan tanlangan ma\'lumot o\'chirildi", Toast.LENGTH_SHORT).show();
+                        }                           item.setIcon(R.drawable.ic_book_mark_add);
                     }
                     //  Toast.makeText(this, "title:" + title + "\nposition:" + position + "\ntitleSubject:" + titleSubject + "\npositionSubject:" + positionSubject, Toast.LENGTH_LONG).show();
                 }
@@ -259,13 +312,54 @@ public class Detail_Activity extends AppCompatActivity {
 
             List<Acts_Subtitle> acts_subtitles = Administrativniy_kodeks_kir.getActs_Chapter_2();
 
-            for (int i = 0; i < acts_subtitles.size(); i++) {
-                if (positionChapter == i && acts_subtitles.get(i).getTitle().equals(titleChapter)) {
-                    if (dark.equals("no")) {
-                        pdfView.fromAsset("kir/Административный кодекс/2.ИККИНЧИ БЎЛИМ. МАЪМУРИЙ ҲУҚУҚБУЗАРЛИК ВА МАЪМУРИЙ ЖАВОБГАРЛИК/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").nightMode(true).load();
-                    } else {
-                        pdfView.fromAsset("kir/Административный кодекс/2.ИККИНЧИ БЎЛИМ. МАЪМУРИЙ ҲУҚУҚБУЗАРЛИК ВА МАЪМУРИЙ ЖАВОБГАРЛИК/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").load();
+            if (title.equals("Маъмурий жавобгарлик тўғрисидаги кодекси") && position == 0 && titleSubject.equals("II.Иккинчи бўлим. Маъмурий ҳуқуқбузарлик ва маъмурий жавобгарлик") && positionSubject == 1 && titleChapter.equals("9-боб. Саноатдаги, қурилишдаги ва иссиқлик ҳамда электр энергиясидан фойдаланиш соҳасидаги ҳуқуқбузарликлар учун маъмурий жавобгарлик"))
+            {
+                if (dark.equals("no")) {
+                    pdfView.fromAsset("kir/Административный кодекс/2.ИККИНЧИ БЎЛИМ. МАЪМУРИЙ ҲУҚУҚБУЗАРЛИК ВА МАЪМУРИЙ ЖАВОБГАРЛИК/9.9-БОБ. САНОАТДАГИ, ҚУРИЛИШДАГИ ВА ИССИҚЛИК ҲАМДА ЭЛЕКТР.pdf").nightMode(true).load();
+                } else {
+                    pdfView.fromAsset("kir/Административный кодекс/2.ИККИНЧИ БЎЛИМ. МАЪМУРИЙ ҲУҚУҚБУЗАРЛИК ВА МАЪМУРИЙ ЖАВОБГАРЛИК/9.9-БОБ. САНОАТДАГИ, ҚУРИЛИШДАГИ ВА ИССИҚЛИК ҲАМДА ЭЛЕКТР.pdf").load();
 
+                }
+            }
+            else if (title.equals("Маъмурий жавобгарлик тўғрисидаги кодекси") && position == 0 && titleSubject.equals("II.Иккинчи бўлим. Маъмурий ҳуқуқбузарлик ва маъмурий жавобгарлик") && positionSubject == 1 && titleChapter.equals("10-боб. Қишлоқ хўжалигидаги ҳуқуқбузарлик, ветеринария, ветеринария-санитария қоидалари ва нормаларини бузганлик учун маъмурий жавобгарлик"))
+            {
+                if (dark.equals("no")) {
+                    pdfView.fromAsset("kir/Административный кодекс/2.ИККИНЧИ БЎЛИМ. МАЪМУРИЙ ҲУҚУҚБУЗАРЛИК ВА МАЪМУРИЙ ЖАВОБГАРЛИК/10.10-БОБ. ҚИШЛОҚ ХЎЖАЛИГИДАГИ ҲУҚУҚБУЗАРЛИК.pdf").nightMode(true).load();
+                } else {
+                    pdfView.fromAsset("kir/Административный кодекс/2.ИККИНЧИ БЎЛИМ. МАЪМУРИЙ ҲУҚУҚБУЗАРЛИК ВА МАЪМУРИЙ ЖАВОБГАРЛИК/10.10-БОБ. ҚИШЛОҚ ХЎЖАЛИГИДАГИ ҲУҚУҚБУЗАРЛИК.pdf").load();
+
+                }
+            }
+            else if (title.equals("Маъмурий жавобгарлик тўғрисидаги кодекси") && position == 0 && titleSubject.equals("II.Иккинчи бўлим. Маъмурий ҳуқуқбузарлик ва маъмурий жавобгарлик") && positionSubject == 1 && titleChapter.equals("12-боб. Фуқароларнинг турар жой ҳуқуқларига тааллуқли, коммунал хизмат ва ободонлаштириш соҳасидаги ҳуқуқбузарликлар маъмурий жавобгарлик"))
+            {
+                if (dark.equals("no")) {
+                    pdfView.fromAsset("kir/Административный кодекс/2.ИККИНЧИ БЎЛИМ. МАЪМУРИЙ ҲУҚУҚБУЗАРЛИК ВА МАЪМУРИЙ ЖАВОБГАРЛИК/12.12-БОБ. ФУҚАРОЛАРНИНГ ТУРАР ЖОЙ ҲУҚУҚЛАРИГА ТААЛЛУҚЛИ.pdf").nightMode(true).load();
+                } else {
+                    pdfView.fromAsset("kir/Административный кодекс/2.ИККИНЧИ БЎЛИМ. МАЪМУРИЙ ҲУҚУҚБУЗАРЛИК ВА МАЪМУРИЙ ЖАВОБГАРЛИК/12.12-БОБ. ФУҚАРОЛАРНИНГ ТУРАР ЖОЙ ҲУҚУҚЛАРИГА ТААЛЛУҚЛИ.pdf").load();
+
+                }
+            }
+
+            else if (title.equals("Маъмурий жавобгарлик тўғрисидаги кодекси") && position == 0 && titleSubject.equals("II.Иккинчи бўлим. Маъмурий ҳуқуқбузарлик ва маъмурий жавобгарлик") && positionSubject == 1 && titleChapter.equals("16.1 боб. Тадбиркорлик фаолиятига тўсқинлик қилганлик, қонунга хилоф равишда аралашганлик ҳамда хўжалик юритувчи субъектларнинг ҳуқуқлари ва қонуний манфаатларига тажовуз қиладиган бошқа ҳуқуқбузарликлар учун маъмурий жавобгарлик"))
+            {
+                if (dark.equals("no")) {
+                    pdfView.fromAsset("kir/Административный кодекс/2.ИККИНЧИ БЎЛИМ. МАЪМУРИЙ ҲУҚУҚБУЗАРЛИК ВА МАЪМУРИЙ ЖАВОБГАРЛИК/17.16.1-БОБ. ТАДБИРКОРЛИК ФАОЛИЯТИГА ТЎСҚИНЛИК ҚИЛГАНЛИК, ҚОНУНГА ХИЛОФ РАВИШДА АРАЛАШГАНЛИК ҲАМДА ХЎЖАЛИ.pdf").nightMode(true).load();
+                } else {
+                    pdfView.fromAsset("kir/Административный кодекс/2.ИККИНЧИ БЎЛИМ. МАЪМУРИЙ ҲУҚУҚБУЗАРЛИК ВА МАЪМУРИЙ ЖАВОБГАРЛИК/17.16.1-БОБ. ТАДБИРКОРЛИК ФАОЛИЯТИГА ТЎСҚИНЛИК ҚИЛГАНЛИК, ҚОНУНГА ХИЛОФ РАВИШДА АРАЛАШГАНЛИК ҲАМДА ХЎЖАЛИ.pdf").load();
+
+                }
+            }
+
+
+            else {
+                for (int i = 0; i < acts_subtitles.size(); i++) {
+                    if (positionChapter == i && acts_subtitles.get(i).getTitle().equals(titleChapter)) {
+                        if (dark.equals("no")) {
+                            pdfView.fromAsset("kir/Административный кодекс/2.ИККИНЧИ БЎЛИМ. МАЪМУРИЙ ҲУҚУҚБУЗАРЛИК ВА МАЪМУРИЙ ЖАВОБГАРЛИК/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").nightMode(true).load();
+                        } else {
+                            pdfView.fromAsset("kir/Административный кодекс/2.ИККИНЧИ БЎЛИМ. МАЪМУРИЙ ҲУҚУҚБУЗАРЛИК ВА МАЪМУРИЙ ЖАВОБГАРЛИК/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").load();
+
+                        }
                     }
                 }
             }
@@ -311,13 +405,24 @@ public class Detail_Activity extends AppCompatActivity {
 
             List<Acts_Subtitle> acts_subtitles = Administrativniy_kodeks_kir.getActs_Chapter_5();
 
-            for (int i = 0; i < acts_subtitles.size(); i++) {
-                if (positionChapter == i && acts_subtitles.get(i).getTitle().equals(titleChapter)) {
-                    if (dark.equals("no")) {
-                        pdfView.fromAsset("kir/Административный кодекс/5.БЕШИНЧИ БЎЛИМ. МАЪМУРИЙ ЖА3О ҚЎЛЛАНИШ ТЎҒРИСИДАГИ ҚАРОРЛАРНИ ИЖРО ЭТИШ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").nightMode(true).load();
-                    } else {
-                        pdfView.fromAsset("kir/Административный кодекс/5.БЕШИНЧИ БЎЛИМ. МАЪМУРИЙ ЖА3О ҚЎЛЛАНИШ ТЎҒРИСИДАГИ ҚАРОРЛАРНИ ИЖРО ЭТИШ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").load();
+            if (title.equals("Маъмурий жавобгарлик тўғрисидаги кодекси") && position == 0 && titleSubject.equals("V.Бешинчи бўлим. Маъмурий жа3о қўлланиш тўғрисидаги қарорларни ижро этиш") && positionSubject == 4 && titleChapter.equals("30.1-боб. Чет эл фуқароларини ва фуқаролиги бўлмаган шахсларни Ўзбекистон Республикаси ҳудудидан маъмурий тарзда чиқариб юбориш тўғрисидаги қарорни ижро этиш бўйича иш юритиш"))
+            {
+                if (dark.equals("no")) {
+                    pdfView.fromAsset("kir/Административный кодекс/5.БЕШИНЧИ БЎЛИМ. МАЪМУРИЙ ЖА3О ҚЎЛЛАНИШ ТЎҒРИСИДАГИ ҚАРОРЛАРНИ ИЖРО ЭТИШ/7.30.1-БОБ. ЧЕТ ЭЛ ФУҚАРОЛАРИНИ ВА ФУҚАРОЛИГИ БЎЛМАГАН ШАХСЛАРНИ ЎЗБЕКИСТОН РЕСПУБЛИКАСИ ҲУДУДИД.pdf").nightMode(true).load();
+                } else {
+                    pdfView.fromAsset("kir/Административный кодекс/5.БЕШИНЧИ БЎЛИМ. МАЪМУРИЙ ЖА3О ҚЎЛЛАНИШ ТЎҒРИСИДАГИ ҚАРОРЛАРНИ ИЖРО ЭТИШ/7.30.1-БОБ. ЧЕТ ЭЛ ФУҚАРОЛАРИНИ ВА ФУҚАРОЛИГИ БЎЛМАГАН ШАХСЛАРНИ ЎЗБЕКИСТОН РЕСПУБЛИКАСИ ҲУДУДИД.pdf").load();
 
+                }
+            }
+            else {
+                for (int i = 0; i < acts_subtitles.size(); i++) {
+                    if (positionChapter == i && acts_subtitles.get(i).getTitle().equals(titleChapter)) {
+                        if (dark.equals("no")) {
+                            pdfView.fromAsset("kir/Административный кодекс/5.БЕШИНЧИ БЎЛИМ. МАЪМУРИЙ ЖА3О ҚЎЛЛАНИШ ТЎҒРИСИДАГИ ҚАРОРЛАРНИ ИЖРО ЭТИШ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").nightMode(true).load();
+                        } else {
+                            pdfView.fromAsset("kir/Административный кодекс/5.БЕШИНЧИ БЎЛИМ. МАЪМУРИЙ ЖА3О ҚЎЛЛАНИШ ТЎҒРИСИДАГИ ҚАРОРЛАРНИ ИЖРО ЭТИШ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").load();
+
+                        }
                     }
                 }
             }
@@ -540,7 +645,7 @@ public class Detail_Activity extends AppCompatActivity {
             }
         }
 
-        if (title.equals("Жиноят-процессуал кодекси") && position == 3 && titleSubject.equals("III.УЧИНЧИ БЎЛИМ \n" + "Далиллар ва исбот қилиниши лозим бўлган ҳолатлар") && positionSubject == 2) {
+        if (title.equals("Жиноят-процессуал кодекси") && position == 3 && titleSubject.equals("III.Учинчи бўлим \n" + "Далиллар ва исбот қилиниши лозим бўлган ҳолатлар") && positionSubject == 2) {
 
             List<Acts_Subtitle> acts_subtitles = Ugolovniy_protssesualniy_kodeks_kir.getActs_Chapter_3();
 
@@ -641,13 +746,24 @@ public class Detail_Activity extends AppCompatActivity {
 
             List<Acts_Subtitle> acts_subtitles = Ugolovniy_protssesualniy_kodeks_kir.getActs_Chapter_9();
 
-            for (int i = 0; i < acts_subtitles.size(); i++) {
-                if (positionChapter == i && acts_subtitles.get(i).getTitle().equals(titleChapter)) {
-                    if (dark.equals("no")) {
-                        pdfView.fromAsset("kir/Уголовный процессуальный кодекс/9.ТЎҚҚИЗИНЧИ БЎЛИМ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").nightMode(true).load();
-                    } else {
-                        pdfView.fromAsset("kir/Уголовный процессуальный кодекс/9.ТЎҚҚИЗИНЧИ БЎЛИМ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").load();
+            if (title.equals("Жиноят-процессуал кодекси") && position == 3 && titleSubject.equals("IX.Тўққизинчи бўлим \n" + "Ишни судга қадар юритиш") && positionSubject == 8 && titleChapter.equals("47-боб. Суриштирув ва дастлабки тергов органлари шунингдек терговга қадар текширувни амалга оширувчи органларнинг қонунларнинг ижро этиши устидан назорат"))
+            {
+                if (dark.equals("no")) {
+                    pdfView.fromAsset("kir/Уголовный процессуальный кодекс/9.ТЎҚҚИЗИНЧИ БЎЛИМ/8.47-боб. Суриштирув ва дастлабки тергов органлари шунингдек терговга қадар.pdf").nightMode(true).load();
+                } else {
+                    pdfView.fromAsset("kir/Уголовный процессуальный кодекс/9.ТЎҚҚИЗИНЧИ БЎЛИМ/8.47-боб. Суриштирув ва дастлабки тергов органлари шунингдек терговга қадар.pdf").load();
 
+                }
+            }
+            else {
+                for (int i = 0; i < acts_subtitles.size(); i++) {
+                    if (positionChapter == i && acts_subtitles.get(i).getTitle().equals(titleChapter)) {
+                        if (dark.equals("no")) {
+                            pdfView.fromAsset("kir/Уголовный процессуальный кодекс/9.ТЎҚҚИЗИНЧИ БЎЛИМ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").nightMode(true).load();
+                        } else {
+                            pdfView.fromAsset("kir/Уголовный процессуальный кодекс/9.ТЎҚҚИЗИНЧИ БЎЛИМ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").load();
+
+                        }
                     }
                 }
             }
@@ -721,16 +837,29 @@ public class Detail_Activity extends AppCompatActivity {
 
             List<Acts_Subtitle> acts_subtitles = Ugolovniy_protssesualniy_kodeks_kir.getActs_Chapter_14();
 
-            for (int i = 0; i < acts_subtitles.size(); i++) {
-                if (positionChapter == i && acts_subtitles.get(i).getTitle().equals(titleChapter)) {
-                    if (dark.equals("no")) {
-                        pdfView.fromAsset("kir/Уголовный процессуальный кодекс/14.ЎН ТЎРТИНЧИ БЎЛИМ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").nightMode(true).load();
-                    } else {
-                        pdfView.fromAsset("kir/Уголовный процессуальный кодекс/14.ЎН ТЎРТИНЧИ БЎЛИМ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").load();
+            if (title.equals("Жиноят-процессуал кодекси") && position == 3 && titleSubject.equals("XIV.Ўн тўртинчи бўлим \n" + "Жиноий суд ишларини юритиш соҳасидаги халқаро ҳамкорлик") && positionSubject == 13 && titleChapter.equals("64-БОБ. Судлар, прокурорлар, терговчилар ва суриштирув органларининг хорижий давлатлар ваколатли органлари билан ўзаро ҳамкорлигининг тартиби тўғрисидаги асосий қоидалар"))
+            {
+                if (dark.equals("no")) {
+                    pdfView.fromAsset("kir/Уголовный процессуальный кодекс/14.ЎН ТЎРТИНЧИ БЎЛИМ/1.64-БОБ. СУДЛАР, ПРОКУРОРЛАР, ТЕРГОВЧИЛАР ВА СУРИШТИРУВ ОРГАНЛАРИНИНГ.pdf").nightMode(true).load();
+                } else {
+                    pdfView.fromAsset("kir/Уголовный процессуальный кодекс/14.ЎН ТЎРТИНЧИ БЎЛИМ/1.64-БОБ. СУДЛАР, ПРОКУРОРЛАР, ТЕРГОВЧИЛАР ВА СУРИШТИРУВ ОРГАНЛАРИНИНГ.pdf").load();
 
+                }
+            }
+            else {
+                for (int i = 0; i < acts_subtitles.size(); i++) {
+                    if (positionChapter == i && acts_subtitles.get(i).getTitle().equals(titleChapter)) {
+                        if (dark.equals("no")) {
+                            pdfView.fromAsset("kir/Уголовный процессуальный кодекс/14.ЎН ТЎРТИНЧИ БЎЛИМ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").nightMode(true).load();
+                        } else {
+                            pdfView.fromAsset("kir/Уголовный процессуальный кодекс/14.ЎН ТЎРТИНЧИ БЎЛИМ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").load();
+
+                        }
                     }
                 }
             }
+
+
         }
 
         //Уголовный процессуальный кодекс конец
@@ -916,16 +1045,37 @@ public class Detail_Activity extends AppCompatActivity {
 
             List<Acts_Subtitle> acts_subtitles = Nalogoviy_kodeks_kir.getActs_Chapter_12();
 
-            for (int i = 0; i < acts_subtitles.size(); i++) {
-                if (positionChapter == i && acts_subtitles.get(i).getTitle().equals(titleChapter)) {
-                    if (dark.equals("no")) {
-                        pdfView.fromAsset("kir/Налоговый кодекс/12.XII БЎЛИМ ФОЙДА СОЛИҒИ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle() + ".pdf").nightMode(true).load();
-                    } else {
-                        pdfView.fromAsset("kir/Налоговый кодекс/12.XII БЎЛИМ ФОЙДА СОЛИҒИ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle() + ".pdf").load();
+            if (title.equals("Солиқ кодекси") && position == 5 && titleSubject.equals("XII бўлим. Фойда солиғи") && positionSubject == 11 && titleChapter.equals("48-боб. Ўзбекистон Республикасининг солиқ резидентларига тўланадиган дивидендлар ва фоизлар тарзидаги даромадларга солиқ солишнинг ўзига хос хусусиятлари"))
+            {
+                if (dark.equals("no")) {
+                    pdfView.fromAsset("kir/Налоговый кодекс/12.XII БЎЛИМ ФОЙДА СОЛИҒИ/7.48-боб. Ўзбекистон Республикасининг солиқ резидентларига тўланадиган.pdf").nightMode(true).load();
+                } else {
+                    pdfView.fromAsset("kir/Налоговый кодекс/12.XII БЎЛИМ ФОЙДА СОЛИҒИ/7.48-боб. Ўзбекистон Республикасининг солиқ резидентларига тўланадиган.pdf").load();
 
+                }
+            }
+            else if (title.equals("Солиқ кодекси") && position == 5 && titleSubject.equals("XII бўлим. Фойда солиғи") && positionSubject == 11 && titleChapter.equals("49-боб. Фаолиятини доимий муассаса орқали амалга ошираётган норезидентларнинг даромадларига солиқ солишнинг ўзига хос хусусиятлари"))
+            {
+                if (dark.equals("no")) {
+                    pdfView.fromAsset("kir/Налоговый кодекс/12.XII БЎЛИМ ФОЙДА СОЛИҒИ/8.49-боб. Фаолиятини доимий муассаса орқали.pdf").nightMode(true).load();
+                } else {
+                    pdfView.fromAsset("kir/Налоговый кодекс/12.XII БЎЛИМ ФОЙДА СОЛИҒИ/8.49-боб. Фаолиятини доимий муассаса орқали.pdf").load();
+
+                }
+            }
+            else {
+                for (int i = 0; i < acts_subtitles.size(); i++) {
+                    if (positionChapter == i && acts_subtitles.get(i).getTitle().equals(titleChapter)) {
+                        if (dark.equals("no")) {
+                            pdfView.fromAsset("kir/Налоговый кодекс/12.XII БЎЛИМ ФОЙДА СОЛИҒИ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle() + ".pdf").nightMode(true).load();
+                        } else {
+                            pdfView.fromAsset("kir/Налоговый кодекс/12.XII БЎЛИМ ФОЙДА СОЛИҒИ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle() + ".pdf").load();
+
+                        }
                     }
                 }
             }
+
         }
 
         if (title.equals("Солиқ кодекси") && position == 5 && titleSubject.equals("XIII бўлим. Жисмоний шахслардан олинадиган даромад солиғи") && positionSubject == 12) {
@@ -1060,13 +1210,24 @@ public class Detail_Activity extends AppCompatActivity {
 
             List<Acts_Subtitle> acts_subtitles = Nalogoviy_kodeks_kir.getActs_Chapter_21();
 
-            for (int i = 0; i < acts_subtitles.size(); i++) {
-                if (positionChapter == i && acts_subtitles.get(i).getTitle().equals(titleChapter)) {
-                    if (dark.equals("no")) {
-                        pdfView.fromAsset("kir/Налоговый кодекс/21.ХХI БЎЛИМ СОЛИҚ ТЎЛОВЧИЛАРНИНГ АЙРИМ ТОИФАЛАРИГА СОЛИҚ СОЛИШНИНГ ЎЗИГА ХОС ХУСУСИЯТЛАРИ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle() + ".pdf").nightMode(true).load();
-                    } else {
-                        pdfView.fromAsset("kir/Налоговый кодекс/21.ХХI БЎЛИМ СОЛИҚ ТЎЛОВЧИЛАРНИНГ АЙРИМ ТОИФАЛАРИГА СОЛИҚ СОЛИШНИНГ ЎЗИГА ХОС ХУСУСИЯТЛАРИ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle() + ".pdf").load();
+            if (title.equals("Солиқ кодекси") && position == 5 && titleSubject.equals("ХХI бўлим. Солиқ тўловчиларнинг айрим тоифаларига солиқ солишнинг ўзига хос хусусиятлари") && positionSubject == 20 && titleChapter.equals("70-боб. Адвокатлар ҳайъатларига, адвокатлик фирмаларига, адвокатлик бюроларига ва адвокатларга солиқ солишнинг ўзига хос хусусиятлари"))
+            {
+                if (dark.equals("no")) {
+                    pdfView.fromAsset("kir/Налоговый кодекс/21.ХХI БЎЛИМ СОЛИҚ ТЎЛОВЧИЛАРНИНГ АЙРИМ ТОИФАЛАРИГА СОЛИҚ СОЛИШНИНГ ЎЗИГА ХОС ХУСУСИЯТЛАРИ/4.70-боб. Адвокатлар ҳайъатларига, адвокатлик фирмаларига.pdf").nightMode(true).load();
+                } else {
+                    pdfView.fromAsset("kir/Налоговый кодекс/21.ХХI БЎЛИМ СОЛИҚ ТЎЛОВЧИЛАРНИНГ АЙРИМ ТОИФАЛАРИГА СОЛИҚ СОЛИШНИНГ ЎЗИГА ХОС ХУСУСИЯТЛАРИ/4.70-боб. Адвокатлар ҳайъатларига, адвокатлик фирмаларига.pdf").load();
 
+                }
+            }
+            else {
+                for (int i = 0; i < acts_subtitles.size(); i++) {
+                    if (positionChapter == i && acts_subtitles.get(i).getTitle().equals(titleChapter)) {
+                        if (dark.equals("no")) {
+                            pdfView.fromAsset("kir/Налоговый кодекс/21.ХХI БЎЛИМ СОЛИҚ ТЎЛОВЧИЛАРНИНГ АЙРИМ ТОИФАЛАРИГА СОЛИҚ СОЛИШНИНГ ЎЗИГА ХОС ХУСУСИЯТЛАРИ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle() + ".pdf").nightMode(true).load();
+                        } else {
+                            pdfView.fromAsset("kir/Налоговый кодекс/21.ХХI БЎЛИМ СОЛИҚ ТЎЛОВЧИЛАРНИНГ АЙРИМ ТОИФАЛАРИГА СОЛИҚ СОЛИШНИНГ ЎЗИГА ХОС ХУСУСИЯТЛАРИ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle() + ".pdf").load();
+
+                        }
                     }
                 }
             }
@@ -1356,9 +1517,9 @@ public class Detail_Activity extends AppCompatActivity {
             for (int i = 0; i < acts_subtitles.size(); i++) {
                 if (positionChapter == i && acts_subtitles.get(i).getTitle().equals(titleChapter)) {
                     if (dark.equals("no")) {
-                        pdfView.fromAsset("kir/Таможенный кодекс/9.IX бўлим. Божхона статистикаси. Божхона ишида ахборот-коммуникация технологиялари. Интеллектуал мулк объектларига бўлган ҳуқуқларни ҳимоя қилиш/" + (i + 1) + "." + acts_subtitles.get(i).getTitle() + ".pdf").nightMode(true).load();
+                        pdfView.fromAsset("kir/Таможенный кодекс/9.IX бўлим. Божхона статистикаси. Божхона ишида ахборот-коммуникация технологиялари/" + (i + 1) + "." + acts_subtitles.get(i).getTitle() + ".pdf").nightMode(true).load();
                     } else {
-                        pdfView.fromAsset("kir/Таможенный кодекс/9.IX бўлим. Божхона статистикаси. Божхона ишида ахборот-коммуникация технологиялари. Интеллектуал мулк объектларига бўлган ҳуқуқларни ҳимоя қилиш/" + (i + 1) + "." + acts_subtitles.get(i).getTitle() + ".pdf").load();
+                        pdfView.fromAsset("kir/Таможенный кодекс/9.IX бўлим. Божхона статистикаси. Божхона ишида ахборот-коммуникация технологиялари/" + (i + 1) + "." + acts_subtitles.get(i).getTitle() + ".pdf").load();
 
                     }
                 }
@@ -1369,16 +1530,28 @@ public class Detail_Activity extends AppCompatActivity {
 
             List<Acts_Subtitle> acts_subtitles = Tamojenniy_kodeks_kir.getActs_Chapter_10();
 
-            for (int i = 0; i < acts_subtitles.size(); i++) {
-                if (positionChapter == i && acts_subtitles.get(i).getTitle().equals(titleChapter)) {
-                    if (dark.equals("no")) {
-                        pdfView.fromAsset("kir/Таможенный кодекс/10.X бўлим. Чет эллик шахсларнинг айрим тоифалари учун божхона имтиёзлари/" + (i + 1) + "." + acts_subtitles.get(i).getTitle() + ".pdf").nightMode(true).load();
-                    } else {
-                        pdfView.fromAsset("kir/Таможенный кодекс/10.X бўлим. Чет эллик шахсларнинг айрим тоифалари учун божхона имтиёзлари/" + (i + 1) + "." + acts_subtitles.get(i).getTitle() + ".pdf").load();
+            if (title.equals("Божхона кодекси") && position == 8 && titleSubject.equals("X бўлим. Чет эллик шахсларнинг айрим тоифалари учун божхона имтиёзлари") && positionSubject == 9 && titleChapter.equals("59-боб. Ўзбекистон Республикасининг чет давлатлардаги дипломатик ваколатхоналари ва консуллик муассасалари ҳамда уларнинг ходимлари учун божхона имтиёзлари"))
+            {
+                if (dark.equals("no")) {
+                    pdfView.fromAsset("kir/Таможенный кодекс/10.X бўлим. Чет эллик шахсларнинг айрим тоифалари учун божхона имтиёзлари/3.59-боб. Ўзбекистон Республикасининг чет давлатлардаги.pdf").nightMode(true).load();
+                } else {
+                    pdfView.fromAsset("kir/Таможенный кодекс/10.X бўлим. Чет эллик шахсларнинг айрим тоифалари учун божхона имтиёзлари/3.59-боб. Ўзбекистон Республикасининг чет давлатлардаги.pdf").load();
 
+                }
+            }
+            else {
+                for (int i = 0; i < acts_subtitles.size(); i++) {
+                    if (positionChapter == i && acts_subtitles.get(i).getTitle().equals(titleChapter)) {
+                        if (dark.equals("no")) {
+                            pdfView.fromAsset("kir/Таможенный кодекс/10.X бўлим. Чет эллик шахсларнинг айрим тоифалари учун божхона имтиёзлари/" + (i + 1) + "." + acts_subtitles.get(i).getTitle() + ".pdf").nightMode(true).load();
+                        } else {
+                            pdfView.fromAsset("kir/Таможенный кодекс/10.X бўлим. Чет эллик шахсларнинг айрим тоифалари учун божхона имтиёзлари/" + (i + 1) + "." + acts_subtitles.get(i).getTitle() + ".pdf").load();
+
+                        }
                     }
                 }
             }
+
         }
 
         if (title.equals("Божхона кодекси") && position == 8 && titleSubject.equals("XI бўлим. Назорат остида етказиб бериш") && positionSubject == 10) {
@@ -1557,12 +1730,26 @@ public class Detail_Activity extends AppCompatActivity {
                 Log.i("title", actsList.get(i).getTitle());
 
                 if (positionSubject == i && actsList.get(i).getTitle().equals(titleSubject)) {
-                    if (dark.equals("no")) {
-                        pdfView.fromAsset("kir/Земельный кодекс/" + (i + 1) + "." + actsList.get(i).getTitle().toUpperCase() + ".pdf").nightMode(true).load();
-                    } else {
-                        pdfView.fromAsset("kir/Земельный кодекс/" + (i + 1) + "." + actsList.get(i).getTitle().toUpperCase() + ".pdf").load();
 
+                    if (titleSubject.equals("XIII-боб. Ер эгалари, ердан фойдаланувчилар, ер участкалари ижарачиларига ва мулкдорларига етказилган зарар ҳамда қишлоқ хўжалиги ва ўрмон хўжалиги ишлаб чиқариши нобудгарчиликларининг ўрнини қоплаш"))
+                    {
+                        if (dark.equals("no")) {
+                            pdfView.fromAsset("kir/Земельный кодекс/13.XIII-БОБ. ЕР ЭГАЛАРИ, ЕРДАН ФОЙДАЛАНУВЧИЛАР.pdf").nightMode(true).load();
+                        } else {
+                            pdfView.fromAsset("kir/Земельный кодекс/13.XIII-БОБ. ЕР ЭГАЛАРИ, ЕРДАН ФОЙДАЛАНУВЧИЛАР.pdf").load();
+
+                        }
                     }
+                    else {
+
+                        if (dark.equals("no")) {
+                            pdfView.fromAsset("kir/Земельный кодекс/" + (i + 1) + "." + actsList.get(i).getTitle().toUpperCase() + ".pdf").nightMode(true).load();
+                        } else {
+                            pdfView.fromAsset("kir/Земельный кодекс/" + (i + 1) + "." + actsList.get(i).getTitle().toUpperCase() + ".pdf").load();
+
+                        }
+                    }
+
                 }
             }
         }
@@ -1629,20 +1816,34 @@ public class Detail_Activity extends AppCompatActivity {
 
         }
 
+
         if (title.equals("Ma’muriy javobkarlik to‘g‘risidagi kodeksi") && position == 0 && titleSubject.equals("II.Ikkinchi bo‘lim. Ma’muriy huquqbuzarlik va ma’muriy javobgarlik") && positionSubject == 1) {
 
             List<Acts_Subtitle> acts_subtitles = Administrativniy_kodeks_uz.getActs_Chapter_2();
 
-            for (int i = 0; i < acts_subtitles.size(); i++) {
-                if (positionChapter == i && acts_subtitles.get(i).getTitle().equals(titleChapter)) {
-                    if (dark.equals("no")) {
-                        pdfView.fromAsset("lat/Административный кодекс/2.II.Ikkinchi bo‘lim. Ma’muriy huquqbuzarlik va ma’muriy javobgarlik/" + (i + 1) + "." + acts_subtitles.get(i).getTitle() + ".pdf").nightMode(true).load();
-                    } else {
-                        pdfView.fromAsset("lat/Административный кодекс/2.II.Ikkinchi bo‘lim. Ma’muriy huquqbuzarlik va ma’muriy javobgarlik/" + (i + 1) + "." + acts_subtitles.get(i).getTitle() + ".pdf").load();
 
+            if(title.equals("Ma’muriy javobkarlik to‘g‘risidagi kodeksi") && position == 0 && titleSubject.equals("II.Ikkinchi bo‘lim. Ma’muriy huquqbuzarlik va ma’muriy javobgarlik") && positionSubject == 1 && titleChapter.equals("16.1-bob. Tadbirkorlik faoliyatiga to‘sqinlik qilganlik, qonunga xilof ravishda aralashganlik hamda xo‘jalik yurituvchi subyektlarning huquqlari va qonuniy manfaatlariga tajovuz qiladigan boshqa huquqbuzarliklar uchun ma’muriy javobgarlik") && positionChapter == 16)
+            {
+                if (dark.equals("no")) {
+                    pdfView.fromAsset("lat/Административный кодекс/2.II.Ikkinchi bo‘lim. Ma’muriy huquqbuzarlik va ma’muriy javobgarlik/17.16.1-bob. Tadbirkorlik faoliyatiga to‘sqinlik qilganlik.pdf").nightMode(true).load();
+                } else {
+                    pdfView.fromAsset("lat/Административный кодекс/2.II.Ikkinchi bo‘lim. Ma’muriy huquqbuzarlik va ma’muriy javobgarlik/17.16.1-bob. Tadbirkorlik faoliyatiga to‘sqinlik qilganlik.pdf").load();
+
+                }
+            }else {
+                for (int i = 0; i < acts_subtitles.size(); i++) {
+                    if (positionChapter == i && acts_subtitles.get(i).getTitle().equals(titleChapter)) {
+                        if (dark.equals("no")) {
+                            pdfView.fromAsset("lat/Административный кодекс/2.II.Ikkinchi bo‘lim. Ma’muriy huquqbuzarlik va ma’muriy javobgarlik/" + (i + 1) + "." + acts_subtitles.get(i).getTitle() + ".pdf").nightMode(true).load();
+                        } else {
+                            pdfView.fromAsset("lat/Административный кодекс/2.II.Ikkinchi bo‘lim. Ma’muriy huquqbuzarlik va ma’muriy javobgarlik/" + (i + 1) + "." + acts_subtitles.get(i).getTitle() + ".pdf").load();
+
+                        }
                     }
                 }
             }
+
+
 
 
         }
@@ -2025,13 +2226,24 @@ public class Detail_Activity extends AppCompatActivity {
 
             List<Acts_Subtitle> acts_subtitles = Ugolovniy_protssesualniy_kodeks_uz.getActs_Chapter_9();
 
-            for (int i = 0; i < acts_subtitles.size(); i++) {
-                if (positionChapter == i && acts_subtitles.get(i).getTitle().equals(titleChapter)) {
-                    if (dark.equals("no")) {
-                        pdfView.fromAsset("lat/Уголовный процессуальный кодекс/9.TO‘QQIZINChI BO‘LIM -ISHNI SUDGA QADAR YuRITISH/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").nightMode(true).load();
-                    } else {
-                        pdfView.fromAsset("lat/Уголовный процессуальный кодекс/9.TO‘QQIZINChI BO‘LIM -ISHNI SUDGA QADAR YuRITISH/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").load();
+            if(title.equals("Jinoyat-prosessual kodeksi") && position == 3 && titleSubject.equals("IX.To‘qqizinchi bo‘lim \n" + "Ishni sudga qadar yuritish") && positionSubject == 8 && titleChapter.equals("47-bob. Surishtiruv va dastlabki tergov organlari shuningdek tergovga qadar tekshiruvni amalga oshiruvchi organlarning qonunlarning ijro etish ustidan nazorat"))
+            {
+                if (dark.equals("no")) {
+                    pdfView.fromAsset("lat/Уголовный процессуальный кодекс/9.TO‘QQIZINChI BO‘LIM -ISHNI SUDGA QADAR YuRITISH/8.47-BOB. SURISHTIRUV VA DASTLABKI TERGOV.pdf").nightMode(true).load();
+                } else {
+                    pdfView.fromAsset("lat/Уголовный процессуальный кодекс/9.TO‘QQIZINChI BO‘LIM -ISHNI SUDGA QADAR YuRITISH/8.47-BOB. SURISHTIRUV VA DASTLABKI TERGOV.pdf").load();
 
+                }
+            }
+            else {
+                for (int i = 0; i < acts_subtitles.size(); i++) {
+                    if (positionChapter == i && acts_subtitles.get(i).getTitle().equals(titleChapter)) {
+                        if (dark.equals("no")) {
+                            pdfView.fromAsset("lat/Уголовный процессуальный кодекс/9.TO‘QQIZINChI BO‘LIM -ISHNI SUDGA QADAR YuRITISH/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").nightMode(true).load();
+                        } else {
+                            pdfView.fromAsset("lat/Уголовный процессуальный кодекс/9.TO‘QQIZINChI BO‘LIM -ISHNI SUDGA QADAR YuRITISH/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").load();
+
+                        }
                     }
                 }
             }
@@ -2105,13 +2317,24 @@ public class Detail_Activity extends AppCompatActivity {
 
             List<Acts_Subtitle> acts_subtitles = Ugolovniy_protssesualniy_kodeks_uz.getActs_Chapter_14();
 
-            for (int i = 0; i < acts_subtitles.size(); i++) {
-                if (positionChapter == i && acts_subtitles.get(i).getTitle().equals(titleChapter)) {
-                    if (dark.equals("no")) {
-                        pdfView.fromAsset("lat/Уголовный процессуальный кодекс/14.O‘N TO‘RTINChI BO‘LIM -JINOIY SUD ISHLARINI YuRITISH SOHASIDAGI XALQARO HAMKORLIK/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").nightMode(true).load();
-                    } else {
-                        pdfView.fromAsset("lat/Уголовный процессуальный кодекс/14.O‘N TO‘RTINChI BO‘LIM -JINOIY SUD ISHLARINI YuRITISH SOHASIDAGI XALQARO HAMKORLIK/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").load();
+            if (title.equals("Jinoyat-prosessual kodeksi") && position == 3 && titleSubject.equals("XIV.O‘n to‘rtinchi bo‘lim \n" + "Jinoiy sud ishlarini yuritish sohasidagi xalqaro hamkorlik") && positionSubject == 13 && titleChapter.equals("64-bob. Sudlar, prokurorlar, tergovchilar va surishtiruv organlarining xorijiy davlatlar vakolatli organlari bilan o‘zaro hamkorligining tartibi to‘gʻrisidagi asosiy qoidalar"))
+            {
+                if (dark.equals("no")) {
+                    pdfView.fromAsset("lat/Уголовный процессуальный кодекс/14.O‘N TO‘RTINChI BO‘LIM -JINOIY SUD ISHLARINI YuRITISH SOHASIDAGI XALQARO HAMKORLIK/1.64-BOB. SUDLAR, PROKURORLAR, TERGOVCHILAR VA SURISHTIRUV ORGANLARINING XORIJIY DAVLATLAR VAKOLATLI ORGANLA.pdf").nightMode(true).load();
+                } else {
+                    pdfView.fromAsset("lat/Уголовный процессуальный кодекс/14.O‘N TO‘RTINChI BO‘LIM -JINOIY SUD ISHLARINI YuRITISH SOHASIDAGI XALQARO HAMKORLIK/1.64-BOB. SUDLAR, PROKURORLAR, TERGOVCHILAR VA SURISHTIRUV ORGANLARINING XORIJIY DAVLATLAR VAKOLATLI ORGANLA.pdf").load();
 
+                }
+            }
+            else {
+                for (int i = 0; i < acts_subtitles.size(); i++) {
+                    if (positionChapter == i && acts_subtitles.get(i).getTitle().equals(titleChapter)) {
+                        if (dark.equals("no")) {
+                            pdfView.fromAsset("lat/Уголовный процессуальный кодекс/14.O‘N TO‘RTINChI BO‘LIM -JINOIY SUD ISHLARINI YuRITISH SOHASIDAGI XALQARO HAMKORLIK/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").nightMode(true).load();
+                        } else {
+                            pdfView.fromAsset("lat/Уголовный процессуальный кодекс/14.O‘N TO‘RTINChI BO‘LIM -JINOIY SUD ISHLARINI YuRITISH SOHASIDAGI XALQARO HAMKORLIK/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").load();
+
+                        }
                     }
                 }
             }
@@ -2137,7 +2360,7 @@ public class Detail_Activity extends AppCompatActivity {
             }
         }
 
-        if (title.equals("Soliq kodeksi") && position == 5 && titleSubject.equals("II bo‘lim. Soliq hisobi va soliq hisobotlar") && positionSubject == 1) {
+        if (title.equals("Soliq kodeksi") && position == 5 && titleSubject.equals("II bo‘lim. Soliq hisobi va soliq hisobotlari") && positionSubject == 1) {
 
             List<Acts_Subtitle> acts_subtitles = Nalogoviy_kodeks_uz.getActs_Chapter_2();
 
@@ -2468,11 +2691,23 @@ public class Detail_Activity extends AppCompatActivity {
                 Log.i("title", actsList.get(i).getTitle());
 
                 if (positionSubject == i && actsList.get(i).getTitle().equals(titleSubject)) {
-                    if (dark.equals("no")) {
-                        pdfView.fromAsset("lat/Земельный кодекс/" + (i + 1) + "." + actsList.get(i).getTitle().toUpperCase() + ".pdf").nightMode(true).load();
-                    } else {
-                        pdfView.fromAsset("lat/Земельный кодекс/" + (i + 1) + "." + actsList.get(i).getTitle().toUpperCase() + ".pdf").load();
 
+                    if (titleSubject.equals("XIII bob. Yer egalari, yerdan foydalanuvchilar, yer uchastkalari ijarachilariga va mulkdorlariga yetkazilgan zarar hamda qishloq xo‘jaligi va o‘rmon xo‘jaligi ishlab chiqarishi nobudgarchiliklarining o‘rnini qoplash"))
+                    {
+                        if (dark.equals("no")) {
+                            pdfView.fromAsset("lat/Земельный кодекс/13.XIII BOB. YER EGALARI, YERDAN FOYDALANUVCHILAR.pdf").nightMode(true).load();
+                        } else {
+                            pdfView.fromAsset("lat/Земельный кодекс/13.XIII BOB. YER EGALARI, YERDAN FOYDALANUVCHILAR.pdf").load();
+
+                        }
+                    }
+                    else {
+                        if (dark.equals("no")) {
+                            pdfView.fromAsset("lat/Земельный кодекс/" + (i + 1) + "." + actsList.get(i).getTitle().toUpperCase() + ".pdf").nightMode(true).load();
+                        } else {
+                            pdfView.fromAsset("lat/Земельный кодекс/" + (i + 1) + "." + actsList.get(i).getTitle().toUpperCase() + ".pdf").load();
+
+                        }
                     }
                 }
             }
@@ -3034,13 +3269,51 @@ public class Detail_Activity extends AppCompatActivity {
 
             List<Acts_Subtitle> acts_subtitles = Administrativniy_kodeks_ru.getActs_Chapter_2();
 
-            for (int i = 0; i < acts_subtitles.size(); i++) {
-                if (positionChapter == i && acts_subtitles.get(i).getTitle().equals(titleChapter)) {
-                    if (dark.equals("no")) {
-                        pdfView.fromAsset("rus/Административный кодекс/2.РАЗДЕЛ ВТОРОЙ. АДМИНИСТРАТИВНОЕ ПРАВОНАРУШЕНИЕ И АДМИНИСТРАТИВНАЯ ОТВЕТСТВЕННОСТЬ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").nightMode(true).load();
-                    } else {
-                        pdfView.fromAsset("rus/Административный кодекс/2.РАЗДЕЛ ВТОРОЙ. АДМИНИСТРАТИВНОЕ ПРАВОНАРУШЕНИЕ И АДМИНИСТРАТИВНАЯ ОТВЕТСТВЕННОСТЬ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").load();
+            if (title.equals("Административный кодекс") && position == 0 && titleSubject.equals("II.Раздел второй. административное правонарушение и административная ответственность") && positionSubject == 1 && titleChapter.equals("Глава 9. Административная ответственность за правонарушения в промышленности, строительстве и области использования тепловой и электрической энергии"))
+            {
+                if (dark.equals("no")) {
+                    pdfView.fromAsset("rus/Административный кодекс/2.РАЗДЕЛ ВТОРОЙ. АДМИНИСТРАТИВНОЕ ПРАВОНАРУШЕНИЕ И АДМИНИСТРАТИВНАЯ ОТВЕТСТВЕННОСТЬ/9.ГЛАВА 9. АДМИНИСТРАТИВНАЯ ОТВЕТСТВЕННОСТЬ.pdf").nightMode(true).load();
+                } else {
+                    pdfView.fromAsset("rus/Административный кодекс/2.РАЗДЕЛ ВТОРОЙ. АДМИНИСТРАТИВНОЕ ПРАВОНАРУШЕНИЕ И АДМИНИСТРАТИВНАЯ ОТВЕТСТВЕННОСТЬ/9.ГЛАВА 9. АДМИНИСТРАТИВНАЯ ОТВЕТСТВЕННОСТЬ.pdf").load();
 
+                }
+            }
+            else if(title.equals("Административный кодекс") && position == 0 && titleSubject.equals("II.Раздел второй. административное правонарушение и административная ответственность") && positionSubject == 1 && titleChapter.equals("Глава 10. Административная ответственность за правонарушения в сельском хозяйстве, нарушения ветеринарных, ветеринарно-санитарных правил и норм"))
+            {
+                if (dark.equals("no")) {
+                    pdfView.fromAsset("rus/Административный кодекс/2.РАЗДЕЛ ВТОРОЙ. АДМИНИСТРАТИВНОЕ ПРАВОНАРУШЕНИЕ И АДМИНИСТРАТИВНАЯ ОТВЕТСТВЕННОСТЬ/10.ГЛАВА 10. АДМИНИСТРАТИВНАЯ ОТВЕТСТВЕННОСТЬ ЗА ПРАВОНАРУШЕНИЯ В СЕЛЬСКОМ ХОЗЯЙСТВЕ.pdf").nightMode(true).load();
+                } else {
+                    pdfView.fromAsset("rus/Административный кодекс/2.РАЗДЕЛ ВТОРОЙ. АДМИНИСТРАТИВНОЕ ПРАВОНАРУШЕНИЕ И АДМИНИСТРАТИВНАЯ ОТВЕТСТВЕННОСТЬ/10.ГЛАВА 10. АДМИНИСТРАТИВНАЯ ОТВЕТСТВЕННОСТЬ ЗА ПРАВОНАРУШЕНИЯ В СЕЛЬСКОМ ХОЗЯЙСТВЕ.pdf").load();
+
+                }
+            }
+            else if (title.equals("Административный кодекс") && position == 0 && titleSubject.equals("II.Раздел второй. административное правонарушение и административная ответственность") && positionSubject == 1 && titleChapter.equals("Глава 12. Административная ответственность за правонарушения в области жилищных прав граждан, коммунального обслуживания и благоустройства"))
+            {
+                if (dark.equals("no")) {
+                    pdfView.fromAsset("rus/Административный кодекс/2.РАЗДЕЛ ВТОРОЙ. АДМИНИСТРАТИВНОЕ ПРАВОНАРУШЕНИЕ И АДМИНИСТРАТИВНАЯ ОТВЕТСТВЕННОСТЬ/12.ГЛАВА 12. АДМИНИСТРАТИВНАЯ ОТВЕТСТВЕННОСТЬ.pdf").nightMode(true).load();
+                } else {
+                    pdfView.fromAsset("rus/Административный кодекс/2.РАЗДЕЛ ВТОРОЙ. АДМИНИСТРАТИВНОЕ ПРАВОНАРУШЕНИЕ И АДМИНИСТРАТИВНАЯ ОТВЕТСТВЕННОСТЬ/12.ГЛАВА 12. АДМИНИСТРАТИВНАЯ ОТВЕТСТВЕННОСТЬ.pdf").load();
+
+                }
+            }
+            else if (title.equals("Административный кодекс") && position == 0 && titleSubject.equals("II.Раздел второй. административное правонарушение и административная ответственность") && positionSubject == 1 && titleChapter.equals("Глава 16.1. Административная ответственность за воспрепятствование, незаконное вмешательство в предпринимательскую деятельность и другие правонарушения, посягающие на права и законные интересы хозяйствующих субъектов"))
+            {
+                if (dark.equals("no")) {
+                    pdfView.fromAsset("rus/Административный кодекс/2.РАЗДЕЛ ВТОРОЙ. АДМИНИСТРАТИВНОЕ ПРАВОНАРУШЕНИЕ И АДМИНИСТРАТИВНАЯ ОТВЕТСТВЕННОСТЬ/17.ГЛАВА 16.1. АДМИНИСТРАТИВНАЯ ОТВЕТСТВЕННОСТЬ.pdf").nightMode(true).load();
+                } else {
+                    pdfView.fromAsset("rus/Административный кодекс/2.РАЗДЕЛ ВТОРОЙ. АДМИНИСТРАТИВНОЕ ПРАВОНАРУШЕНИЕ И АДМИНИСТРАТИВНАЯ ОТВЕТСТВЕННОСТЬ/17.ГЛАВА 16.1. АДМИНИСТРАТИВНАЯ ОТВЕТСТВЕННОСТЬ.pdf").load();
+
+                }
+            }
+            else {
+                for (int i = 0; i < acts_subtitles.size(); i++) {
+                    if (positionChapter == i && acts_subtitles.get(i).getTitle().equals(titleChapter)) {
+                        if (dark.equals("no")) {
+                            pdfView.fromAsset("rus/Административный кодекс/2.РАЗДЕЛ ВТОРОЙ. АДМИНИСТРАТИВНОЕ ПРАВОНАРУШЕНИЕ И АДМИНИСТРАТИВНАЯ ОТВЕТСТВЕННОСТЬ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").nightMode(true).load();
+                        } else {
+                            pdfView.fromAsset("rus/Административный кодекс/2.РАЗДЕЛ ВТОРОЙ. АДМИНИСТРАТИВНОЕ ПРАВОНАРУШЕНИЕ И АДМИНИСТРАТИВНАЯ ОТВЕТСТВЕННОСТЬ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").load();
+
+                        }
                     }
                 }
             }
@@ -3051,6 +3324,8 @@ public class Detail_Activity extends AppCompatActivity {
         if (title.equals("Административный кодекс") && position == 0 && titleSubject.equals("III.Раздел третий. органы (должностные лица), уполномоченные рассматривать дела об административных правонарушениях") && positionSubject == 2) {
 
             List<Acts_Subtitle> acts_subtitles = Administrativniy_kodeks_ru.getActs_Chapter_3();
+
+
 
             for (int i = 0; i < acts_subtitles.size(); i++) {
                 if (positionChapter == i && acts_subtitles.get(i).getTitle().equals(titleChapter)) {
@@ -3086,13 +3361,24 @@ public class Detail_Activity extends AppCompatActivity {
 
             List<Acts_Subtitle> acts_subtitles = Administrativniy_kodeks_ru.getActs_Chapter_5();
 
-            for (int i = 0; i < acts_subtitles.size(); i++) {
-                if (positionChapter == i && acts_subtitles.get(i).getTitle().equals(titleChapter)) {
-                    if (dark.equals("no")) {
-                        pdfView.fromAsset("rus/Административный кодекс/5.РАЗДЕЛ ПЯТЫЙ. ИСПОЛНЕНИЕ ПОСТАНОВЛЕНИЙ О ПРИМЕНЕНИИ АДМИНИСТРАТИВНЫХ ВЗЫСКАНИЙ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").nightMode(true).load();
-                    } else {
-                        pdfView.fromAsset("rus/Административный кодекс/5.РАЗДЕЛ ПЯТЫЙ. ИСПОЛНЕНИЕ ПОСТАНОВЛЕНИЙ О ПРИМЕНЕНИИ АДМИНИСТРАТИВНЫХ ВЗЫСКАНИЙ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").load();
+            if (title.equals("Административный кодекс") && position == 0 && titleSubject.equals("V.Раздел пятый. исполнение постановлений о применении административных взысканий") && positionSubject == 4 && titleChapter.equals("Глава 30.1. Производство по исполнению постановления об административном выдворении иностранных граждан и лиц без гражданства за пределы Республики Узбекистан"))
+            {
+                if (dark.equals("no")) {
+                    pdfView.fromAsset("rus/Административный кодекс/5.РАЗДЕЛ ПЯТЫЙ. ИСПОЛНЕНИЕ ПОСТАНОВЛЕНИЙ О ПРИМЕНЕНИИ АДМИНИСТРАТИВНЫХ ВЗЫСКАНИЙ/7.ГЛАВА 30.1. ПРОИЗВОДСТВО ПО ИСПОЛНЕНИЮ ПОСТАНОВЛЕНИЯ ОБ АДМИНИСТРАТИВНОМ.pdf").nightMode(true).load();
+                } else {
+                    pdfView.fromAsset("rus/Административный кодекс/5.РАЗДЕЛ ПЯТЫЙ. ИСПОЛНЕНИЕ ПОСТАНОВЛЕНИЙ О ПРИМЕНЕНИИ АДМИНИСТРАТИВНЫХ ВЗЫСКАНИЙ/7.ГЛАВА 30.1. ПРОИЗВОДСТВО ПО ИСПОЛНЕНИЮ ПОСТАНОВЛЕНИЯ ОБ АДМИНИСТРАТИВНОМ.pdf").load();
 
+                }
+            }
+            else {
+                for (int i = 0; i < acts_subtitles.size(); i++) {
+                    if (positionChapter == i && acts_subtitles.get(i).getTitle().equals(titleChapter)) {
+                        if (dark.equals("no")) {
+                            pdfView.fromAsset("rus/Административный кодекс/5.РАЗДЕЛ ПЯТЫЙ. ИСПОЛНЕНИЕ ПОСТАНОВЛЕНИЙ О ПРИМЕНЕНИИ АДМИНИСТРАТИВНЫХ ВЗЫСКАНИЙ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").nightMode(true).load();
+                        } else {
+                            pdfView.fromAsset("rus/Административный кодекс/5.РАЗДЕЛ ПЯТЫЙ. ИСПОЛНЕНИЕ ПОСТАНОВЛЕНИЙ О ПРИМЕНЕНИИ АДМИНИСТРАТИВНЫХ ВЗЫСКАНИЙ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").load();
+
+                        }
                     }
                 }
             }
@@ -3232,7 +3518,7 @@ public class Detail_Activity extends AppCompatActivity {
 
         if (title.equals("Бюджетный кодекс") && position == 1 && titleSubject.equals("Раздел IX. Контроль за исполнением бюджетов бюджетной системы") && positionSubject == 8) {
 
-            List<Acts_Subtitle> acts_subtitles = Byudjetniy_kodeks_ru.getActs_Chapter_8();
+            List<Acts_Subtitle> acts_subtitles = Byudjetniy_kodeks_ru.getActs_Chapter_9();
 
             for (int i = 0; i < acts_subtitles.size(); i++) {
                 if (positionChapter == i && acts_subtitles.get(i).getTitle().equals(titleChapter)) {
@@ -3309,13 +3595,29 @@ public class Detail_Activity extends AppCompatActivity {
 
                 Log.i("title", actsList.get(i).getTitle());
 
-                if (positionSubject == i && actsList.get(i).getTitle().equals(titleSubject)) {
-                    if (dark.equals("no")) {
-                        pdfView.fromAsset("rus/Земельный кодекс/" + (i + 1) + "." + actsList.get(i).getTitle().toUpperCase() + ".pdf").nightMode(true).load();
-                    } else {
-                        pdfView.fromAsset("rus/Земельный кодекс/" + (i + 1) + "." + actsList.get(i).getTitle().toUpperCase() + ".pdf").load();
 
+
+                if (positionSubject == i && actsList.get(i).getTitle().equals(titleSubject)) {
+
+                    if (titleSubject.equals("Глава XIII. Ввозмещение убытков землевладельцам, землепользователям, арендаторам, собственникам земельных участков и потерь сельскохозяйственного и лесохозяйственного производства"))
+                    {
+                        if (dark.equals("no")) {
+                            pdfView.fromAsset("rus/Земельный кодекс/13.ГЛАВА XIII. ВОЗМЕЩЕНИЕ УБЫТКОВ ЗЕМЛЕВЛАДЕЛЬЦАМ, ЗЕМЛЕПОЛЬЗОВАТЕЛЯМ, АРЕНДАТОРАМ.pdf").nightMode(true).load();
+                        } else {
+                            pdfView.fromAsset("rus/Земельный кодекс/13.ГЛАВА XIII. ВОЗМЕЩЕНИЕ УБЫТКОВ ЗЕМЛЕВЛАДЕЛЬЦАМ, ЗЕМЛЕПОЛЬЗОВАТЕЛЯМ, АРЕНДАТОРАМ.pdf").load();
+
+                        }
                     }
+                    else {
+                        if (dark.equals("no")) {
+                            pdfView.fromAsset("rus/Земельный кодекс/" + (i + 1) + "." + actsList.get(i).getTitle().toUpperCase() + ".pdf").nightMode(true).load();
+                        } else {
+                            pdfView.fromAsset("rus/Земельный кодекс/" + (i + 1) + "." + actsList.get(i).getTitle().toUpperCase() + ".pdf").load();
+
+                        }
+                    }
+
+
                 }
             }
         }
@@ -3437,7 +3739,7 @@ public class Detail_Activity extends AppCompatActivity {
             }
         }
 
-        if (title.equals("Налоговый кодекс") && position == 5 && titleSubject.equals("Раздел VIII. Акцизный налогГ") && positionSubject == 7) {
+        if (title.equals("Налоговый кодекс") && position == 5 && titleSubject.equals("Раздел VIII. Акцизный налог") && positionSubject == 7) {
 
             List<Acts_Subtitle> acts_subtitles = Nalogoviy_kodeks_ru.getActs_Chapter_8();
 
@@ -3469,7 +3771,7 @@ public class Detail_Activity extends AppCompatActivity {
             }
         }
 
-        if (title.equals("Налоговый кодекс") && position == 5 && titleSubject.equals("Раздел X. Налог за пользование водными ресурсамиИ") && positionSubject == 9) {
+        if (title.equals("Налоговый кодекс") && position == 5 && titleSubject.equals("Раздел X. Налог за пользование водными ресурсами") && positionSubject == 9) {
 
             List<Acts_Subtitle> acts_subtitles = Nalogoviy_kodeks_ru.getActs_Chapter_10();
 
@@ -3917,16 +4219,28 @@ public class Detail_Activity extends AppCompatActivity {
 
             List<Acts_Subtitle> acts_subtitles = Tamojenniy_kodeks_ru.getActs_Chapter_10();
 
-            for (int i = 0; i < acts_subtitles.size(); i++) {
-                if (positionChapter == i && acts_subtitles.get(i).getTitle().equals(titleChapter)) {
-                    if (dark.equals("no")) {
-                        pdfView.fromAsset("rus/Таможенный кодекс/10.Раздел X. Таможенные льготы отдельным категориям иностранных лиц/" + (i + 1) + "." + acts_subtitles.get(i).getTitle() + ".pdf").nightMode(true).load();
-                    } else {
-                        pdfView.fromAsset("rus/Таможенный кодекс/10.Раздел X. Таможенные льготы отдельным категориям иностранных лиц/" + (i + 1) + "." + acts_subtitles.get(i).getTitle() + ".pdf").load();
+            if (title.equals("Таможенный кодекс") && position == 8 && titleSubject.equals("Раздел X. Таможенные льготы отдельным категориям иностранных лиц") && positionSubject == 9 && titleChapter.equals("Глава 59. Таможенные льготы дипломатическим представительствам и консульским учреждениям Республики Узбекистан в иностранных государствах и их работникам"))
+            {
+                if (dark.equals("no")) {
+                    pdfView.fromAsset("rus/Таможенный кодекс/10.Раздел X. Таможенные льготы отдельным категориям иностранных лиц/3.Глава 59. Таможенные льготы дипломатическим представительствам.pdf").nightMode(true).load();
+                } else {
+                    pdfView.fromAsset("rus/Таможенный кодекс/10.Раздел X. Таможенные льготы отдельным категориям иностранных лиц/3.Глава 59. Таможенные льготы дипломатическим представительствам.pdf").load();
 
+                }
+            }
+            else {
+                for (int i = 0; i < acts_subtitles.size(); i++) {
+                    if (positionChapter == i && acts_subtitles.get(i).getTitle().equals(titleChapter)) {
+                        if (dark.equals("no")) {
+                            pdfView.fromAsset("rus/Таможенный кодекс/10.Раздел X. Таможенные льготы отдельным категориям иностранных лиц/" + (i + 1) + "." + acts_subtitles.get(i).getTitle() + ".pdf").nightMode(true).load();
+                        } else {
+                            pdfView.fromAsset("rus/Таможенный кодекс/10.Раздел X. Таможенные льготы отдельным категориям иностранных лиц/" + (i + 1) + "." + acts_subtitles.get(i).getTitle() + ".pdf").load();
+
+                        }
                     }
                 }
             }
+
         }
 
         if (title.equals("Таможенный кодекс") && position == 8 && titleSubject.equals("Раздел XI. Контролируемые поставки") && positionSubject == 10) {
@@ -4195,13 +4509,24 @@ public class Detail_Activity extends AppCompatActivity {
 
             List<Acts_Subtitle> acts_subtitles = Ugolovniy_protssesualniy_kodeks_ru.getActs_Chapter_4();
 
-            for (int i = 0; i < acts_subtitles.size(); i++) {
-                if (positionChapter == i && acts_subtitles.get(i).getTitle().equals(titleChapter)) {
-                    if (dark.equals("no")) {
-                        pdfView.fromAsset("rus/Уголовный процессуальный кодекс/4.РАЗДЕЛ ЧЕТВЕРТЫЙ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").nightMode(true).load();
-                    } else {
-                        pdfView.fromAsset("rus/Уголовный процессуальный кодекс/4.РАЗДЕЛ ЧЕТВЕРТЫЙ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").load();
+            if (title.equals("Уголовный процессуальный кодекс") && position == 3 && titleSubject.equals("Раздел четвертый \n" + "Процессуальное принуждение") && positionSubject == 3 && titleChapter.equals("Глава 32. Обеспечение безопасности участников процесса. Ответственность за нарушение процессуальных обязанностей и порядка на дознании, предварительном следствии и в суде"))
+            {
+                if (dark.equals("no")) {
+                    pdfView.fromAsset("rus/Уголовный процессуальный кодекс/4.РАЗДЕЛ ЧЕТВЕРТЫЙ/8.ГЛАВА 32. ОБЕСПЕЧЕНИЕ БЕЗОПАСНОСТИ УЧАСТНИКОВ ПРОЦЕССА..pdf").nightMode(true).load();
+                } else {
+                    pdfView.fromAsset("rus/Уголовный процессуальный кодекс/4.РАЗДЕЛ ЧЕТВЕРТЫЙ/8.ГЛАВА 32. ОБЕСПЕЧЕНИЕ БЕЗОПАСНОСТИ УЧАСТНИКОВ ПРОЦЕССА..pdf").load();
 
+                }
+            }
+           else {
+                for (int i = 0; i < acts_subtitles.size(); i++) {
+                    if (positionChapter == i && acts_subtitles.get(i).getTitle().equals(titleChapter)) {
+                        if (dark.equals("no")) {
+                            pdfView.fromAsset("rus/Уголовный процессуальный кодекс/4.РАЗДЕЛ ЧЕТВЕРТЫЙ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").nightMode(true).load();
+                        } else {
+                            pdfView.fromAsset("rus/Уголовный процессуальный кодекс/4.РАЗДЕЛ ЧЕТВЕРТЫЙ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").load();
+
+                        }
                     }
                 }
             }
@@ -4275,13 +4600,25 @@ public class Detail_Activity extends AppCompatActivity {
 
             List<Acts_Subtitle> acts_subtitles = Ugolovniy_protssesualniy_kodeks_ru.getActs_Chapter_9();
 
-            for (int i = 0; i < acts_subtitles.size(); i++) {
-                if (positionChapter == i && acts_subtitles.get(i).getTitle().equals(titleChapter)) {
-                    if (dark.equals("no")) {
-                        pdfView.fromAsset("rus/Уголовный процессуальный кодекс/9.РАЗДЕЛ ДЕВЯТЫЙ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").nightMode(true).load();
-                    } else {
-                        pdfView.fromAsset("rus/Уголовный процессуальный кодекс/9.РАЗДЕЛ ДЕВЯТЫЙ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").load();
+            if (title.equals("Уголовный процессуальный кодекс") && position == 3 && titleSubject.equals("Раздел девятый\n" + "Досудебное производство") && positionSubject == 8 && titleChapter.equals("Глава 47. Надзор за исполнением законов органами дознания и предварительного следствия, а также органами, осуществляющими доследственную проверку"))
+            {
+                if (dark.equals("no")) {
+                    pdfView.fromAsset("rus/Уголовный процессуальный кодекс/9.РАЗДЕЛ ДЕВЯТЫЙ/8.ГЛАВА 47. НАДЗОР ЗА ИСПОЛНЕНИЕМ ЗАКОНОВ ОРГАНАМИ ДОЗНАНИЯ.pdf").nightMode(true).load();
+                } else {
+                    pdfView.fromAsset("rus/Уголовный процессуальный кодекс/9.РАЗДЕЛ ДЕВЯТЫЙ/8.ГЛАВА 47. НАДЗОР ЗА ИСПОЛНЕНИЕМ ЗАКОНОВ ОРГАНАМИ ДОЗНАНИЯ.pdf").load();
 
+                }
+            }
+            else {
+
+                for (int i = 0; i < acts_subtitles.size(); i++) {
+                    if (positionChapter == i && acts_subtitles.get(i).getTitle().equals(titleChapter)) {
+                        if (dark.equals("no")) {
+                            pdfView.fromAsset("rus/Уголовный процессуальный кодекс/9.РАЗДЕЛ ДЕВЯТЫЙ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").nightMode(true).load();
+                        } else {
+                            pdfView.fromAsset("rus/Уголовный процессуальный кодекс/9.РАЗДЕЛ ДЕВЯТЫЙ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").load();
+
+                        }
                     }
                 }
             }
@@ -4355,13 +4692,24 @@ public class Detail_Activity extends AppCompatActivity {
 
             List<Acts_Subtitle> acts_subtitles = Ugolovniy_protssesualniy_kodeks_ru.getActs_Chapter_14();
 
-            for (int i = 0; i < acts_subtitles.size(); i++) {
-                if (positionChapter == i && acts_subtitles.get(i).getTitle().equals(titleChapter)) {
-                    if (dark.equals("no")) {
-                        pdfView.fromAsset("rus/Уголовный процессуальный кодекс/14.РАЗДЕЛ ЧЕТЫРНАДЦАТЫЙ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").nightMode(true).load();
-                    } else {
-                        pdfView.fromAsset("rus/Уголовный процессуальный кодекс/14.РАЗДЕЛ ЧЕТЫРНАДЦАТЫЙ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").load();
+            if (title.equals("Уголовный процессуальный кодекс") && position == 3 && titleSubject.equals("Раздел четырнадцатый \n" + "Международное сотрудничество в сфере уголовного судопроизводства") && positionSubject == 13 && titleChapter.equals("Глава 64. Основные положения о порядке взаимодействия судов, прокуроров, следователей и органов дознания с компетентными органами иностранных государств"))
+            {
+                if (dark.equals("no")) {
+                    pdfView.fromAsset("rus/Уголовный процессуальный кодекс/14.РАЗДЕЛ ЧЕТЫРНАДЦАТЫЙ/1.ГЛАВА 64. ОСНОВНЫЕ ПОЛОЖЕНИЯ.pdf").nightMode(true).load();
+                } else {
+                    pdfView.fromAsset("rus/Уголовный процессуальный кодекс/14.РАЗДЕЛ ЧЕТЫРНАДЦАТЫЙ/1.ГЛАВА 64. ОСНОВНЫЕ ПОЛОЖЕНИЯ.pdf").load();
 
+                }
+            }
+            else {
+                for (int i = 0; i < acts_subtitles.size(); i++) {
+                    if (positionChapter == i && acts_subtitles.get(i).getTitle().equals(titleChapter)) {
+                        if (dark.equals("no")) {
+                            pdfView.fromAsset("rus/Уголовный процессуальный кодекс/14.РАЗДЕЛ ЧЕТЫРНАДЦАТЫЙ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").nightMode(true).load();
+                        } else {
+                            pdfView.fromAsset("rus/Уголовный процессуальный кодекс/14.РАЗДЕЛ ЧЕТЫРНАДЦАТЫЙ/" + (i + 1) + "." + acts_subtitles.get(i).getTitle().toUpperCase() + ".pdf").load();
+
+                        }
                     }
                 }
             }

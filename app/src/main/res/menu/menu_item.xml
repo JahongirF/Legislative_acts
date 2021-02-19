@@ -5,13 +5,13 @@
     tools:showIn="navigation_view">
 
     <group >
-        <item
-            android:id="@+id/main_activity"
-            android:icon="@drawable/ic_main"
-            android:title="@string/main_activity_lang"
-            app:showAsAction="always"
+<!--        <item-->
+<!--            android:id="@+id/main_activity"-->
+<!--            android:icon="@drawable/ic_main"-->
+<!--            android:title="@string/main_activity_lang"-->
+<!--            app:showAsAction="always"-->
 
-            />
+<!--            />-->
 
         <item
             android:id="@+id/lang_activity"

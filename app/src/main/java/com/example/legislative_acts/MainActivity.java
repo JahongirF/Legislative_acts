@@ -117,11 +117,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         toolbar = findViewById(R.id.toolBar);
         setSupportActionBar(toolbar);
 
-
-
         navigationView = findViewById(R.id.nav_view);
 
         View header = navigationView.getHeaderView(0);
+
         ImageView imageViewdark = header.findViewById(R.id.imageViewDark);
 
         ImageView imageViewLogo = header.findViewById(R.id.imageViewLogo);
@@ -205,9 +204,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         toggle.syncState();
 
-
-
-
     }
 
 
@@ -216,11 +212,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
         switch (item.getItemId()) {
-            case R.id.main_activity:
-
-                getSupportFragmentManager().beginTransaction().addToBackStack("main").replace(R.id.fragment_container, fragment_main_activity).commit();
-
-                break;
+//            case R.id.main_activity:
+//
+//                getSupportFragmentManager().beginTransaction().addToBackStack("main").replace(R.id.fragment_container, fragment_main_activity).commit();
+//
+//                break;
 
             case R.id.lang_activity:
                 Language_Activity_Fragment language_activity_fragment = new Language_Activity_Fragment(new DialogDismisListener() {
@@ -237,9 +233,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
                 getSupportFragmentManager().beginTransaction().addToBackStack("about").replace(R.id.fragment_container, about_activity_fragment).commit();
                 getSupportActionBar().hide();
-
-
-
                 break;
 
             case R.id.other_activity:

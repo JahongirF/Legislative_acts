@@ -41,16 +41,25 @@ public class FavouriteActivity extends AppCompatActivity {
 
 
         materialToolbar = findViewById(R.id.toolBarFavourite);
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        String lang = sharedPreferences.getString("lang", "kir");
+
+        if (lang.equals("rus")) {
+            materialToolbar.setTitle("Сохраненные");
+        } else if (lang.equals("kir")) {
+            materialToolbar.setTitle("Сақланганлар");
+        } else if (lang.equals("uz")) {
+            materialToolbar.setTitle("Saqlanganlar");
+        }
         ActionBar actionBar = getSupportActionBar();
-        if (actionBar != null)
-        {
+        if (actionBar != null) {
             actionBar.hide();
         }
 
         materialToolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(FavouriteActivity.this,MainActivity.class));
+                startActivity(new Intent(FavouriteActivity.this, MainActivity.class));
             }
         });
 
@@ -75,11 +84,11 @@ public class FavouriteActivity extends AppCompatActivity {
                 adapter.setOnClickBXMSListener(new Favourite_Adapter.OnClickBXMSListener() {
                     @Override
                     public void OnClickListener(int position, ActsData actsData) {
-                        Intent intent = new Intent(FavouriteActivity.this,Detail_Activity.class);
+                        Intent intent = new Intent(FavouriteActivity.this, Detail_Activity.class);
                         intent.putExtra("title", actsData.getTitle());
-                        intent.putExtra("position",actsData.getPosition());
-                        intent.putExtra("titleSubject",actsData.getTitleSection());
-                        intent.putExtra("positionSubject",actsData.getPositionSection());
+                        intent.putExtra("position", actsData.getPosition());
+                        intent.putExtra("titleSubject", actsData.getTitleSection());
+                        intent.putExtra("positionSubject", actsData.getPositionSection());
                         intent.putExtra("titleChapter", actsData.getTitleChapter());
                         intent.putExtra("positionChapter", actsData.getPositionChapter());
                         intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);

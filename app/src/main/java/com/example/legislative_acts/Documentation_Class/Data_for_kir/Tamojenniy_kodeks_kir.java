@@ -63,9 +63,9 @@ public class Tamojenniy_kodeks_kir {
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
         acts_subtitles.add(new Acts_Subtitle("22-боб. Тижорат мақсадларида фойдаланиладиган транспорт воситаларини олиб ўтиш"));
-        acts_subtitles.add(new Acts_Subtitle("23-боб. Жисмоний шахслар томонидан товарларни ва транспорт воситала"));
+        acts_subtitles.add(new Acts_Subtitle("23-боб. Жисмоний шахслар томонидан товарларни ва транспорт воситаларини нотижорат мақсадларда олиб ўтиш"));
         acts_subtitles.add(new Acts_Subtitle("24-боб. Халқаро почта ва курьерлик жўнатмаларида юбориладиган товарлар"));
-        acts_subtitles.add(new Acts_Subtitle("25-боб. Божхона чегарасидан қувур транспортида ва электр узатиш лин"));
+        acts_subtitles.add(new Acts_Subtitle("25-боб. Божхона чегарасидан қувур транспортида ва электр узатиш линиялари орқали ўтиладиган товарлар"));
         acts_subtitles.add(new Acts_Subtitle("26-боб. Божхона омборлари, бож олинмайдиган савдо дўконлари ва эркин омборлар"));
 
         return acts_subtitles;
@@ -148,7 +148,7 @@ public class Tamojenniy_kodeks_kir {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
         acts_subtitles.add(new Acts_Subtitle("57-боб. Чет давлатларнинг ваколатхоналари ва уларнинг ходимлари учун божхона имтиёзлари"));
         acts_subtitles.add(new Acts_Subtitle("58-боб. Чет эллик бошқа шахслар учун божхона имтиёзлари"));
-        acts_subtitles.add(new Acts_Subtitle("59-боб. Ўзбекистон Республикасининг чет давлатлардаги дипломатик ваколатхоналари ва консуллик муассасалари"));
+        acts_subtitles.add(new Acts_Subtitle("59-боб. Ўзбекистон Республикасининг чет давлатлардаги дипломатик ваколатхоналари ва консуллик муассасалари ҳамда уларнинг ходимлари учун божхона имтиёзлари"));
 
         return acts_subtitles;
     }

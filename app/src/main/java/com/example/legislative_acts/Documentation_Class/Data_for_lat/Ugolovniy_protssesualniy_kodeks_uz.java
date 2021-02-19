@@ -42,9 +42,9 @@ public class Ugolovniy_protssesualniy_kodeks_uz {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
         acts_subtitles.add(new Acts_Subtitle("3-bob. Jinoyat ishini yuritishga mas’ul bo‘lgan davlat organlari va mansabdor shaxslar"));
         acts_subtitles.add(new Acts_Subtitle("4-bob. Jinoyat ishini yuritishda ishtirok etuvchi jamoat birlashmalari, jamoalar va ularning vakillari"));
-        acts_subtitles.add(new Acts_Subtitle("5-bob. Jinoyat prosessida o‘z manfaatlarini himoya qiladigan shaxslar. himoyachilar va vakillar"));
+        acts_subtitles.add(new Acts_Subtitle("5-bob. Jinoyat prosessida o‘z manfaatlarini himoya qiladigan shaxslar. Himoyachilar va vakillar"));
         acts_subtitles.add(new Acts_Subtitle("6-bob. Jinoyat prosessida ishtirok etuvchi boshqa shaxslar"));
-        acts_subtitles.add(new Acts_Subtitle("7-bob. Jinoyat prosessida ishtirok etishga monelik qiladigan holatlar. rad qilishlar"));
+        acts_subtitles.add(new Acts_Subtitle("7-bob. Jinoyat prosessida ishtirok etishga monelik qiladigan holatlar. Rad qilishlar"));
 
         return acts_subtitles;
     }
@@ -87,7 +87,7 @@ public class Ugolovniy_protssesualniy_kodeks_uz {
         acts_subtitles.add(new Acts_Subtitle("29-bob. Lavozimdan chetlashtirish"));
         acts_subtitles.add(new Acts_Subtitle("30-bob. Majburiy keltirish"));
         acts_subtitles.add(new Acts_Subtitle("31-bob. Shaxsni tibbiy muassasaga joylashtirish"));
-        acts_subtitles.add(new Acts_Subtitle("32-bob. Prosess ishtirokchilarining xavfsizligini ta’minlash. surishtiruv, dastlabki tergov va sudda prosessual majburiyatlar hamda tartibni buzganli"));
+        acts_subtitles.add(new Acts_Subtitle("32-bob. Prosess ishtirokchilarining xavfsizligini ta’minlash. Surishtiruv, dastlabki tergov va sudda prosessual majburiyatlar hamda tartibni buzganlik uchun javobgarlik"));
         return acts_subtitles;
     }
 
@@ -154,7 +154,7 @@ public class Ugolovniy_protssesualniy_kodeks_uz {
     public static List<Acts_Subtitle> getActs_Chapter_11()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("55-bob. Hukm, ajrim va qarorlarning qonuniyligi, asosliligi va adolatliligini tekshiri"));
+        acts_subtitles.add(new Acts_Subtitle("55-bob. Hukm, ajrim va qarorlarning qonuniyligi, asosliligi va adolatliligini tekshirishning umumiy shartlari"));
         acts_subtitles.add(new Acts_Subtitle("55.1-bob. Apellyasiya tartibida ish yuritish"));
         acts_subtitles.add(new Acts_Subtitle("56-bob. Kassasiya tartibida ish yuritish"));
         acts_subtitles.add(new Acts_Subtitle("57-bob. Nazorat tartibida ish yuritish"));
@@ -185,7 +185,7 @@ public class Ugolovniy_protssesualniy_kodeks_uz {
     public static List<Acts_Subtitle> getActs_Chapter_14()
     {
         List<Acts_Subtitle> acts_subtitles = new ArrayList<>();
-        acts_subtitles.add(new Acts_Subtitle("64-bob. Sudlar, prokurorlar, tergovchilar va surishtiruv organlarining xorijiy davlatlar vakolatli organla"));
+        acts_subtitles.add(new Acts_Subtitle("64-bob. Sudlar, prokurorlar, tergovchilar va surishtiruv organlarining xorijiy davlatlar vakolatli organlari bilan o‘zaro hamkorligining tartibi to‘gʻrisidagi asosiy qoidalar"));
         acts_subtitles.add(new Acts_Subtitle("65-bob. Shaxsni jinoiy javobgarlikka tortish yoki hukmni ijro etish uchun ushlab berish"));
 
         return acts_subtitles;

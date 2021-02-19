@@ -110,43 +110,52 @@ public class Acts_Adapter extends RecyclerView.Adapter<Acts_Adapter.Acts_ViewHol
 
 
         boolean isExpanded = actsList.get(position).isExpended();
+        //Toast.makeText(holder.itemView.getContext(), "" + isExpanded, Toast.LENGTH_SHORT).show();
+
         holder.recyclerView_acts_subtitle.setVisibility(isExpanded ? View.VISIBLE : View.GONE);
 
-        if (isExpanded) {
-            holder.constraintLayout.setBackgroundColor(holder.itemView.getResources().getColor(R.color.color_item_stroke));
-            holder.imageView_arrow.setImageResource(R.drawable.ic_arrow_up);
-            if (actsList.get(position).getTitle().equals("Административный кодекс") || actsList.get(position).getTitle().equals("Ma’muriy javobkarlik to‘g‘risidagi kodeksi") || actsList.get(position).getTitle().equals("Маъмурий жавобгарлик тўғрисидаги кодекси")) {
 
-                holder.imageView_acts.setImageResource(R.drawable.ic_administrativniy_kodeks_white);
-            } else if (actsList.get(position).getTitle().equals("Бюджетный кодекс") || actsList.get(position).getTitle().equals("Byudjet kodeksi") || actsList.get(position).getTitle().equals("Бюджет кодекси")) {
-                holder.imageView_acts.setImageResource(R.drawable.ic_byudjetniy_kodeks_white);
-            } else if (actsList.get(position).getTitle().equals("Гражданский кодекс") || actsList.get(position).getTitle().equals("Fuqorolik kodeksi") || actsList.get(position).getTitle().equals("Фуқоролик кодекси")) {
-                holder.imageView_acts.setImageResource(R.drawable.ic_grajdanskiy_kodeks_white);
-            } else if (actsList.get(position).getTitle().equals("Уголовный процессуальный кодекс") || actsList.get(position).getTitle().equals("Jinoyat-prosessual kodeksi") || actsList.get(position).getTitle().equals("Жиноят-процессуал кодекси")) {
-                holder.imageView_acts.setImageResource(R.drawable.ic_protsesualniy_white);
-            } else if (actsList.get(position).getTitle().equals("Земельный кодекс") || actsList.get(position).getTitle().equals("Yer kodeksi") || actsList.get(position).getTitle().equals("Ер кодекси")) {
-                holder.imageView_acts.setImageResource(R.drawable.ic_zemelniy_kodeks_white);
-            } else if (actsList.get(position).getTitle().equals("Налоговый кодекс") || actsList.get(position).getTitle().equals("Soliq kodeksi") || actsList.get(position).getTitle().equals("Солиқ кодекси")) {
-                holder.imageView_acts.setImageResource(R.drawable.ic_nalogoviy_kodeks_white);
-            } else if (actsList.get(position).getTitle().equals("Таможенный кодекс") || actsList.get(position).getTitle().equals("Bojxona kodeksi") || actsList.get(position).getTitle().equals("Божхона кодекси")) {
-                holder.imageView_acts.setImageResource(R.drawable.ic_tomejenniy_kodeks_white);
-            } else if (actsList.get(position).getTitle().equals("Трудовой кодекс") || actsList.get(position).getTitle().equals("Mehnat kodeksi") || actsList.get(position).getTitle().equals("Меҳнат кодекси")) {
-                holder.imageView_acts.setImageResource(R.drawable.ic_trudovoy_kodeks_white);
-            } else if (actsList.get(position).getTitle().equals("Уголовный кодекс") || actsList.get(position).getTitle().equals("Jinoyat kodeksi") || actsList.get(position).getTitle().equals("Жиноят кодекси")) {
-                holder.imageView_acts.setImageResource(R.drawable.ic_ugolovniy_kodeks_white);
-            } else if (actsList.get(position).getTitle().equals("Масъулияти чекланган ҳамда қўшимча масъулиятли жамиятлар тўғрисидаги кодекси") || actsList.get(position).getTitle().equals("Mas’suliyati cheklangan hamda qo‘shimcha mas’uliyatli jamiyatlar to‘g‘risidagi kodeksi") || actsList.get(position).getTitle().equals("Общество с  ограниченной и дополнительной ответсятвенностью")) {
-                holder.imageView_acts.setImageResource(R.drawable.ic_llc_white);
-            } else if (actsList.get(position).getTitle().equals("Оила кодекси") || actsList.get(position).getTitle().equals("Oila kodeksi") || actsList.get(position).getTitle().equals("Семейный кодекс")) {
-                holder.imageView_acts.setImageResource(R.drawable.ic_family_white);
-            } else if (actsList.get(position).getTitle().equals("Частное предприятие") || actsList.get(position).getTitle().equals("Xususiy korxona to‘g‘risidagi kodeksi") || actsList.get(position).getTitle().equals("Хусусий корхона тоғрисидаги кодекси")) {
-                holder.imageView_acts.setImageResource(R.drawable.ic_chastnoe_predpriyatie_white);
-            } else {
-                holder.imageView_acts.setImageResource(R.drawable.ic_pattern_example_white);
+
+
+            if (isExpanded) {
+                holder.constraintLayout.setBackgroundColor(holder.itemView.getResources().getColor(R.color.color_item_stroke));
+                holder.imageView_arrow.setImageResource(R.drawable.ic_arrow_up);
+
+
+                if (actsList.get(position).getTitle().equals("Административный кодекс") || actsList.get(position).getTitle().equals("Ma’muriy javobkarlik to‘g‘risidagi kodeksi") || actsList.get(position).getTitle().equals("Маъмурий жавобгарлик тўғрисидаги кодекси")) {
+
+                    holder.imageView_acts.setImageResource(R.drawable.ic_administrativniy_kodeks_white);
+                } else if (actsList.get(position).getTitle().equals("Бюджетный кодекс") || actsList.get(position).getTitle().equals("Byudjet kodeksi") || actsList.get(position).getTitle().equals("Бюджет кодекси")) {
+                    holder.imageView_acts.setImageResource(R.drawable.ic_byudjetniy_kodeks_white);
+                } else if (actsList.get(position).getTitle().equals("Гражданский кодекс") || actsList.get(position).getTitle().equals("Fuqorolik kodeksi") || actsList.get(position).getTitle().equals("Фуқоролик кодекси")) {
+                    holder.imageView_acts.setImageResource(R.drawable.ic_grajdanskiy_kodeks_white);
+                } else if (actsList.get(position).getTitle().equals("Уголовный процессуальный кодекс") || actsList.get(position).getTitle().equals("Jinoyat-prosessual kodeksi") || actsList.get(position).getTitle().equals("Жиноят-процессуал кодекси")) {
+                    holder.imageView_acts.setImageResource(R.drawable.ic_protsesualniy_white);
+                } else if (actsList.get(position).getTitle().equals("Земельный кодекс") || actsList.get(position).getTitle().equals("Yer kodeksi") || actsList.get(position).getTitle().equals("Ер кодекси")) {
+                    holder.imageView_acts.setImageResource(R.drawable.ic_zemelniy_kodeks_white);
+                } else if (actsList.get(position).getTitle().equals("Налоговый кодекс") || actsList.get(position).getTitle().equals("Soliq kodeksi") || actsList.get(position).getTitle().equals("Солиқ кодекси")) {
+                    holder.imageView_acts.setImageResource(R.drawable.ic_nalogoviy_kodeks_white);
+                } else if (actsList.get(position).getTitle().equals("Таможенный кодекс") || actsList.get(position).getTitle().equals("Bojxona kodeksi") || actsList.get(position).getTitle().equals("Божхона кодекси")) {
+                    holder.imageView_acts.setImageResource(R.drawable.ic_tomejenniy_kodeks_white);
+                } else if (actsList.get(position).getTitle().equals("Трудовой кодекс") || actsList.get(position).getTitle().equals("Mehnat kodeksi") || actsList.get(position).getTitle().equals("Меҳнат кодекси")) {
+                    holder.imageView_acts.setImageResource(R.drawable.ic_trudovoy_kodeks_white);
+                } else if (actsList.get(position).getTitle().equals("Уголовный кодекс") || actsList.get(position).getTitle().equals("Jinoyat kodeksi") || actsList.get(position).getTitle().equals("Жиноят кодекси")) {
+                    holder.imageView_acts.setImageResource(R.drawable.ic_ugolovniy_kodeks_white);
+                } else if (actsList.get(position).getTitle().equals("Масъулияти чекланган ҳамда қўшимча масъулиятли жамиятлар тўғрисидаги кодекси") || actsList.get(position).getTitle().equals("Mas’suliyati cheklangan hamda qo‘shimcha mas’uliyatli jamiyatlar to‘g‘risidagi kodeksi") || actsList.get(position).getTitle().equals("Общество с  ограниченной и дополнительной ответсятвенностью")) {
+                    holder.imageView_acts.setImageResource(R.drawable.ic_llc_white);
+                } else if (actsList.get(position).getTitle().equals("Оила кодекси") || actsList.get(position).getTitle().equals("Oila kodeksi") || actsList.get(position).getTitle().equals("Семейный кодекс")) {
+                    holder.imageView_acts.setImageResource(R.drawable.ic_family_white);
+                } else if (actsList.get(position).getTitle().equals("Частное предприятие") || actsList.get(position).getTitle().equals("Xususiy korxona to‘g‘risidagi kodeksi") || actsList.get(position).getTitle().equals("Хусусий корхона тоғрисидаги кодекси")) {
+                    holder.imageView_acts.setImageResource(R.drawable.ic_chastnoe_predpriyatie_white);
+                } else {
+                    holder.imageView_acts.setImageResource(R.drawable.ic_pattern_example_white);
+                }
+
+                holder.textView_acts.setTextColor(holder.itemView.getResources().getColor(R.color.white));
+
             }
 
-            holder.textView_acts.setTextColor(holder.itemView.getResources().getColor(R.color.white));
 
-        }
 
 
     }

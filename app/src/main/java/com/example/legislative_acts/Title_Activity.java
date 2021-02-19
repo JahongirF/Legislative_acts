@@ -670,7 +670,7 @@ public class Title_Activity extends AppCompatActivity {
                 adapter.setActs_subtitleList(Ugolovniy_protssesualniy_kodeks_uz.getActs_Chapter_11());
             }
 
-            if (titleSubject.equals("XII.O‘N IKKINChI BO‘LIM \n" + "HUKM, AJRIM, QARORLARNI IJRO ETISH") && positionSubject == 11)
+            if (titleSubject.equals("XII.O‘n ikkinchi bo‘lim \n" + "Hukm, ajrim, qarorlarni ijro etish") && positionSubject == 11)
             {
                 adapter.setActs_subtitleList(Ugolovniy_protssesualniy_kodeks_uz.getActs_Chapter_12());
             }

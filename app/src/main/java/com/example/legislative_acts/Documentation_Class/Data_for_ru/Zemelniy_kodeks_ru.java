@@ -22,7 +22,7 @@ public class Zemelniy_kodeks_ru {
         acts_subtitles.add(new Acts_Subtitle("Глава X. Земли лесного фонда, водного фонда и земли запаса"));
         acts_subtitles.add(new Acts_Subtitle("Глава XI. Охрана земель"));
         acts_subtitles.add(new Acts_Subtitle("Глава XII. Контроль за использованием и охраной земель"));
-        acts_subtitles.add(new Acts_Subtitle("Глава XIII. Возмещение убытков землевладельцам, землепользователям, арендаторам"));
+        acts_subtitles.add(new Acts_Subtitle("Глава XIII. Ввозмещение убытков землевладельцам, землепользователям, арендаторам, собственникам земельных участков и потерь сельскохозяйственного и лесохозяйственного производства"));
         acts_subtitles.add(new Acts_Subtitle("Глава XIV. Разрешение земельных споров и ответственность за нарушение земельного законодательства"));
 
         return acts_subtitles;
