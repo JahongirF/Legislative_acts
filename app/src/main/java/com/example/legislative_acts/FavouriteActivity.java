@@ -74,9 +74,9 @@ public class FavouriteActivity extends AppCompatActivity {
             public void onChanged(final List<ActsData> saveDates) {
                 adapter.setGetBXMS(saveDates);
 
-                adapter.setOnLongClickListener(new Favourite_Adapter.OnLongClickListener() {
+                adapter.setOnDeleteClickListener(new Favourite_Adapter.OnDeleteClickListener() {
                     @Override
-                    public void OnLongClick(int position, ActsData saveDate) {
+                    public void OnDeleteClick(int position, ActsData saveDate) {
                         viewModal.delete(saveDate);
                     }
                 });

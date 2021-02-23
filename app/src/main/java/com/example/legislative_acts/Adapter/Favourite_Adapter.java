@@ -33,7 +33,7 @@ public class Favourite_Adapter extends RecyclerView.Adapter<Favourite_Adapter.Fa
 
     private List<ActsData> actsData;
     private OnClickBXMSListener onClickBXMSListener;
-    private OnLongClickListener onLongClickListener;
+    private OnDeleteClickListener onDeleteClickListener;
 
     public Favourite_Adapter() {
         actsData = new ArrayList<>();
@@ -52,8 +52,8 @@ public class Favourite_Adapter extends RecyclerView.Adapter<Favourite_Adapter.Fa
         void OnClickListener(int position, ActsData saveDate);
     }
 
-    public interface  OnLongClickListener{
-        void OnLongClick(int position, ActsData saveDate);
+    public interface  OnDeleteClickListener{
+        void OnDeleteClick(int position, ActsData saveDate);
     }
 
 
@@ -61,8 +61,8 @@ public class Favourite_Adapter extends RecyclerView.Adapter<Favourite_Adapter.Fa
         this.onClickBXMSListener = onClickBXMSListener;
     }
 
-    public void setOnLongClickListener(OnLongClickListener onLongClickListener) {
-        this.onLongClickListener = onLongClickListener;
+    public void setOnDeleteClickListener(OnDeleteClickListener onDeleteClickListener) {
+        this.onDeleteClickListener = onDeleteClickListener;
         notifyDataSetChanged();
     }
 
@@ -175,11 +175,7 @@ public class Favourite_Adapter extends RecyclerView.Adapter<Favourite_Adapter.Fa
         }
 
 
-        if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES)
-        {
-            holder.imageView.setImageResource(R.drawable.icon_app_3_dark);
 
-        }
 
 
 
@@ -217,19 +213,15 @@ public class Favourite_Adapter extends RecyclerView.Adapter<Favourite_Adapter.Fa
                 }
             });
 
-            itemView.setOnLongClickListener(new View.OnLongClickListener() {
+            imageView.setOnClickListener(new View.OnClickListener() {
                 @Override
-                public boolean onLongClick(View v) {
-
-                    if (onLongClickListener != null)
+                public void onClick(View v) {
+                    if (onDeleteClickListener != null)
                     {
-                        onLongClickListener.OnLongClick(getAdapterPosition(),actsData.get(getAdapterPosition()));
+                        onDeleteClickListener.OnDeleteClick(getAdapterPosition(),actsData.get(getAdapterPosition()));
                     }
-
-                    return true;
                 }
             });
-
         }
     }
 }
